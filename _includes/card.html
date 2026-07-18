@@ -1,47 +1,29 @@
-{{ " " }}
-<div class="card" data-style="{{ include.style }}">
-  <a
-    {% if include.link %}
-      href="{{ include.link | relative_url | uri_escape }}"
-    {% endif %}
-    aria-label="{{ include.title | default: "card link" | regex_strip }}"
-    class="card-image"
-  >
-    <img
-      src="{{ include.image | relative_url | uri_escape }}"
-      alt="{{ include.title | default: "card image" | regex_strip }}"
-      loading="lazy"
-      {% include fallback.html %}
-    >
-  </a>
-
-  <div class="card-text">
-    {% if include.title %}
-      <a
-        {% if include.link %}
-          href="{{ include.link | relative_url | uri_escape }}"
-        {% endif %}
-        {% if include.tooltip %}
-          data-tooltip="{{ include.tooltip | xml_escape }}"
-        {% endif %}
-        class="card-title"
+{% assign card_url = include.link | default: include.url %}
+<article class="card" {% if include.style %}data-style="{{ include.style }}"{% endif %}>
+  {% if include.image %}
+    <a class="card__media" {% if card_url %}href="{{ card_url | relative_url | uri_escape }}"{% endif %}>
+      <img
+        src="{{ include.image | relative_url | uri_escape }}"
+        alt=""
+        loading="lazy"
+        decoding="async"
+        {% include fallback.html %}
       >
-        {{ include.title }}
     </a>
-    {% endif %}
+  {% else %}
+    <div class="card__media card__media--fallback" aria-hidden="true"><span></span></div>
+  {% endif %}
 
-    {% if include.subtitle %}
-      <span class="card-subtitle">{{ include.subtitle }}</span>
+  <div class="card__body">
+    {% if include.title %}
+      <h3 class="card__title">
+        {% if card_url %}<a href="{{ card_url | relative_url | uri_escape }}">{{ include.title }}</a>{% else %}{{ include.title }}{% endif %}
+      </h3>
     {% endif %}
-
-    {% if include.description %}
-      <p>
-        {{ include.description | markdownify | remove: "<p>" | remove: "</p>" }}
-      </p>
-    {% endif %}
-
+    {% if include.subtitle %}<p class="card__subtitle">{{ include.subtitle }}</p>{% endif %}
+    {% if include.description %}<div class="card__description">{{ include.description | markdownify }}</div>{% endif %}
     {% if include.tags or include.repo %}
-      {% include tags.html tags=include.tags repo=include.repo %}
+      <div class="card__tags">{% include tags.html tags=include.tags repo=include.repo %}</div>
     {% endif %}
   </div>
-</div>
+</article>

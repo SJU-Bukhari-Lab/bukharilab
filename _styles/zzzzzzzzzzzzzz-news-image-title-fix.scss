@@ -1,0 +1,76 @@
+---
+---
+
+/* News image mapping and article-title behavior fix. */
+
+/* Explicitly cancel any inherited sticky/fixed heading behavior on article pages. */
+.layout-post .news-article__header,
+.layout-post .news-article__header h1 {
+  position: static !important;
+  inset: auto !important;
+  top: auto !important;
+  right: auto !important;
+  bottom: auto !important;
+  left: auto !important;
+  z-index: auto !important;
+  transform: none !important;
+}
+
+.layout-post .news-article__header {
+  display: block;
+  width: min(100%, 940px);
+  margin: 0 auto 32px;
+  padding: 0;
+  background: transparent !important;
+  box-shadow: none !important;
+}
+
+.layout-post .news-article__header h1 {
+  max-width: 940px;
+  margin-inline: auto;
+  font-size: clamp(2.15rem, 4.2vw, 4rem) !important;
+  line-height: 1.08 !important;
+}
+
+/* Preserve the full conference photographs instead of aggressively cropping them. */
+.page-news .post-excerpt__media--contain,
+.layout-post .news-article__visual--contain {
+  background:
+    linear-gradient(135deg, rgba(247, 251, 253, 0.98), rgba(226, 239, 247, 0.98));
+}
+
+.page-news .post-excerpt__media--contain img {
+  object-fit: contain !important;
+  padding: 12px;
+}
+
+.layout-post .news-article__visual--contain img {
+  object-fit: contain !important;
+  padding: clamp(12px, 2vw, 24px);
+}
+
+/* Keep article imagery below the title in normal document flow. */
+.layout-post .news-article__visual {
+  position: relative !important;
+  z-index: 1;
+  margin-top: 0;
+}
+
+.layout-post .news-article__content {
+  z-index: 2;
+}
+
+@media (max-width: 700px) {
+  .layout-post .news-article__header {
+    margin-bottom: 24px;
+  }
+
+  .layout-post .news-article__header h1 {
+    font-size: clamp(2rem, 10vw, 3rem) !important;
+  }
+
+  .page-news .post-excerpt__media--contain img,
+  .layout-post .news-article__visual--contain img {
+    padding: 8px;
+  }
+}

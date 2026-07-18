@@ -1,16 +1,16 @@
-<div class="search-box">
-  <input
-    type="text"
-    class="search-input"
-    oninput="onSearchInput(this)"
-    placeholder="Search items on this page"
-  />
-  <button
-    disabled
-    data-tooltip="Clear search"
-    aria-label="clear search"
-    onclick="onSearchClear()"
-  >
+<form class="search-box" role="search" onsubmit="return false;">
+  <label for="page-search">Search this page</label>
+  <div class="search-box__control">
     {% include icon.html icon="fa-solid fa-magnifying-glass" %}
-  </button>
-</div>
+    <input
+      id="page-search"
+      type="search"
+      autocomplete="off"
+      placeholder="Search"
+      oninput="onSearchInput(this)"
+    >
+    <button type="button" aria-label="Clear search" onclick="onSearchClear()" disabled>
+      {% include icon.html icon="fa-solid fa-magnifying-glass" %}
+    </button>
+  </div>
+</form>

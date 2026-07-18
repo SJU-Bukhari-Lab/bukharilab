@@ -13,8 +13,8 @@ links:
   # email: contact@your-lab.com
   # orcid: 0000-0001-8713-9213
   google-scholar: JhWJ5PEAAAAJ
-  github: Bukhari-Lab
-  website: https://www.linkedin.com/company/bukharilab/posts/?feedView=all
+  github: SJU-Bukhari-Lab
+  website: https://www.linkedin.com/company/bukharilab
   # twitter: YourLabHandle
   # youtube: YourLabChannel
 
@@ -32,6 +32,11 @@ defaults:
       type: "members"
     values:
       layout: member
+  # markdown files in /_projects
+  - scope:
+      type: "projects"
+    values:
+      layout: project
   # markdown files in /_posts
   - scope:
       type: "posts"
@@ -41,6 +46,9 @@ defaults:
 collections:
   # generate page for each member
   members:
+    output: true
+  # generate page for each project
+  projects:
     output: true
   # generate page for each post
   posts:
@@ -71,6 +79,8 @@ include:
 
 # force jekyll to exclude certain files/folders
 exclude:
+  - "*-backup-*"
+  - "**/*-backup-*"
   - README.md
   - LICENSE.md
   - _site

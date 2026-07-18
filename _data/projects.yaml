@@ -1,96 +1,111 @@
 # Bukhari Lab research projects.
+# Each project has an internal detail page and a verified public publication link.
 
 - title: Our Socio-technical Approach for Biomedical Content Authoring and Structured Web Publishing
   subtitle: NSF Award 2101350
   group: featured
-  image: images/projects/content-authoring.png
-  link: https://www.nsf.gov/awardsearch/showAward?AWD_ID=2101350
+  image: images/projects/infographics/our-socio-technical-approach-infographic.webp
+  link: https://doi.org/10.32473/flairs.36.133253
   description: Balancing the speed and accuracy in structured biomedical content authoring
   tags:
-    - semantic web
-
+  - semantic web
+  detail: /projects/our-socio-technical-approach-for-biomedical-content-authoring-and-structured-web-publishing/
+  publication: https://doi.org/10.32473/flairs.36.133253
 - title: Ontology-based Scientific Metadata Generation
   group: featured
-  image: images/projects/ontology-metadata.png
-  link: https://bukharilab.org/services/generate-ontology-based-scientific-metadata/
-  description: "Public biomedical data repositories often provide web-based interfaces to collect experimental metadata. …"
+  image: images/projects/infographics/ontology-metadata-generation-infographic.webp
+  link: https://doi.org/10.1186/s12859-018-2247-6
+  description: Public biomedical data repositories often provide web-based interfaces to collect experimental metadata. …
   tags:
-    - semantic web
-
+  - semantic web
+  detail: /projects/ontology-based-scientific-metadata-generation/
+  publication: https://doi.org/10.1186/s12859-018-2247-6
 - title: Reporting and connecting cell type names and gating definitions through ontologies
   group: featured
-  image: images/projects/cell-types-gating.png
-  link: https://bukharilab.org/services/reporting-and-connecting-cell-type-names-and-gating-definitions-through-ontologies/
-  description: "Human immunology studies often rely on the isolation and quantification of cell populations from an input sample based on flow cytometry and related techniques. …"
+  image: images/projects/infographics/cell-type-gating-ontologies-infographic.webp
+  link: https://doi.org/10.1186/s12859-019-2725-5
+  description: Human immunology studies often rely on the isolation and quantification of cell populations from an input sample based on flow cytometry and related techniques. …
   tags:
-    - semantic web
-
+  - semantic web
+  detail: /projects/reporting-and-connecting-cell-type-names-and-gating-definitions-through-ontologies/
+  publication: https://doi.org/10.1186/s12859-019-2725-5
 - title: How Representative Is a SPARQL Benchmark? An Analysis of RDF Triplestore Benchmarks
-  image: images/projects/sparql-benchmark.png
-  link: https://bukharilab.org/services/how-representative-is-a-sparql-benchmark-an-analysis-of-rdf-triplestore-benchmarks/
-  description: "Triplestores are data management systems for storing and querying RDF data. …"
+  image: images/projects/infographics/sparql-benchmark-infographic.webp
+  link: https://doi.org/10.1145/3308558.3313556
+  description: Triplestores are data management systems for storing and querying RDF data. …
   tags:
-    - semantic web
-
+  - semantic web
+  detail: /projects/how-representative-is-a-sparql-benchmark-an-analysis-of-rdf-triplestore-benchmarks/
+  publication: https://doi.org/10.1145/3308558.3313556
 - title: Formal representation of immunology related data with ontologies
-  image: images/photo.jpg
-  link: https://bukharilab.org/services/formal-representation-of-immunology-related-data-with-ontologies/
-  description: "The Human Immunology Project Consortium (HIPC) is a multicenter collaboration between research centers performing large-scale human immunology studies that focus on profiling the human immune response to natural infection and vaccination. …"
+  image: images/projects/infographics/formal-immunology-ontologies-infographic.webp
+  link: https://doi.org/10.4049/jimmunol.202.Supp.130.26
+  description: The Human Immunology Project Consortium (HIPC) is a multicenter collaboration between research centers performing large-scale human immunology studies that focus on profiling the human immune response to natural infection and vaccination. …
   tags:
-    - data integration
-
+  - data integration
+  detail: /projects/formal-representation-of-immunology-related-data-with-ontologies/
+  publication: https://doi.org/10.4049/jimmunol.202.Supp.130.26
 - title: A linked data graph approach to integration of immunological data
-  image: images/projects/linked-data-immunology.png
-  link: https://bukharilab.org/services/a-linked-data-graph-approach-to-integration-of-immunological-data/
-  description: "Systems biology involves the integration of multiple data types (across different data sources) to offer a more complete picture of the biological system being studied. …"
+  image: images/projects/infographics/linked-immunology-data-infographic.webp
+  link: https://doi.org/10.1109/BIBM47256.2019.8982986
+  description: Systems biology involves the integration of multiple data types (across different data sources) to offer a more complete picture of the biological system being studied. …
   tags:
-    - data integration
-
-- title: "The ADC API: a web API for the programmatic query of the AIRR Data Commons"
-  image: images/projects/adc-api.png
-  link: https://bukharilab.org/services/the-adc-api-a-web-api-for-the-programmatic-query-of-the-airr-data-commons/
-  description: "The Adaptive Immune Receptor Repertoire (AIRR) Community is a research-driven group that is establishing a clear set of community-accepted data and metadata standards. …"
+  - data integration
+  detail: /projects/a-linked-data-graph-approach-to-integration-of-immunological-data/
+  publication: https://doi.org/10.1109/BIBM47256.2019.8982986
+- title: 'The ADC API: a web API for the programmatic query of the AIRR Data Commons'
+  image: images/projects/infographics/adc-api-infographic.webp
+  link: https://doi.org/10.3389/fdata.2020.00022
+  description: The Adaptive Immune Receptor Repertoire (AIRR) Community is a research-driven group that is establishing a clear set of community-accepted data and metadata standards. …
   tags:
-    - data integration
-
+  - data integration
+  detail: /projects/the-adc-api-a-web-api-for-the-programmatic-query-of-the-airr-data-commons/
+  publication: https://doi.org/10.3389/fdata.2020.00022
 - title: Predicting 30-days All-cause Hospital Readmissions Considering Discharge-to-alternate-care-facilities
-  image: images/projects/hospital-readmission.png
-  link: https://bukharilab.org/services/predicting-30-days-all-cause-hospital-readmissions-considering-discharge-to-alternate-care-facilities/
-  description: "Hospital discharge is a decision based on several data points including diagnostic, physiological, demographic and caretaker information. …"
+  image: images/projects/infographics/hospital-readmissions-infographic.webp
+  link: https://doi.org/10.5220/0009385608640873
+  description: Hospital discharge is a decision based on several data points including diagnostic, physiological, demographic and caretaker information. …
   tags:
-    - clinical prediction
-
-- title: "LDA–GA–SVM: improved hepatocellular carcinoma prediction through dimensionality reduction and genetically optimized support vector machine"
-  image: images/photo.jpg
-  link: https://bukharilab.org/services/lda-ga-svm-improved-hepatocellular-carcinoma-prediction-through-dimensionality-reduction-and-genetically-optimized-support-vector-machine/
-  description: "Hepatocellular carcinoma (HCC) is a common type of liver cancer worldwide. …"
+  - clinical prediction
+  detail: /projects/predicting-30-days-all-cause-hospital-readmissions-considering-discharge-to-alternate-care-facilities/
+  publication: https://doi.org/10.5220/0009385608640873
+- title: 'LDA–GA–SVM: improved hepatocellular carcinoma prediction through dimensionality reduction and genetically optimized support vector machine'
+  image: images/projects/infographics/lda-ga-svm-infographic.webp
+  link: https://doi.org/10.1007/s00521-020-05157-2
+  description: Hepatocellular carcinoma (HCC) is a common type of liver cancer worldwide. …
   tags:
-    - clinical prediction
-
-- title: "Multimodal Brain Tumor Classification Using Deep Learning and Robust Feature Selection: A Machine Learning Application for Radiologists"
-  image: images/projects/brain-tumor.png
-  link: https://bukharilab.org/services/multimodal-brain-tumor-classification-using-deep-learning-and-robust-feature-selection-a-machine-learning-application-for-radiologists/
-  description: "Manual identification of brain tumors is an error-prone and tedious process for radiologists; therefore, it is crucial to adopt an automated system. …"
+  - clinical prediction
+  detail: /projects/lda-ga-svm-improved-hepatocellular-carcinoma-prediction-through-dimensionality-reduction-and-genetically-optimized-support-vector-machine/
+  publication: https://doi.org/10.1007/s00521-020-05157-2
+- title: 'Multimodal Brain Tumor Classification Using Deep Learning and Robust Feature Selection: A Machine Learning Application for Radiologists'
+  image: images/projects/infographics/brain-tumor-classification-infographic.webp
+  link: https://doi.org/10.3390/diagnostics10080565
+  description: Manual identification of brain tumors is an error-prone and tedious process for radiologists; therefore, it is crucial to adopt an automated system. …
   tags:
-    - medical imaging
-
+  - medical imaging
+  detail: /projects/multimodal-brain-tumor-classification-using-deep-learning-and-robust-feature-selection-a-machine-learning-application-for-radiologists/
+  publication: https://doi.org/10.3390/diagnostics10080565
 - title: Statistically rigorous deep neural network approach to predict mortality in trauma patients admitted to the intensive care unit
-  image: images/projects/trauma-mortality.png
-  link: https://bukharilab.org/services/statistically-rigorous-deep-neural-network-approach-to-predict-mortality-in-trauma-patients-admitted-to-the-intensive-care-unit/
-  description: "Trauma patients admitted to critical care are at high risk of mortality because of their injuries. …"
+  image: images/projects/infographics/trauma-mortality-infographic.webp
+  link: https://pubmed.ncbi.nlm.nih.gov/32773672/
+  description: Trauma patients admitted to critical care are at high risk of mortality because of their injuries. …
   tags:
-    - clinical prediction
-
+  - clinical prediction
+  detail: /projects/statistically-rigorous-deep-neural-network-approach-to-predict-mortality-in-trauma-patients-admitted-to-the-intensive-care-unit/
+  publication: https://pubmed.ncbi.nlm.nih.gov/32773672/
 - title: Classification of positive COVID-19 CT scans using deep learning
-  image: images/projects/covid-ct-scan.png
-  link: https://bukharilab.org/services/classification-of-positive-covid-19-ct-scans-using-deep-learning/
-  description: "In medical imaging, computer vision researchers are faced with a variety of features for verifying the authenticity of classifiers for an accurate diagnosis. …"
+  image: images/projects/infographics/covid-ct-classification-infographic.webp
+  link: https://doi.org/10.32604/cmc.2021.013191
+  description: In medical imaging, computer vision researchers are faced with a variety of features for verifying the authenticity of classifiers for an accurate diagnosis. …
   tags:
-    - medical imaging
-
+  - medical imaging
+  detail: /projects/classification-of-positive-covid-19-ct-scans-using-deep-learning/
+  publication: https://doi.org/10.32604/cmc.2021.013191
 - title: A Deep Learning Approach for COVID-19 8 Viral Pneumonia Screening with X-ray Images
-  image: images/projects/covid-detection.png
-  link: https://bukharilab.org/services/a-deep-learning-approach-for-covid-19-8-viral-pneumonia-screening-with-x-ray-images/
-  description: "Beginning in December 2019, the spread of the novel Coronavirus (COVID-19) has exposed weaknesses in healthcare systems across the world. …"
+  image: images/projects/infographics/covid-xray-screening-infographic.webp
+  link: https://doi.org/10.1145/3431804
+  description: Beginning in December 2019, the spread of the novel Coronavirus (COVID-19) has exposed weaknesses in healthcare systems across the world. …
   tags:
-    - medical imaging
+  - medical imaging
+  detail: /projects/a-deep-learning-approach-for-covid-19-8-viral-pneumonia-screening-with-x-ray-images/
+  publication: https://doi.org/10.1145/3431804

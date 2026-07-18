@@ -1,0 +1,459 @@
+---
+---
+
+/* Final Team page layout. Uses custom classes to avoid legacy portrait-card sizing. */
+
+.page-team main > section.background {
+  padding-top: clamp(44px, 5vw, 72px);
+  padding-bottom: clamp(64px, 7vw, 96px);
+}
+
+.page-team .team-directory {
+  display: grid;
+  gap: clamp(54px, 7vw, 86px);
+  margin-top: clamp(44px, 6vw, 72px);
+}
+
+.page-team .team-block {
+  min-width: 0;
+}
+
+.page-team .team-block__heading {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  width: 100%;
+  margin: 0 0 26px;
+}
+
+.page-team .team-block__heading::after {
+  content: "";
+  height: 1px;
+  flex: 1;
+  background: #c9d9e6;
+}
+
+.page-team .team-block__heading h2 {
+  flex: 0 0 auto;
+  margin: 0 !important;
+  padding: 0 !important;
+  border: 0 !important;
+  font-size: clamp(1.75rem, 3vw, 2.7rem);
+}
+
+.page-team .team-pi {
+  max-width: 1060px;
+  margin-inline: auto;
+}
+
+.page-team .team-profile {
+  box-sizing: border-box;
+  width: 100% !important;
+  min-width: 0 !important;
+  max-width: none !important;
+  height: 100%;
+  margin: 0 !important;
+  overflow: hidden;
+  border: 1px solid #c8d8e5;
+  border-radius: 20px;
+  background: #ffffff;
+  box-shadow: 0 12px 28px rgba(20, 42, 68, 0.06);
+  transition: transform 220ms ease, box-shadow 220ms ease, border-color 220ms ease;
+}
+
+.page-team .team-profile:hover,
+.page-team .team-profile:focus-within {
+  border-color: #9fc2d9;
+  box-shadow: 0 18px 38px rgba(20, 42, 68, 0.1);
+  transform: translateY(-4px);
+}
+
+.page-team .team-profile__media {
+  display: block;
+  min-width: 0;
+  overflow: hidden;
+  background: linear-gradient(145deg, #e9f3fa, #f8fbfd);
+}
+
+.page-team .team-profile__image {
+  display: block;
+  width: 100% !important;
+  height: 100% !important;
+  max-width: none !important;
+  margin: 0 !important;
+  border-radius: 0 !important;
+  object-fit: cover;
+  object-position: center top;
+  transition: transform 320ms ease;
+}
+
+.page-team .team-profile:hover .team-profile__image,
+.page-team .team-profile:focus-within .team-profile__image {
+  transform: scale(1.025);
+}
+
+.page-team .team-profile__fallback {
+  display: block;
+  width: 100%;
+  height: 100%;
+  background:
+    radial-gradient(circle at 50% 38%, #c8dceb 0 18%, transparent 19%),
+    radial-gradient(circle at 50% 92%, #c8dceb 0 35%, transparent 36%),
+    linear-gradient(145deg, #edf5fa, #ffffff);
+}
+
+.page-team .team-profile__body {
+  display: flex;
+  min-width: 0;
+  padding: 22px;
+  flex: 1;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.page-team .team-profile__name {
+  margin: 0 0 7px !important;
+  padding: 0 !important;
+  border: 0 !important;
+  font-size: clamp(1.2rem, 1.45vw, 1.45rem) !important;
+  line-height: 1.15;
+}
+
+.page-team .team-profile__name a {
+  color: #17263b !important;
+  text-decoration: none !important;
+}
+
+.page-team .team-profile__role {
+  margin: 0;
+  color: #2f435c;
+  font-weight: 700;
+  line-height: 1.5;
+}
+
+.page-team .team-profile__affiliation {
+  margin: 6px 0 0;
+  color: #66788d;
+  font-size: 0.93rem;
+}
+
+.page-team .team-profile__actions {
+  margin-top: 20px;
+}
+
+.page-team .team-profile__links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 12px;
+}
+
+.page-team .team-profile__links a,
+.page-team .team-profile__profile-link {
+  display: inline-flex;
+  min-height: 36px;
+  align-items: center;
+  justify-content: center;
+  padding: 8px 12px;
+  border: 1px solid #c7d9e6;
+  border-radius: 999px;
+  color: #a51f31 !important;
+  background: #f8fbfd;
+  font-size: 0.86rem;
+  font-weight: 700;
+  line-height: 1;
+  text-decoration: none !important;
+  transition: background 180ms ease, color 180ms ease, border-color 180ms ease;
+}
+
+.page-team .team-profile__links a:hover,
+.page-team .team-profile__profile-link:hover {
+  border-color: #a51f31;
+  color: #ffffff !important;
+  background: #a51f31;
+}
+
+.page-team .team-profile__profile-link {
+  color: #2e5f7c !important;
+  background: transparent;
+}
+
+/* Principal investigator: one strong editorial profile card. */
+.page-team .team-profile--pi {
+  position: relative;
+  display: grid;
+  grid-template-columns: minmax(270px, 340px) minmax(0, 1fr);
+  min-height: 390px;
+}
+
+.page-team .team-profile--pi::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 2;
+  height: 4px;
+  background: linear-gradient(90deg, #b62034, #8dbed9);
+}
+
+.page-team .team-profile--pi .team-profile__media {
+  min-height: 390px;
+}
+
+.page-team .team-profile--pi .team-profile__body {
+  padding: clamp(30px, 4vw, 48px);
+  background:
+    radial-gradient(circle at 100% 0, rgba(176, 210, 232, 0.28), transparent 300px),
+    #ffffff;
+}
+
+.page-team .team-profile--pi .team-profile__name {
+  max-width: 760px;
+  font-size: clamp(2rem, 3.2vw, 3.25rem) !important;
+}
+
+.page-team .team-profile--pi .team-profile__role {
+  font-size: 1.1rem;
+}
+
+/* Current members: three evenly sized profiles. */
+.page-team .team-grid {
+  display: grid;
+  min-width: 0;
+  gap: 24px;
+}
+
+.page-team .team-grid--current {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.page-team .team-profile--current {
+  display: flex;
+  min-height: 100%;
+  flex-direction: column;
+}
+
+.page-team .team-profile--current .team-profile__media {
+  aspect-ratio: 1 / 1;
+}
+
+/* Previous members: compact four-column alumni directory. */
+.page-team .team-alumni {
+  padding: 0;
+  border: 0;
+  background: transparent;
+  box-shadow: none;
+}
+
+.page-team .team-alumni__summary {
+  cursor: pointer;
+  list-style: none;
+}
+
+.page-team .team-alumni__summary::-webkit-details-marker {
+  display: none;
+}
+
+.page-team .team-alumni__summary::after {
+  display: none;
+}
+
+.page-team .team-alumni__toggle {
+  position: relative;
+  width: 34px;
+  height: 34px;
+  flex: 0 0 34px;
+  border: 1px solid #c7d9e6;
+  border-radius: 50%;
+  background: #ffffff;
+}
+
+.page-team .team-alumni__toggle::before,
+.page-team .team-alumni__toggle::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 12px;
+  height: 2px;
+  border-radius: 999px;
+  background: #2e5f7c;
+  transform: translate(-50%, -50%);
+}
+
+.page-team .team-alumni__toggle::after {
+  transform: translate(-50%, -50%) rotate(90deg);
+  transition: transform 180ms ease;
+}
+
+.page-team .team-alumni[open] .team-alumni__toggle::after {
+  transform: translate(-50%, -50%) rotate(0deg);
+}
+
+.page-team .team-grid--previous {
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+}
+
+.page-team .team-profile--previous {
+  display: flex;
+  flex-direction: column;
+  box-shadow: none;
+}
+
+.page-team .team-profile--previous .team-profile__media {
+  aspect-ratio: 1 / 1;
+}
+
+.page-team .team-profile--previous .team-profile__body {
+  padding: 18px;
+}
+
+.page-team .team-profile--previous .team-profile__name {
+  font-size: 1.1rem !important;
+}
+
+.page-team .team-profile--previous .team-profile__role,
+.page-team .team-profile--previous .team-profile__affiliation {
+  font-size: 0.88rem;
+}
+
+.page-team .team-profile--previous .team-profile__actions {
+  margin-top: 14px;
+}
+
+@media (max-width: 1050px) {
+  .page-team .team-grid--current {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .page-team .team-grid--previous {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 780px) {
+  .page-team .team-profile--pi {
+    grid-template-columns: 1fr;
+  }
+
+  .page-team .team-profile--pi .team-profile__media {
+    min-height: 0;
+    aspect-ratio: 4 / 3;
+  }
+
+  .page-team .team-grid--current,
+  .page-team .team-grid--previous {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 560px) {
+  .page-team .team-directory {
+    gap: 48px;
+    margin-top: 38px;
+  }
+
+  .page-team .team-block__heading {
+    gap: 12px;
+    margin-bottom: 20px;
+  }
+
+  .page-team .team-block__heading h2 {
+    font-size: 1.65rem;
+  }
+
+  .page-team .team-grid--current,
+  .page-team .team-grid--previous {
+    grid-template-columns: 1fr;
+  }
+
+  .page-team .team-profile--pi .team-profile__body {
+    padding: 24px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .page-team .team-profile,
+  .page-team .team-profile__image,
+  .page-team .team-profile__links a,
+  .page-team .team-profile__profile-link {
+    transition: none;
+  }
+
+  .page-team .team-profile:hover,
+  .page-team .team-profile:focus-within,
+  .page-team .team-profile:hover .team-profile__image,
+  .page-team .team-profile:focus-within .team-profile__image {
+    transform: none;
+  }
+}
+
+/* Compact Team page sizing */
+@media (min-width: 781px) {
+  .page-team .team-pi {
+    max-width: 940px;
+  }
+
+  .page-team .team-profile--pi {
+    grid-template-columns: minmax(230px, 285px) minmax(0, 1fr);
+    min-height: 330px;
+  }
+
+  .page-team .team-profile--pi .team-profile__media {
+    min-height: 330px;
+  }
+
+  .page-team .team-profile--pi .team-profile__body {
+    padding: clamp(26px, 3vw, 36px);
+  }
+
+  .page-team .team-profile--pi .team-profile__name {
+    font-size: clamp(1.85rem, 2.7vw, 2.7rem) !important;
+  }
+
+  .page-team .team-grid--current {
+    width: min(100%, 1030px);
+    margin-inline: auto;
+    gap: 20px;
+  }
+
+  .page-team .team-profile--current .team-profile__media {
+    aspect-ratio: 5 / 4;
+  }
+
+  .page-team .team-profile--current .team-profile__body {
+    padding: 18px;
+  }
+
+  .page-team .team-profile--current .team-profile__name {
+    font-size: 1.2rem !important;
+  }
+
+  .page-team .team-profile--current .team-profile__actions {
+    margin-top: 14px;
+  }
+
+  .page-team .team-grid--previous {
+    width: min(100%, 1100px);
+    margin-inline: auto;
+    gap: 18px;
+  }
+
+  .page-team .team-profile--previous .team-profile__media {
+    aspect-ratio: 5 / 4;
+  }
+
+  .page-team .team-profile--previous .team-profile__body {
+    padding: 15px;
+  }
+
+  .page-team .team-profile--previous .team-profile__name {
+    font-size: 1rem !important;
+  }
+
+  .page-team .team-profile--previous .team-profile__actions {
+    margin-top: 10px;
+  }
+}
+

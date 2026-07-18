@@ -1,60 +1,53 @@
 {% if include.lookup %}
-  {% assign post = site.posts 
-    | where_exp: "post", "post.slug == include.lookup"
-    | first
-    | default: include
-  %}
+  {% assign post = site.posts | where_exp: "item", "item.slug == include.lookup" | first | default: include %}
 {% else %}
   {% assign post = include %}
 {% endif %}
 
-<div class="post-excerpt-container">
-  <div class="post-excerpt">
-    {% assign url = post.url | relative_url | uri_escape %}
-    {% assign title = post.title %}
-    {% assign image = post.image | relative_url | uri_escape %}
+{% assign post_url = post.url | relative_url | uri_escape %}
+{% assign excerpt = post.content | default: "" | regex_scan: "(.*)", true | default: post.excerpt | default: "" | strip_html %}
+{% assign search = post.title | append: " " | append: post.content | append: " " | append: post.tags | strip_html | strip_newlines | regex_strip %}
+{% assign style = include.style | default: "card" %}
+{% assign card_image_fit = post.image_fit | default: "cover" %}
 
-    {% if image %}
-      <a
-        href="{{ url }}"
-        class="post-excerpt-image"
-        aria-label="{{ title | default: "excerpt link" | regex_strip }}"
+<article class="post-excerpt post-excerpt--{{ style }}" data-search="{{ search | xml_escape }}">
+  <a class="post-excerpt__media post-excerpt__media--{{ card_image_fit }}" href="{{ post_url }}" aria-label="Read {{ post.title | xml_escape }}">
+    {% if post.image %}
+      <img
+        src="{{ post.image | relative_url | uri_escape }}"
+        alt="{{ post.image_alt | default: post.title | xml_escape }}"
+        loading="lazy"
+        decoding="async"
+        {% include fallback.html %}
       >
-        <img
-          src="{{ image }}"
-          alt="{{ title | default: "excerpt image" | regex_strip }}"
-          loading="lazy"
-          {% include fallback.html %}
-        >
-      </a>
+    {% else %}
+      <span class="post-excerpt__placeholder" aria-hidden="true">
+        <span class="post-excerpt__placeholder-line"></span>
+      </span>
+    {% endif %}
+  </a>
+
+  <div class="post-excerpt__body">
+    <div class="post-excerpt__meta">
+      {% if post.date %}
+        <time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%B %-d, %Y" }}</time>
+      {% endif %}
+      {% if post.tags %}
+        {% include tags.html tags=post.tags link="blog/" %}
+      {% endif %}
+    </div>
+
+    <h2 class="post-excerpt__title">
+      <a href="{{ post_url }}">{{ post.title }}</a>
+    </h2>
+
+    {% if excerpt and excerpt != "" %}
+      <p class="post-excerpt__summary">{{ excerpt | truncate: 220 }}</p>
     {% endif %}
 
-    <div class="post-excerpt-text">
-      <a href="{{ url }}">{{ title }}</a>
-
-      {%
-        include post-info.html
-        author=post.author
-        published=post.date
-        updated=post.last_modified_at
-        tags=post.tags
-      %}
-
-      {% assign excerpt = post.content
-        | default: ""
-        | regex_scan: "<!-- excerpt start -->(.*)<!-- excerpt end -->", true
-        | default: post.excerpt
-        | default: ""
-        | strip_html
-      %}
-      {% assign search = post.content
-        | strip_html
-        | strip_newlines
-        | regex_strip
-      %}
-      <p data-search="{{ search }}">
-        {{ excerpt }}
-      </p>
-    </div>
+    <a class="post-excerpt__cta" href="{{ post_url }}" aria-label="Read {{ post.title | xml_escape }}">
+      <span>Read article</span>
+      <span aria-hidden="true">→</span>
+    </a>
   </div>
-</div>
+</article>

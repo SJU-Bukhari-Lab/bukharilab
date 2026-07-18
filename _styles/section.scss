@@ -1,18 +1,44 @@
 ---
 ---
 
-$page: 1000px;
-$padding: 40px;
+$page-width: 1120px;
+$wide-width: 1280px;
+$reading-width: 760px;
+
+$padding-desktop: 32px;
+$padding-mobile: 20px;
 
 section {
-  padding: $padding max($padding, calc((100% - $page) / 2));
-  transition: background var(--transition), color var(--transition);
+  width: 100%;
+
+  padding-block: clamp(40px, 5vw, 72px);
+  padding-inline: max(
+    $padding-mobile,
+    calc((100% - #{$page-width}) / 2)
+  );
+
+  transition:
+    background var(--transition),
+    color var(--transition);
 }
 
+/* Wider layouts for grids, hero sections, and large visual areas */
 section[data-size="wide"] {
-  padding: $padding;
+  padding-inline: max(
+    $padding-mobile,
+    calc((100% - #{$wide-width}) / 2)
+  );
 }
 
+/* Narrow reading width for biographies and articles */
+section[data-size="reading"] {
+  padding-inline: max(
+    $padding-mobile,
+    calc((100% - #{$reading-width}) / 2)
+  );
+}
+
+/* Edge-to-edge sections */
 section[data-size="full"] {
   padding: 0;
 }
@@ -26,14 +52,34 @@ section[data-size="full"] img {
   border-radius: 0;
 }
 
+/* Prevent unnecessary spacing around the first and last elements */
+section > :first-child {
+  margin-top: 0;
+}
+
+section > :last-child {
+  margin-bottom: 0;
+}
+
+/* Allow the final section to fill remaining page height */
 main > section:last-of-type {
   flex-grow: 1;
 }
 
+/* Alternate only top-level page sections, not nested sections */
 main > section:nth-of-type(odd) {
   background: var(--background);
 }
 
 main > section:nth-of-type(even) {
   background: var(--background-alt);
+}
+
+@media (max-width: 700px) {
+  section,
+  section[data-size="wide"],
+  section[data-size="reading"] {
+    padding-block: 32px;
+    padding-inline: $padding-mobile;
+  }
 }

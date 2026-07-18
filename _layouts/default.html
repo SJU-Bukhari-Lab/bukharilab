@@ -1,9 +1,11 @@
 <!DOCTYPE html>
 <html lang="en" data-dark="false">
   {% include head.html %}
-  <body>
+  {% capture page_class %}{{ page.title | default: "page" }}{% endcapture %}
+  {% capture layout_class %}{{ page.layout | default: "default" }}{% endcapture %}
+  <body class="page-{{ page_class | strip | slugify }} layout-{{ layout_class | strip | slugify }}">
     {% include header.html %}
-    <main>
+    <main id="main-content" tabindex="-1">
       {% include content.html content=content %}
     </main>
     {% include footer.html %}

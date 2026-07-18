@@ -1,58 +1,50 @@
 ---
 ---
 
-// colors
-// Bukhari Lab gold/amber accent, tuned to the logo wordmark.
-// --primary is used for links and small UI accents, so it is a readable
-// deep gold (not pure yellow) for contrast on light backgrounds; --secondary
-// is the brighter logo gold used for highlights and hovers.
+/* Core theme tokens. The font loader reads this file and requests the Google fonts. */
 [data-dark="false"] {
-  --primary: #b8860b;
-  --secondary: #f2a81d;
-  --text: #1a1a1a;
+  --primary: #a82338;
+  --secondary: #3f7fa6;
+  --text: #182534;
   --background: #ffffff;
-  --background-alt: #fbf8f1;
-  --light-gray: #e5e1d8;
-  --gray: #808080;
-  --dark-gray: #404040;
-  --overlay: #00000020;
+  --background-alt: #f2f7fb;
+  --light-gray: #dce7ef;
+  --gray: #6f7e8c;
+  --dark-gray: #33475a;
+  --overlay: #102a4314;
 }
+
 [data-dark="true"] {
-  --primary: #f2a81d;
-  --secondary: #d99a1c;
-  --text: #ffffff;
-  --background: #181818;
-  --background-alt: #1f1c16;
-  --light-gray: #404040;
-  --gray: #808080;
-  --dark-gray: #b0b0b0;
-  --overlay: #ffffff10;
+  --primary: #e15c6f;
+  --secondary: #78b5d8;
+  --text: #f4f7f9;
+  --background: #111820;
+  --background-alt: #18222d;
+  --light-gray: #324150;
+  --gray: #9aabb9;
+  --dark-gray: #d4dee6;
+  --overlay: #00000040;
 }
 
 :root {
-  // font families
-  --title: "Barlow", sans-serif;
-  --heading: "Barlow", sans-serif;
-  --body: "Barlow", sans-serif;
+  --title: "Source Serif 4", Georgia, "Times New Roman", serif;
+  --heading: "Source Serif 4", Georgia, "Times New Roman", serif;
+  --body: "Source Sans 3", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
   --code: "Roboto Mono", monospace;
 
-  // font sizes
-  --large: 1.2rem;
-  --xl: 1.4rem;
-  --xxl: 1.6rem;
+  --large: 1.15rem;
+  --xl: 1.35rem;
+  --xxl: 1.55rem;
 
-  // font weights
-  --thin: 200;
+  --thin: 300;
   --regular: 400;
-  --semi-bold: 500;
-  --bold: 600;
+  --semi-bold: 600;
+  --bold: 700;
 
-  // text line spacing
-  --spacing: 2;
-  --compact: 1.5;
+  --spacing: 1.7;
+  --compact: 1.45;
 
-  // effects
-  --rounded: 3px;
-  --shadow: 0 0 10px 0 var(--overlay);
+  --rounded: 8px;
+  --shadow: 0 10px 30px var(--overlay);
   --transition: 0.2s ease;
 }

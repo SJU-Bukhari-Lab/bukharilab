@@ -1,0 +1,42 @@
+---
+---
+
+/* Display generated infographics clearly as project card cover images. */
+.page-projects .project-card__image img[src*="/images/projects/infographics/"],
+.page-projects .project-card__thumb img[src*="/images/projects/infographics/"] {
+  width: 100% !important;
+  height: 100% !important;
+  object-fit: contain !important;
+  object-position: center !important;
+  padding: 8px !important;
+  background: #ffffff !important;
+  transform: none !important;
+}
+
+.page-projects .project-card__image:has(
+  img[src*="/images/projects/infographics/"]
+) {
+  height: 230px;
+  background: #ffffff;
+}
+
+.page-projects .project-card__thumb:has(
+  img[src*="/images/projects/infographics/"]
+) {
+  background: #ffffff;
+}
+
+.page-projects .project-card:hover
+.project-card__image img[src*="/images/projects/infographics/"],
+.page-projects .project-card:hover
+.project-card__thumb img[src*="/images/projects/infographics/"] {
+  transform: scale(1.01) !important;
+}
+
+@media (max-width: 720px) {
+  .page-projects .project-card__image:has(
+    img[src*="/images/projects/infographics/"]
+  ) {
+    height: 215px;
+  }
+}

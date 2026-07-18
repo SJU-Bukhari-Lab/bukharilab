@@ -2,23 +2,41 @@
 layout: default
 ---
 
-{% include section.html background=page.image %}
+<article class="news-article">
+  <header class="news-article__header">
+    <a class="news-article__back" href="{{ 'blog/' | relative_url }}">← Back to News</a>
 
-<h1 class="center">{{ page.title }}</h1>
+    <div class="news-article__meta">
+      {% if page.date %}
+        <time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: "%B %-d, %Y" }}</time>
+      {% endif %}
+      {% if page.tags %}
+        {% include tags.html tags=page.tags link="blog/" %}
+      {% endif %}
+    </div>
 
-{%
-  include post-info.html
-  author=page.author
-  member=page.member
-  published=page.date
-  updated=page.last_modified_at
-  tags=page.tags
-%}
+    <h1>{{ page.title }}</h1>
+  </header>
 
-{% include section.html %}
+  {% assign article_image_fit = page.image_fit | default: "cover" %}
+  <div class="news-article__visual news-article__visual--{{ article_image_fit }}{% unless page.image %} news-article__visual--placeholder{% endunless %}">
+    {% if page.image %}
+      <img
+        src="{{ page.image | relative_url | uri_escape }}"
+        alt="{{ page.image_alt | default: page.title | xml_escape }}"
+        decoding="async"
+        {% include fallback.html %}
+      >
+    {% else %}
+      <span class="news-article__visual-line" aria-hidden="true"></span>
+    {% endif %}
+  </div>
 
-{{ content }}
+  <div class="news-article__content prose">
+    {{ content }}
+  </div>
+</article>
 
-{% include section.html %}
-
-{% include post-nav.html post=page %}
+<section class="post-navigation-section">
+  {% include post-nav.html post=page %}
+</section>

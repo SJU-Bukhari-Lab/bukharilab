@@ -1,0 +1,177 @@
+---
+layout: default
+---
+
+<article class="project-detail">
+  <a class="project-detail__back" href="{{ '/projects/' | relative_url }}">← Back to Projects</a>
+
+  <section class="project-detail__hero" aria-labelledby="project-title">
+    <div class="project-detail__media">
+      {% if page.image %}
+        <img
+          src="{{ page.image | relative_url | uri_escape }}"
+          alt="Illustration for {{ page.title | xml_escape }}"
+          loading="eager"
+          decoding="async"
+          {% include fallback.html %}
+        >
+      {% endif %}
+    </div>
+
+    <div class="project-detail__intro">
+      {% if page.subtitle %}
+        <p class="project-detail__eyebrow">{{ page.subtitle }}</p>
+      {% endif %}
+
+      <h1 id="project-title">{{ page.title }}</h1>
+
+      {% if page.tags %}
+        <div class="project-detail__tags" aria-label="Research areas">
+          {% for tag in page.tags %}
+            <span>{{ tag }}</span>
+          {% endfor %}
+        </div>
+      {% endif %}
+
+      {% if page.description %}
+        <div class="project-detail__summary">
+          {{ page.description | markdownify }}
+        </div>
+      {% endif %}
+
+      <div class="project-detail__actions">
+        {% if page.publication %}
+          <a
+            class="project-detail__primary"
+            href="{{ page.publication }}"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            View published work
+          </a>
+        {% endif %}
+
+        <a
+          class="project-detail__secondary"
+          href="https://scholar.google.com/scholar?q={{ page.title | uri_escape }}"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Search on Google Scholar
+        </a>
+      </div>
+    </div>
+  </section>
+
+  {% if page.infographic %}
+    <section
+      class="project-detail__infographic"
+      aria-label="Infographic for {{ page.title | xml_escape }}"
+    >
+      <a
+        class="project-detail__infographic-link"
+        href="{{ page.infographic | relative_url }}"
+        target="_blank"
+        rel="noopener noreferrer"
+        aria-label="Open the full-size infographic for {{ page.title | xml_escape }}"
+      >
+        <img
+          src="{{ page.infographic | relative_url }}"
+          alt="Informative project graphic for {{ page.title | xml_escape }}"
+          loading="lazy"
+          decoding="async"
+        >
+      </a>
+    </section>
+  {% endif %}
+
+  <section
+    class="project-detail__information"
+    aria-labelledby="project-information-heading"
+  >
+    <div>
+      <p class="project-detail__section-label">Project information</p>
+      <h2 id="project-information-heading">Research Overview</h2>
+    </div>
+
+    <div class="project-detail__information-grid">
+      <article>
+        <h3>Research Area</h3>
+        {% if page.tags %}
+          <p>{{ page.tags | join: ', ' }}</p>
+        {% else %}
+          <p>Biomedical Data Science</p>
+        {% endif %}
+      </article>
+
+      <article>
+        <h3>Public Record</h3>
+        <p>
+          The verified publisher, DOI, PubMed, or scholarly record is
+          available through the published-work link above.
+        </p>
+      </article>
+
+      <article>
+        <h3>Explore Further</h3>
+        <p>
+          Use Google Scholar to review citations, related research, and other
+          publicly indexed versions of this work.
+        </p>
+      </article>
+    </div>
+  </section>
+
+  {% assign primary_tag = page.tags | first %}
+  {% if primary_tag %}
+    {% assign related_count = 0 %}
+
+    <section
+      class="project-detail__related"
+      aria-labelledby="related-projects-heading"
+    >
+      <div class="project-detail__related-heading">
+        <p class="project-detail__section-label">Continue exploring</p>
+        <h2 id="related-projects-heading">Related Projects</h2>
+      </div>
+
+      <div class="project-detail__related-grid">
+        {% for project in site.projects %}
+          {% if project.url != page.url and project.tags contains primary_tag and related_count < 3 %}
+            <article class="project-detail__related-card">
+              <a
+                class="project-detail__related-image"
+                href="{{ project.url | relative_url }}"
+              >
+                <img
+                  src="{{ project.image | relative_url | uri_escape }}"
+                  alt=""
+                  loading="lazy"
+                  decoding="async"
+                  {% include fallback.html %}
+                >
+              </a>
+
+              <div>
+                <p>{{ primary_tag }}</p>
+                <h3>
+                  <a href="{{ project.url | relative_url }}">
+                    {{ project.title }}
+                  </a>
+                </h3>
+                <a
+                  class="project-detail__related-link"
+                  href="{{ project.url | relative_url }}"
+                >
+                  View project →
+                </a>
+              </div>
+            </article>
+
+            {% assign related_count = related_count | plus: 1 %}
+          {% endif %}
+        {% endfor %}
+      </div>
+    </section>
+  {% endif %}
+</article>

@@ -1,58 +1,35 @@
 {% if include.lookup %}
-  {% assign member = site.members
-    | where_exp: "member", "member.slug == include.lookup"
-    | first
-  %}
+  {% assign member = site.members | where_exp: "person", "person.slug == include.lookup" | first %}
 {% else %}
   {% assign member = include %}
 {% endif %}
-
 {% assign type = site.data.types[member.role] %}
+{% assign member_url = member.url | relative_url | uri_escape %}
 
-<div class="portrait-wrapper">
-  <div class="portrait" data-style="{{ include.style }}">
-    <a
-      {% if page.slug != member.slug %}
-        href="{{ member.url | relative_url | uri_escape }}"
-      {% endif %}
-      class="portrait-link"
-      aria-label="{{ member.name | default: "member link" | regex_strip }}"
-    >
-      {% if type %}
-        {% include icon.html icon=type.icon %}
-      {% endif %}
+<article class="portrait" {% if include.style %}data-style="{{ include.style }}"{% endif %}>
+  <a class="portrait__media" href="{{ member_url }}" aria-label="View {{ member.name | xml_escape }}'s profile">
+    {% if member.image %}
+      <img
+        class="portrait__image"
+        src="{{ member.image | relative_url | uri_escape }}"
+        alt="Portrait of {{ member.name | xml_escape }}"
+        loading="lazy"
+        decoding="async"
+        {% include fallback.html %}
+      >
+    {% else %}
+      <span class="portrait__fallback" aria-hidden="true">{% include icon.html icon="fa-solid fa-user" %}</span>
+    {% endif %}
+  </a>
 
-      {% if member.image %}
-        <img
-          src="{{ member.image | relative_url | uri_escape }}"
-          class="portrait-image"
-          alt="member portrait"
-          loading="lazy"
-          {% include fallback.html %}
-        >
-      {% endif %}
-
-      {% if member.name %}
-        <span class="portrait-name">
-          {{ member.name }}
-        </span>
-      {% endif %}
-
-      {% if member.description or type %}
-        <span class="portrait-description">
-          {{ member.description | default: type.description }}
-        </span>
-      {% endif %}
-
-      {% if member.affiliation %}
-        <span class="portrait-affiliation">
-          {{ member.affiliation }}
-        </span>
-      {% endif %}
-    </a>
-
+  <div class="portrait__body">
+    {% if member.name %}<h3 class="portrait__name"><a href="{{ member_url }}">{{ member.name }}</a></h3>{% endif %}
+    {% if member.description or type %}
+      <p class="portrait__role">{{ member.description | default: type.description }}</p>
+    {% endif %}
+    {% if member.affiliation %}<p class="portrait__affiliation">{{ member.affiliation }}</p>{% endif %}
     {% if member.links and page.layout != "member" %}
-      <div class="portrait-links">
+      <div class="portrait__links" aria-label="{{ member.name | xml_escape }} links">
         {% for link in member.links %}
           {% assign linkkey = link[0] %}
           {% assign linkval = link[1] %}
@@ -61,4 +38,4 @@
       </div>
     {% endif %}
   </div>
-</div>
+</article>
