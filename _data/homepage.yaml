@@ -1,0 +1,65 @@
+active_projects:
+  - title: "Extreme Clinical Code Prediction"
+    label: "Clinical AI · 2026"
+    description: "Graph-constrained learning for accurate, hierarchy-aware ICD-10-CM code prediction from clinical notes."
+    icon: "fa-solid fa-code-branch"
+    link: "https://arxiv.org/abs/2607.11954"
+
+  - title: "FHIRTrustBench"
+    label: "Interoperability · 2026"
+    description: "A benchmark for evaluating the readiness, interoperability, and trustworthiness of FHIR-based clinical AI systems."
+    icon: "fa-solid fa-shield-halved"
+    link: "https://www.medrxiv.org/content/10.64898/2026.07.08.26357574v1"
+
+  - title: "Care Escalation Prediction in the ICU"
+    label: "Predictive Analytics · 2025"
+    description: "Early multi-label prediction of respiratory, hemodynamic, renal, and neurological deterioration from EHR data."
+    icon: "fa-solid fa-heart-pulse"
+    link: "https://arxiv.org/abs/2509.18145"
+
+  - title: "Pathway-Driven Therapeutic Target Discovery"
+    label: "Drug Discovery · 2025"
+    description: "A machine-learning framework that uses biological pathways to identify therapeutic targets in metabolic disorders."
+    icon: "fa-solid fa-dna"
+    link: "https://arxiv.org/abs/2509.18140"
+
+  - title: "Clinician Burnout Surveillance"
+    label: "Clinical NLP · 2025"
+    description: "Narrative-driven analysis of ICU clinical notes to surface actionable signals related to clinician burnout risk."
+    icon: "fa-solid fa-brain"
+    link: "https://arxiv.org/abs/2509.04497"
+
+featured_papers:
+  - title: "Graph-Constrained Policy Learning for Extreme Clinical Code Prediction"
+    venue: "arXiv · 2026"
+    description: "Reframes extreme clinical coding as hierarchy-aware graph traversal and improves performance over flat prediction baselines."
+    link: "https://arxiv.org/abs/2607.11954"
+
+  - title: "FHIRTrustBench: A Benchmark for Interoperability-Driven Clinical AI Readiness and Trustworthiness"
+    venue: "medRxiv · 2026"
+    description: "Introduces a multidimensional benchmark for evaluating FHIR-based clinical AI systems."
+    link: "https://www.medrxiv.org/content/10.64898/2026.07.08.26357574v1"
+
+  - title: "Early Prediction of Multi-Label Care Escalation Triggers in the Intensive Care Unit Using Electronic Health Records"
+    venue: "arXiv · 2025"
+    description: "Predicts multiple forms of clinical deterioration using the first 24 hours of ICU data."
+    link: "https://arxiv.org/abs/2509.18145"
+
+software_resources:
+  - title: "MediLoom"
+    type: "Clinical AI Workspace"
+    description: "A recent public lab repository supporting healthcare and biomedical data workflows."
+    icon: "fa-solid fa-laptop-medical"
+    link: "https://github.com/bukharilab/MediLoom"
+
+  - title: "BurnoutSurveillanceAI"
+    type: "Narrative NLP"
+    description: "Open research software for clinician burnout surveillance using narrative-based NLP and machine learning."
+    icon: "fa-solid fa-file-waveform"
+    link: "https://github.com/bukharilab/BurnoutSurveillanceAI"
+
+  - title: "KG4BioMedCntnAuthoring"
+    type: "Knowledge Graph Authoring"
+    description: "Research software for enhancing biomedical semantic content authoring through knowledge representation."
+    icon: "fa-solid fa-diagram-project"
+    link: "https://github.com/bukharilab/KG4BioMedCntnAuthoring"
