@@ -32,6 +32,17 @@ jobs:
       - name: Build site
         run: bundle exec jekyll build
 
+      - name: Set up Python for deploy optimization
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Install deploy optimizer
+        run: python -m pip install --disable-pip-version-check Pillow==11.3.0
+
+      - name: Optimize generated site
+        run: python scripts/optimize_built_site.py --site-dir _site
+
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
