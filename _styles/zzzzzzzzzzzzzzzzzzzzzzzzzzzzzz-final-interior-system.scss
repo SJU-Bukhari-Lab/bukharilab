@@ -539,3 +539,384 @@ body.page-about .about-pillars { margin-top: 22px; }
   .archive-card:hover,
   .join-card:hover { transform: none; }
 }
+
+/* Final completeness and team-profile corrections. */
+
+/* Prevent legacy heading rules from placing the eyebrow beside the heading. */
+body.page-team .team-block__heading,
+body.page-team .team-alumni__summary {
+  display: block !important;
+  width: 100%;
+}
+
+body.page-team .team-block__heading .interior-heading__eyebrow {
+  display: block !important;
+  width: auto !important;
+  margin: 0 0 8px !important;
+}
+
+body.page-team .team-block__heading h2 {
+  display: block !important;
+  width: auto !important;
+  margin: 0 !important;
+}
+
+body.page-team .team-alumni__summary {
+  position: relative;
+  padding-right: 48px;
+}
+
+body.page-team .team-alumni__toggle {
+  position: absolute;
+  top: 12px;
+  right: 4px;
+}
+
+/* Full publication archive. */
+.publication-archive {
+  display: grid;
+  gap: 12px;
+}
+
+.publication-row {
+  display: grid;
+  grid-template-columns: 46px minmax(0, 1fr) 40px;
+  gap: 16px;
+  padding: 20px 18px;
+  align-items: center;
+  border: 1px solid var(--interior-line, #d9e5ed);
+  border-radius: 14px;
+  background: var(--interior-surface, #fff);
+  box-shadow: 0 7px 20px rgba(23, 37, 54, .05);
+  transition: border-color 180ms ease, box-shadow 180ms ease, transform 180ms ease;
+}
+
+.publication-row:hover {
+  border-color: #b8d5e2;
+  box-shadow: 0 13px 28px rgba(23, 37, 54, .09);
+  transform: translateY(-2px);
+}
+
+.publication-row__icon {
+  display: grid;
+  width: 46px;
+  height: 46px;
+  place-items: center;
+  border-radius: 13px;
+  color: #176d68;
+  background: var(--interior-teal-soft, #e4f4f2);
+}
+
+.publication-row__meta {
+  margin: 0 0 5px !important;
+  color: var(--bl-blue-700, #2f627f) !important;
+  font-size: .69rem !important;
+  font-weight: 800;
+  letter-spacing: .07em;
+  text-transform: uppercase;
+}
+
+.publication-row h3 {
+  margin: 0 0 6px !important;
+  font-size: 1.02rem !important;
+  line-height: 1.4 !important;
+}
+
+.publication-row h3 a {
+  color: var(--bl-ink, #172536) !important;
+  text-decoration: none !important;
+}
+
+.publication-row__content > p:last-child {
+  margin: 0;
+  color: var(--interior-muted, #6f7f8d);
+  font-size: .87rem;
+  line-height: 1.55;
+}
+
+.publication-row__action {
+  display: grid;
+  width: 38px;
+  height: 38px;
+  place-items: center;
+  border-radius: 999px;
+  color: var(--bl-red, #a82338) !important;
+  background: rgba(168, 35, 56, .07);
+  text-decoration: none !important;
+}
+
+/* Comprehensive software directory. */
+.software-directory {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 13px;
+}
+
+.software-directory__item {
+  display: grid;
+  grid-template-columns: 44px minmax(0, 1fr) 24px;
+  gap: 14px;
+  padding: 17px;
+  align-items: center;
+  border: 1px solid var(--interior-line, #d9e5ed);
+  border-radius: 14px;
+  color: inherit !important;
+  background: var(--interior-surface, #fff);
+  text-decoration: none !important;
+  transition: border-color 180ms ease, box-shadow 180ms ease, transform 180ms ease;
+}
+
+.software-directory__item:hover {
+  border-color: #b8d5e2;
+  box-shadow: 0 12px 26px rgba(23, 37, 54, .08);
+  transform: translateY(-2px);
+}
+
+.software-directory__icon {
+  display: grid;
+  width: 44px;
+  height: 44px;
+  place-items: center;
+  border-radius: 12px;
+  color: #176d68;
+  background: var(--interior-teal-soft, #e4f4f2);
+}
+
+.software-directory__body {
+  display: grid;
+  gap: 3px;
+}
+
+.software-directory__body strong {
+  color: var(--bl-ink, #172536);
+  font-size: .96rem;
+}
+
+.software-directory__body small {
+  color: var(--interior-muted, #6f7f8d);
+  line-height: 1.4;
+}
+
+.software-directory__arrow {
+  color: var(--bl-red, #a82338);
+  font-size: .8rem;
+}
+
+.repository-link-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 12px;
+}
+
+.repository-link-grid > a {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 18px;
+  gap: 4px 10px;
+  padding: 16px;
+  border: 1px solid var(--interior-line, #d9e5ed);
+  border-radius: 12px;
+  color: inherit !important;
+  background: var(--interior-surface, #fff);
+  text-decoration: none !important;
+}
+
+.repository-link-grid strong {
+  color: var(--bl-ink, #172536);
+  font-size: .9rem;
+}
+
+.repository-link-grid span {
+  grid-column: 1;
+  color: var(--interior-muted, #6f7f8d);
+  font-size: .76rem;
+}
+
+.repository-link-grid i {
+  grid-column: 2;
+  grid-row: 1 / span 2;
+  align-self: center;
+  color: var(--bl-red, #a82338);
+  font-size: .75rem;
+}
+
+.catalog-count {
+  display: inline-flex;
+  flex: 0 0 auto;
+  align-items: center;
+  gap: 7px;
+  color: var(--bl-red, #a82338) !important;
+  font-size: .83rem;
+  font-weight: 750;
+  text-decoration: none !important;
+}
+
+/* Member detail pages: fixed portrait ratio, no stretching. */
+.member-detail {
+  display: grid;
+  grid-template-columns: minmax(250px, 350px) minmax(0, 1fr);
+  gap: clamp(34px, 5vw, 70px);
+  padding-block: clamp(42px, 6vw, 74px);
+  align-items: start;
+}
+
+.member-detail__card {
+  position: sticky;
+  top: 104px;
+  overflow: hidden;
+  padding: 18px;
+  border: 1px solid var(--bl-line, #d9e5ed);
+  border-radius: 20px;
+  background: #fff;
+  box-shadow: 0 16px 38px rgba(23, 37, 54, .1);
+}
+
+.member-detail__portrait {
+  overflow: hidden;
+  width: 100%;
+  aspect-ratio: 4 / 5;
+  margin-bottom: 22px;
+  border-radius: 15px;
+  background: #e9f0f4;
+}
+
+.member-detail__portrait img {
+  display: block !important;
+  width: 100% !important;
+  height: 100% !important;
+  max-width: none !important;
+  max-height: none !important;
+  margin: 0 !important;
+  object-fit: cover !important;
+  object-position: center top !important;
+}
+
+.member-detail__eyebrow {
+  margin: 0 0 7px;
+  color: var(--bl-blue-700, #2f627f);
+  font-size: .72rem;
+  font-weight: 800;
+  letter-spacing: .1em;
+  text-transform: uppercase;
+}
+
+.member-detail__card h1 {
+  margin: 0 0 7px !important;
+  font-size: clamp(1.7rem, 2.5vw, 2.25rem) !important;
+  line-height: 1.15 !important;
+}
+
+.member-detail__role {
+  margin: 0;
+  color: var(--bl-ink, #172536);
+  font-weight: 700;
+}
+
+.member-detail__affiliation {
+  margin: 4px 0 0;
+  color: var(--interior-muted, #6f7f8d);
+}
+
+.member-detail__links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 7px;
+  margin-top: 18px;
+}
+
+.member-detail__content {
+  padding-top: 10px;
+}
+
+.member-detail__content h2 {
+  margin: 0 0 18px !important;
+  font-size: clamp(1.75rem, 2.8vw, 2.35rem) !important;
+}
+
+.member-detail__bio {
+  max-width: 780px;
+  color: var(--bl-ink, #172536);
+  font-size: 1rem;
+  line-height: 1.8;
+}
+
+.member-detail__bio p:first-child {
+  margin-top: 0;
+}
+
+.member-detail__actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 30px;
+  padding-top: 24px;
+  border-top: 1px solid var(--bl-line, #d9e5ed);
+}
+
+/* Remove the old oversized member-page treatment if cached styles remain. */
+.member-page {
+  max-width: none !important;
+}
+
+@media (max-width: 900px) {
+  .software-directory {
+    grid-template-columns: 1fr;
+  }
+
+  .repository-link-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .member-detail {
+    grid-template-columns: minmax(220px, 300px) minmax(0, 1fr);
+    gap: 32px;
+  }
+}
+
+@media (max-width: 680px) {
+  .publication-row {
+    grid-template-columns: 40px minmax(0, 1fr);
+  }
+
+  .publication-row__action {
+    display: none;
+  }
+
+  .repository-link-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .member-detail {
+    grid-template-columns: 1fr;
+    padding-block: 30px 48px;
+  }
+
+  .member-detail__card {
+    position: static;
+    max-width: 380px;
+  }
+
+  .member-detail__actions {
+    align-items: stretch;
+    flex-direction: column;
+  }
+}
+
+
+/* ORCID-backed full publication record. */
+.publication-record {
+  display: grid;
+  gap: 14px;
+}
+
+.publication-record .citation {
+  margin: 0 !important;
+  border: 1px solid var(--interior-line, #d9e5ed);
+  border-radius: 14px;
+  background: var(--interior-surface, #fff);
+  box-shadow: 0 8px 22px rgba(23, 37, 54, .06);
+}
+
+.publication-record .citation:hover {
+  border-color: #b8d5e2;
+  box-shadow: 0 13px 30px rgba(23, 37, 54, .1);
+}

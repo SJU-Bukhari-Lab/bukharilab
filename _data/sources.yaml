@@ -1,1 +1,30 @@
-[]
+# Recent and benchmark publications supplementing the ORCID record.
+- id: doi:10.64898/2026.07.08.26357574
+  tags:
+    - benchmarking
+    - clinical AI
+
+- id: doi:10.1145/3308558.3313556
+  tags:
+    - benchmarking
+    - semantic web
+
+- id: arxiv:2607.11954
+  tags:
+    - clinical AI
+    - medical coding
+
+- id: arxiv:2509.18145
+  tags:
+    - predictive analytics
+    - critical care
+
+- id: arxiv:2509.18140
+  tags:
+    - precision medicine
+    - machine learning
+
+- id: doi:10.32473/flairs.39.1.141553
+  tags:
+    - clinical NLP
+    - clinician burnout

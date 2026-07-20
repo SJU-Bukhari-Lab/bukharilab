@@ -28,7 +28,10 @@ layout: default
     {% endif %}
 
     {% if page.links %}
-      <nav class="member-detail__links" aria-label="{{ page.name | default: page.title | xml_escape }} links">
+      <nav
+        class="member-detail__links"
+        aria-label="{{ page.name | default: page.title | xml_escape }} links"
+      >
         {% for link in page.links %}
           {% assign key = link[0] %}
           {% assign value = link[1] %}
