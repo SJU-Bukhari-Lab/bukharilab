@@ -1,11 +1,15 @@
 ---
 title: About
-nav:
-  order: 1
-  tooltip: About the lab
 ---
 
-# About
+<div class="legacy-interior-hero">
+  <p class="interior-hero__eyebrow">Lab overview</p>
+  <h1>About</h1>
+  <p>Learn about the Bukhari Lab's research identity, history, and focus in biomedical informatics and trustworthy artificial intelligence.</p>
+  <div class="legacy-interior-hero__actions">{% include button.html link="research" text="Explore research" %} {% include button.html link="team" text="Meet the team" style="bare" %}</div>
+</div>
+
+{% include section.html %}
 
 <div class="about-profile">
   <div class="about-profile__media">

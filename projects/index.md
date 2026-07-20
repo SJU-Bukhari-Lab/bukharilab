@@ -1,11 +1,15 @@
 ---
 title: Projects
-nav:
-  order: 3
-  tooltip: Research projects and tools
 ---
 
-# Projects
+<div class="legacy-interior-hero">
+  <p class="interior-hero__eyebrow">Research archive</p>
+  <h1>Projects</h1>
+  <p>Browse the lab's established portfolio of biomedical informatics, semantic technology, predictive modeling, and clinical AI projects.</p>
+  <div class="legacy-interior-hero__actions">{% include button.html link="research" text="Current research" %} {% include button.html link="software" text="Software portfolio" style="bare" %}</div>
+</div>
+
+{% include section.html %}
 
 <div class="filter-panel project-filter-panel">
   {% include search-box.html %}

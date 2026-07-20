@@ -2,34 +2,54 @@
 layout: default
 ---
 
-<section class="member-page">
-  <aside class="member-page__aside">
+<section class="member-detail">
+  <aside class="member-detail__card">
     {% if page.image %}
-      <img src="{{ page.image | relative_url | uri_escape }}" alt="Portrait of {{ page.name | default: page.title | xml_escape }}" {% include fallback.html %}>
+      <div class="member-detail__portrait">
+        <img
+          src="{{ page.image | relative_url | uri_escape }}"
+          alt="Portrait of {{ page.name | default: page.title | xml_escape }}"
+          loading="eager"
+          decoding="async"
+          {% include fallback.html %}
+        >
+      </div>
     {% endif %}
+
+    <p class="member-detail__eyebrow">Team member</p>
     <h1>{{ page.name | default: page.title }}</h1>
-    {% if page.description %}<p class="member-page__role">{{ page.description }}</p>{% endif %}
-    {% if page.affiliation %}<p class="member-page__affiliation">{{ page.affiliation }}</p>{% endif %}
+
+    {% if page.description %}
+      <p class="member-detail__role">{{ page.description }}</p>
+    {% endif %}
+
+    {% if page.affiliation %}
+      <p class="member-detail__affiliation">{{ page.affiliation }}</p>
+    {% endif %}
+
     {% if page.links %}
-      <div class="member-page__links">
+      <nav class="member-detail__links" aria-label="{{ page.name | default: page.title | xml_escape }} links">
         {% for link in page.links %}
           {% assign key = link[0] %}
           {% assign value = link[1] %}
           {% include button.html type=key link=value style="bare" %}
         {% endfor %}
-      </div>
+      </nav>
     {% endif %}
   </aside>
 
-  <article class="member-page__content">
-    {{ content }}
+  <article class="member-detail__content">
+    <p class="member-detail__eyebrow">Profile</p>
+    <h2>About</h2>
 
-    {% assign aliases = page.aliases | default: page.name | default: page.title | join: "," | split: "," | array_filter %}
-    {% capture search -%}
-      research/?search={% for alias in aliases %}"{{ alias }}" {% endfor %}
-    {%- endcapture %}
-    <p class="member-page__research-link">
-      <a href="{{ search | relative_url | uri_escape }}">Search for {{ page.name | default: page.title }}'s papers on the Research page</a>
-    </p>
+    <div class="member-detail__bio">
+      {{ content }}
+    </div>
+
+    <div class="member-detail__actions">
+      {% include button.html link="team" text="Back to team" %}
+      {% include button.html link="papers" text="Explore lab papers" style="bare" %}
+      {% include button.html link="research" text="Explore research" style="bare" %}
+    </div>
   </article>
 </section>

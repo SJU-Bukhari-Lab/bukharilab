@@ -1,0 +1,73 @@
+featured:
+  - title: "CEDAR OnDemand"
+    category: "Ontology-Based Scientific Metadata"
+    description: "A browser extension for entering ontology-controlled metadata through existing web-based repository submission forms."
+    link: "https://github.com/bukharilab/CEDAROnDemand"
+    icon: "fa-solid fa-wand-magic-sparkles"
+    status: "Published software"
+
+  - title: "MediLoom"
+    category: "Biomedical Knowledge Graphs"
+    description: "Research software for automated biomedical knowledge graph generation and enrichment using ontologies and embedding-based inference."
+    link: "https://github.com/bukharilab/MediLoom"
+    icon: "fa-solid fa-diagram-project"
+    status: "Research repository"
+
+  - title: "Semantically"
+    category: "Medical Coding & Semantic Content"
+    description: "A platform associated with trustworthy medical code recommendation and biomedical semantic content-authoring research."
+    link: "https://github.com/bukharilab/Semantically"
+    icon: "fa-solid fa-share-nodes"
+    status: "Public repository"
+
+  - title: "Burnout Surveillance AI"
+    category: "Clinical NLP"
+    description: "Research code supporting a narrative-driven computational framework for clinician burnout surveillance."
+    link: "https://github.com/bukharilab/BurnoutSurveillanceAI"
+    icon: "fa-solid fa-file-waveform"
+    status: "Research repository"
+
+portfolio:
+  - title: "KG-4Bio"
+    category: "Biomedical Knowledge Representation"
+    description: "Knowledge graph-based recommendation infrastructure for biomedical semantic content authoring."
+    link: "https://github.com/bukharilab/KG4BioMedCntnAuthoring"
+    icon: "fa-solid fa-network-wired"
+    status: "Public repository"
+
+  - title: "goSemantically"
+    category: "Semantic Biomedical Publishing"
+    description: "A Google Docs add-on for adding machine-interpretable biomedical metadata and exporting semantically enriched content."
+    link: "https://github.com/bukharilab/gosemantically"
+    icon: "fa-solid fa-file-lines"
+    status: "Google Docs add-on"
+
+  - title: "Deep-FLAIM"
+    category: "Critical Care Prediction"
+    description: "Research code for a deep neural network approach to mortality prediction in trauma patients admitted to intensive care."
+    link: "https://github.com/bukharilab/deepflaim"
+    icon: "fa-solid fa-heart-pulse"
+    status: "Research repository"
+
+standards:
+  - title: "AIRR Standards"
+    category: "Adaptive Immune Receptor Repertoire Standards"
+    description: "A fork of the AIRR Community standards repository containing MiAIRR minimal-standard materials and NCBI implementation resources."
+    link: "https://github.com/bukharilab/airr-standards"
+    icon: "fa-solid fa-scale-balanced"
+    status: "Community standards repository"
+
+  - title: "FHIRTrustBench"
+    category: "Clinical AI Benchmarking"
+    description: "A preprint benchmark for evaluating FHIR-based clinical AI readiness, interoperability, and trustworthiness."
+    link: "https://www.medrxiv.org/content/10.64898/2026.07.08.26357574v1"
+    icon: "fa-solid fa-shield-halved"
+    status: "Preprint benchmark"
+
+  - title: "SPARQL Benchmark Analysis"
+    category: "RDF Data Infrastructure Evaluation"
+    description: "A peer-reviewed study of SPARQL benchmark representativeness and RDF triplestore performance characteristics."
+    link: "/projects/how-representative-is-a-sparql-benchmark-an-analysis-of-rdf-triplestore-benchmarks/"
+    icon: "fa-solid fa-gauge-high"
+    status: "Peer-reviewed benchmark study"
+    internal: true

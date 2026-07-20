@@ -1,0 +1,167 @@
+featured:
+  - title: "CEDAR OnDemand"
+    category: "Ontology-Based Scientific Metadata"
+    status: "Featured Software"
+    description: "A browser extension that enables ontology-based scientific metadata entry through existing web repository submission forms."
+    icon: "fa-solid fa-wand-magic-sparkles"
+    link: "https://github.com/bukharilab/CEDAROnDemand"
+    featured: true
+
+  - title: "MediLoom"
+    category: "Biomedical Knowledge Graphs"
+    status: "Research Platform"
+    description: "Automated biomedical knowledge graph generation and enrichment using biomedical ontologies and embedding-based inference."
+    icon: "fa-solid fa-diagram-project"
+    link: "https://github.com/bukharilab/MediLoom"
+
+  - title: "Burnout Surveillance AI"
+    category: "Clinical Natural Language Processing"
+    status: "Research Software"
+    description: "Research code supporting narrative-based natural language processing and machine learning for clinician burnout surveillance."
+    icon: "fa-solid fa-file-waveform"
+    link: "https://github.com/bukharilab/BurnoutSurveillanceAI"
+
+  - title: "Semantically"
+    category: "Medical Coding and Semantic Content"
+    status: "Research Platform"
+    description: "A platform supporting trustworthy medical-code recommendation and biomedical semantic content authoring."
+    icon: "fa-solid fa-code-branch"
+    link: "https://github.com/bukharilab/Semantically"
+
+  - title: "KG-4Bio"
+    category: "Biomedical Knowledge Representation"
+    status: "Research Platform"
+    description: "Knowledge graph-based recommendation infrastructure for biomedical semantic content authoring."
+    icon: "fa-solid fa-network-wired"
+    link: "https://github.com/bukharilab/KG4BioMedCntnAuthoring"
+
+  - title: "Deep-FLAIM"
+    category: "Critical Care Prediction"
+    status: "Research Software"
+    description: "Deep-learning research code for early mortality prediction in trauma patients admitted to intensive care."
+    icon: "fa-solid fa-heart-pulse"
+    link: "https://github.com/bukharilab/deepflaim"
+
+  - title: "AIRR Standards"
+    category: "Biomedical Data Standards"
+    status: "Standards Resource"
+    description: "MiAIRR standards resources supporting reproducible reporting and sharing of adaptive immune receptor repertoire data."
+    icon: "fa-solid fa-scale-balanced"
+    link: "https://github.com/bukharilab/airr-standards"
+
+  - title: "goSemantically"
+    category: "Semantic Biomedical Publishing"
+    status: "Authoring Tool"
+    description: "A Google Docs add-on for creating semantically enriched biomedical content."
+    icon: "fa-solid fa-file-lines"
+    link: "https://github.com/bukharilab/gosemantically"
+
+research_repositories:
+  - title: "syAI4ML PIMA"
+    category: "Machine Learning"
+    status: "Research Repository"
+    icon: "fa-solid fa-chart-line"
+    link: "https://github.com/bukharilab/syAI4ML_PIMA"
+
+  - title: "Linked IM"
+    category: "Linked Immunology"
+    status: "Research Repository"
+    icon: "fa-solid fa-link"
+    link: "https://github.com/bukharilab/linkedimm"
+
+  - title: "Disease Prediction Models"
+    category: "Predictive Modeling"
+    status: "Research Repository"
+    icon: "fa-solid fa-stethoscope"
+    link: "https://github.com/bukharilab/diseasepredictionmodels"
+
+  - title: "Annotatia"
+    category: "Biomedical Annotation"
+    status: "Research Repository"
+    icon: "fa-solid fa-tags"
+    link: "https://github.com/bukharilab/annotatia"
+
+  - title: "Lyme Detector"
+    category: "Disease Detection"
+    status: "Research Repository"
+    icon: "fa-solid fa-microscope"
+    link: "https://github.com/bukharilab/LymeDetector"
+
+  - title: "CEDAR Submission Server"
+    category: "Scientific Metadata Infrastructure"
+    status: "Supporting Repository"
+    icon: "fa-solid fa-server"
+    link: "https://github.com/bukharilab/cedar-submission-server"
+
+  - title: "Project AIRR"
+    category: "Immune Repertoire Data"
+    status: "Standards Repository"
+    icon: "fa-solid fa-dna"
+    link: "https://github.com/bukharilab/projectairr"
+
+  - title: "AIRR Formats"
+    category: "Immune Repertoire Data"
+    status: "Data Models and Formats"
+    icon: "fa-solid fa-file-code"
+    link: "https://github.com/bukharilab/airr-formats"
+
+  - title: "Immunological Standards Mapping"
+    category: "Immunology Data Standards"
+    status: "Standards Repository"
+    icon: "fa-solid fa-table-list"
+    link: "https://github.com/bukharilab/Immunological-Standards-Mapping"
+
+  - title: "Ontology Lookup Service"
+    category: "Ontology Infrastructure"
+    status: "Supporting Repository"
+    icon: "fa-solid fa-magnifying-glass"
+    link: "https://github.com/bukharilab/OLS"
+
+  - title: "BIM: Biomedical Image Ontology"
+    category: "Biomedical Ontologies"
+    status: "Ontology Repository"
+    icon: "fa-solid fa-images"
+    link: "https://github.com/bukharilab/BIM-Biomedical-Image-Ontology"
+
+  - title: "BioNLP-SADI"
+    category: "Biomedical Text Mining"
+    status: "Research Framework"
+    icon: "fa-solid fa-language"
+    link: "https://github.com/bukharilab/BioNLP-SADI"
+
+supporting_repositories:
+  - title: "Support Tools"
+    category: "Research Utilities"
+    link: "https://github.com/bukharilab/support-tools"
+
+  - title: "Open Link Health Census"
+    category: "Linked Health Data"
+    link: "https://github.com/bukharilab/open-link-health-census"
+
+  - title: "Bio-Ont"
+    category: "Biomedical Ontologies"
+    link: "https://github.com/bukharilab/bio-ont"
+
+  - title: "SEBI"
+    category: "Semantic Biomedical Infrastructure"
+    link: "https://github.com/bukharilab/sebi"
+
+  - title: "DataFAQs"
+    category: "Linked Data Quality"
+    link: "https://github.com/bukharilab/DataFAQs"
+
+  - title: "SWOWS"
+    category: "Semantic Web Systems"
+    link: "https://github.com/bukharilab/SWOWS"
+
+  - title: "Graphite"
+    category: "RDF Utilities"
+    link: "https://github.com/bukharilab/Graphite"
+
+  - title: "Talend for Semantic Web"
+    category: "Semantic Web Integration"
+    link: "https://github.com/bukharilab/talend4sw"
+
+  - title: "Sesame Loader"
+    category: "RDF Data Loading"
+    link: "https://github.com/bukharilab/sesame-loader"

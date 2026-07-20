@@ -1,6 +1,1 @@
-# ORCID ids whose works should be pulled automatically into the publication list.
-# TODO: add the PI's (and/or members') ORCID id(s), then run the cite action
-#       (`python _cite/cite.py`) to regenerate _data/citations.yaml.
-#
-# Example:
-# - orcid: 0000-0000-0000-0000
+[]
