@@ -1,0 +1,121 @@
+{% assign citation = include.citation %}
+
+{% capture classification_text %}
+  {{ citation.title }}
+  {{ citation.publisher }}
+  {{ citation.type }}
+  {{ citation.tags | join: " " }}
+{% endcapture %}
+{% assign classification_text = classification_text | strip_html | strip_newlines | downcase %}
+
+{% assign category = "Biomedical Data" %}
+{% assign category_slug = "biomedical-data" %}
+{% assign icon = "fa-solid fa-microscope" %}
+
+{% if classification_text contains "semantic" or classification_text contains "ontology" or classification_text contains "linked data" or classification_text contains "sparql" or classification_text contains "rdf" or classification_text contains "sadi" %}
+  {% assign category = "Semantic Web" %}
+  {% assign category_slug = "semantic-web" %}
+  {% assign icon = "fa-solid fa-diagram-project" %}
+{% elsif classification_text contains "immune" or classification_text contains "immunolog" or classification_text contains "repertoire" or classification_text contains "airr" %}
+  {% assign category = "Immunology" %}
+  {% assign category_slug = "immunology" %}
+  {% assign icon = "fa-solid fa-dna" %}
+{% elsif classification_text contains "clinical" or classification_text contains "medical" or classification_text contains "patient" or classification_text contains "hospital" or classification_text contains "diagnos" or classification_text contains "disease" or classification_text contains "cancer" or classification_text contains "health" or classification_text contains "telemedicine" or classification_text contains "mortality" or classification_text contains "readmission" %}
+  {% assign category = "Clinical & Health AI" %}
+  {% assign category_slug = "clinical-health-ai" %}
+  {% assign icon = "fa-solid fa-heart-pulse" %}
+{% elsif classification_text contains "machine learning" or classification_text contains "deep learning" or classification_text contains "neural" or classification_text contains "classification" or classification_text contains "prediction" or classification_text contains "fuzzy" or classification_text contains "artificial intelligence" %}
+  {% assign category = "Machine Learning" %}
+  {% assign category_slug = "machine-learning" %}
+  {% assign icon = "fa-solid fa-brain" %}
+{% elsif classification_text contains "benchmark" or classification_text contains "evaluation" or classification_text contains "performance" %}
+  {% assign category = "Benchmarking" %}
+  {% assign category_slug = "benchmarking" %}
+  {% assign icon = "fa-solid fa-chart-line" %}
+{% endif %}
+
+{% if citation.date %}
+  {% assign publication_year = citation.date | date: "%Y" %}
+  {% assign publication_date = citation.date | date: "%d %b %Y" %}
+{% else %}
+  {% assign publication_year = "Undated" %}
+  {% assign publication_date = "Date unavailable" %}
+{% endif %}
+
+{% assign publication_link = citation.link %}
+{% if publication_link == nil and citation.buttons and citation.buttons.size > 0 %}
+  {% assign publication_link = citation.buttons[0].link %}
+{% endif %}
+
+{% capture searchable_text %}
+  {{ citation.title }}
+  {{ citation.authors | join: " " }}
+  {{ citation.publisher }}
+  {{ citation.id }}
+  {{ citation.tags | join: " " }}
+  {{ category }}
+  {{ publication_year }}
+{% endcapture %}
+
+<article
+  class="publication-grid-card publication-grid-card--{{ category_slug }}"
+  data-year="{{ publication_year | xml_escape }}"
+  data-category="{{ category | xml_escape }}"
+  data-search="{{ searchable_text | strip_html | strip_newlines | downcase | xml_escape }}"
+>
+  <div class="publication-grid-card__top">
+    <span class="publication-grid-card__icon" aria-hidden="true">
+      <i class="{{ icon }}"></i>
+    </span>
+
+    <div class="publication-grid-card__labels">
+      <span class="publication-grid-card__category">{{ category }}</span>
+      <span class="publication-grid-card__year">{{ publication_year }}</span>
+    </div>
+  </div>
+
+  <h3>
+    {% if publication_link %}
+      <a href="{{ publication_link | relative_url | uri_escape }}">{{ citation.title | default: "[no title information]" }}</a>
+    {% else %}
+      {{ citation.title | default: "[no title information]" }}
+    {% endif %}
+  </h3>
+
+  <p class="publication-grid-card__authors">
+    {% if citation.authors and citation.authors.size > 0 %}
+      {{
+        citation.authors
+        | join: ","
+        | split: ","
+        | array_carve: 4
+        | join: ", "
+        | markdownify
+        | remove: "<p>"
+        | remove: "</p>"
+      }}
+    {% else %}
+      Author information unavailable
+    {% endif %}
+  </p>
+
+  <div class="publication-grid-card__details">
+    <span>{{ citation.publisher | default: "Publication" }}</span>
+    <span>{{ publication_date }}</span>
+  </div>
+
+  {% if citation.tags and citation.tags.size > 0 %}
+    <div class="publication-grid-card__tags">
+      {% for tag in citation.tags limit: 2 %}
+        <span>{{ tag | replace: "-", " " }}</span>
+      {% endfor %}
+    </div>
+  {% endif %}
+
+  {% if publication_link %}
+    <a class="publication-grid-card__action" href="{{ publication_link | relative_url | uri_escape }}">
+      View publication
+      <i class="fa-solid fa-arrow-right" aria-hidden="true"></i>
+    </a>
+  {% endif %}
+</article>

@@ -53,7 +53,7 @@ nav:
   <div class="interior-heading">
     <p class="interior-heading__eyebrow">Research highlights</p>
     <h2>Selected Recent Work</h2>
-    <p>Recent publications and preprints reflecting the lab’s current research directions.</p>
+    <p></p>
   </div>
 
   <div class="publication-grid">
@@ -73,12 +73,12 @@ nav:
 
 {% include section.html %}
 
-<div class="interior-section">
+<div class="interior-section publications-browser">
   <div class="interior-heading interior-heading--split">
     <div>
       <p class="interior-heading__eyebrow">Publication record</p>
       <h2>All Publications</h2>
-      <p>The publication record is refreshed from Dr. Bukhari’s ORCID profile and supplemented with recent benchmark and preprint entries.</p>
+      <p></p>
     </div>
     <a
       class="catalog-count"
@@ -94,43 +94,72 @@ nav:
   {% assign all_citations = site.data.citations | sort: "date" | reverse %}
 
   {% if all_citations and all_citations.size > 0 %}
-    <div class="publication-record">
+    <div class="publication-toolbar" aria-label="Publication filters">
+      <div class="publication-toolbar__search">
+        <label for="publication-search">Search publications</label>
+        <div class="publication-search-field">
+          <i class="fa-solid fa-magnifying-glass" aria-hidden="true"></i>
+          <input
+            id="publication-search"
+            type="search"
+            placeholder="Search by title, author, journal, or keyword"
+            autocomplete="off"
+          >
+        </div>
+      </div>
+
+      <div class="publication-toolbar__select">
+        <label for="publication-year">Year</label>
+        <select id="publication-year">
+          <option value="">All years</option>
+        </select>
+      </div>
+
+      <div class="publication-toolbar__select">
+        <label for="publication-category">Research area</label>
+        <select id="publication-category">
+          <option value="">All areas</option>
+        </select>
+      </div>
+
+      <button class="publication-toolbar__reset" id="publication-reset" type="button">
+        Clear filters
+      </button>
+    </div>
+
+    <div class="publication-results-summary" aria-live="polite">
+      <span id="publication-results-count">{{ all_citations.size }} publications</span>
+      <span>Newest first</span>
+    </div>
+
+    <div class="publication-catalog-grid" id="publication-catalog">
       {% for citation in all_citations %}
-        {% assign citation_lookup = citation.id | default: citation.title %}
-        {% include citation.html lookup=citation_lookup style="rich" %}
+        {% include publication-grid-card.html citation=citation %}
       {% endfor %}
     </div>
+
+    <div class="publication-empty-state" id="publication-empty-state" hidden>
+      <i class="fa-solid fa-file-circle-question" aria-hidden="true"></i>
+      <h3>No publications match these filters</h3>
+      <p>Try a broader search term or clear the selected filters.</p>
+    </div>
   {% else %}
-    <div class="publication-archive">
+    <div class="publication-catalog-grid">
       {% for paper in site.data.projects %}
         {% assign paper_url = paper.publication | default: paper.link %}
-        <article class="publication-row">
-          <div class="publication-row__icon" aria-hidden="true">
-            <i class="fa-solid fa-file-lines"></i>
+        <article class="publication-grid-card" data-year="" data-category="Research publication">
+          <div class="publication-grid-card__top">
+            <span class="publication-grid-card__icon">
+              <i class="fa-solid fa-file-lines" aria-hidden="true"></i>
+            </span>
+            <span class="publication-grid-card__category">Research publication</span>
           </div>
-          <div class="publication-row__content">
-            <p class="publication-row__meta">
-              {% if paper.tags and paper.tags.size > 0 %}
-                {{ paper.tags | first }}
-              {% else %}
-                Research publication
-              {% endif %}
-            </p>
-            <h3>
-              <a href="{{ paper_url }}" target="_blank" rel="noopener noreferrer">
-                {{ paper.title }}
-              </a>
-            </h3>
-            <p>{{ paper.description | strip_html | truncate: 230 }}</p>
-          </div>
-          <a
-            class="publication-row__action"
-            href="{{ paper_url }}"
-            target="_blank"
-            rel="noopener noreferrer"
-            aria-label="Read {{ paper.title | xml_escape }}"
-          >
-            <i class="fa-solid fa-arrow-right" aria-hidden="true"></i>
+          <h3>
+            <a href="{{ paper_url }}" target="_blank" rel="noopener noreferrer">{{ paper.title }}</a>
+          </h3>
+          <p class="publication-grid-card__authors">{{ paper.description | strip_html | truncate: 150 }}</p>
+          <a class="publication-grid-card__action" href="{{ paper_url }}" target="_blank" rel="noopener noreferrer">
+            Read publication <i class="fa-solid fa-arrow-right" aria-hidden="true"></i>
           </a>
         </article>
       {% endfor %}
