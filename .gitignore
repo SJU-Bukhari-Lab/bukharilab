@@ -7,3 +7,8 @@ vendor/
 *.gem
 .env
 .env.*
+
+# Generated validation and local-system files
+tmp/.htmlproofer/
+*.pyc
+__pycache__/

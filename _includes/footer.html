@@ -43,22 +43,24 @@
           </a>
         {% endif %}
 
-        <a class="site-footer__link" href="{{ site.url | append: site.baseurl }}" target="_blank" rel="noopener noreferrer">
+        <a class="site-footer__link" href="{{ '/' | relative_url }}">
           <i class="fa-solid fa-globe" aria-hidden="true"></i>
           <span>Website</span>
         </a>
 
-        {% if site.links.website %}
-          <a class="site-footer__link" href="{{ site.links.website }}" target="_blank" rel="noopener noreferrer">
+        {% if site.links.linkedin %}
+          <a class="site-footer__link" href="{{ site.links.linkedin }}" target="_blank" rel="noopener noreferrer">
             <i class="fa-brands fa-linkedin" aria-hidden="true"></i>
             <span>LinkedIn</span>
           </a>
         {% endif %}
 
-        <a class="site-footer__link" href="{{ site.hugging_face_url }}" target="_blank" rel="noopener noreferrer">
-          <img class="site-footer__hugging-face-logo" src="{{ 'images/brand/hugging-face-logo.svg' | relative_url }}" alt="">
-          <span>Hugging Face</span>
-        </a>
+        {% if site.hugging_face_url %}
+          <a class="site-footer__link" href="{{ site.hugging_face_url }}" target="_blank" rel="noopener noreferrer">
+            <img class="site-footer__hugging-face-logo" src="{{ 'images/brand/hugging-face-logo.svg' | relative_url }}" alt="">
+            <span>Hugging Face</span>
+          </a>
+        {% endif %}
       </div>
     </div>
   </div>

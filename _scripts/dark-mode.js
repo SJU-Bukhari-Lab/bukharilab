@@ -1,25 +1,40 @@
-/*
-  manages light/dark mode.
-*/
+/* Manages light and dark mode with resilient localStorage access. */
+(() => {
+  const STORAGE_KEY = "dark-mode";
 
-{
-  // immediately load saved (or default) mode before page renders
-  document.documentElement.dataset.dark =
-    window.localStorage.getItem("dark-mode") ?? "false";
-
-  const onLoad = () => {
-    // update toggle button to match loaded mode
-    document.querySelector(".dark-toggle").checked =
-      document.documentElement.dataset.dark === "true";
+  const readSavedMode = () => {
+    try {
+      return window.localStorage.getItem(STORAGE_KEY);
+    } catch (error) {
+      console.warn("Dark-mode preference could not be read.", error);
+      return null;
+    }
   };
 
-  // after page loads
-  window.addEventListener("load", onLoad);
+  const saveMode = (value) => {
+    try {
+      window.localStorage.setItem(STORAGE_KEY, value);
+    } catch (error) {
+      console.warn("Dark-mode preference could not be saved.", error);
+    }
+  };
 
-  // when user toggles mode button
+  const preferredMode = readSavedMode();
+  document.documentElement.dataset.dark = preferredMode ?? "false";
+
+  window.addEventListener("DOMContentLoaded", () => {
+    const toggle = document.querySelector(".dark-toggle");
+    if (toggle instanceof HTMLInputElement) {
+      toggle.checked = document.documentElement.dataset.dark === "true";
+    }
+  });
+
   window.onDarkToggleChange = (event) => {
-    const value = event.target.checked;
+    const target = event.target;
+    if (!(target instanceof HTMLInputElement)) return;
+
+    const value = String(target.checked);
     document.documentElement.dataset.dark = value;
-    window.localStorage.setItem("dark-mode", value);
+    saveMode(value);
   };
-}
+})();

@@ -6,7 +6,8 @@ VENV="${TMPDIR:-/tmp}/bukharilab-citations-venv"
 
 cd "$ROOT"
 
-if [[ ! -d "$VENV" ]]; then
+if [[ ! -f "$VENV/bin/activate" ]]; then
+  rm -rf "$VENV"
   python3 -m venv "$VENV"
 fi
 

@@ -62,15 +62,6 @@
   orcid: 0000-0002-6517-5261
   plugin: orcid.py
   file: orcid.yaml
-- id: doi:10.32473/flairs.36
-  title: ''
-  authors: []
-  publisher: The International FLAIRS Conference Proceedings
-  date: '2023-05-08'
-  link: https://doi.org/hcb6pq
-  orcid: 0000-0002-6517-5261
-  plugin: orcid.py
-  file: orcid.yaml
 - id: doi:10.32473/flairs.36.133253
   title: Enhancing Biomedical Semantic Annotations through a Knowledge Graph-Based
     Approach
@@ -519,7 +510,7 @@
 - title: 'BIM: An open ontology for the annotation of biomedical images'
   publisher: CEUR Workshop Proceedings
   date: '2022-05-25'
-  link: http://www.scopus.com/inward/record.url?eid=2-s2.0-84960977773&partnerID=MN8TOARS
+  link: https://www.scopus.com/inward/record.url?eid=2-s2.0-84960977773&partnerID=MN8TOARS
   orcid: 0000-0002-6517-5261
   plugin: orcid.py
   file: orcid.yaml
@@ -532,7 +523,7 @@
 - title: 'ICyrus: A semantic framework for biomedical image discovery'
   publisher: CEUR Workshop Proceedings
   date: '2022-05-25'
-  link: http://www.scopus.com/inward/record.url?eid=2-s2.0-84964076425&partnerID=MN8TOARS
+  link: https://www.scopus.com/inward/record.url?eid=2-s2.0-84964076425&partnerID=MN8TOARS
   orcid: 0000-0002-6517-5261
   plugin: orcid.py
   file: orcid.yaml
@@ -579,7 +570,7 @@
     reusability based on semantic enrichment'
   publisher: CEUR Workshop Proceedings
   date: '2022-05-25'
-  link: http://www.scopus.com/inward/record.url?eid=2-s2.0-84920025197&partnerID=MN8TOARS
+  link: https://www.scopus.com/inward/record.url?eid=2-s2.0-84920025197&partnerID=MN8TOARS
   orcid: 0000-0002-6517-5261
   plugin: orcid.py
   file: orcid.yaml
@@ -695,7 +686,7 @@
   publisher: Proceedings - 7th International Conference on Networked Computing and
     Advanced Information Management, NCM 2011
   date: '2022-05-25'
-  link: http://www.scopus.com/inward/record.url?eid=2-s2.0-80052125192&partnerID=MN8TOARS
+  link: https://www.scopus.com/inward/record.url?eid=2-s2.0-80052125192&partnerID=MN8TOARS
   orcid: 0000-0002-6517-5261
   plugin: orcid.py
   file: orcid.yaml

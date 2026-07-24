@@ -183,7 +183,7 @@ def bundle_assets(site_dir: Path, report: Report) -> tuple[str | None, str | Non
             report.js_bytes_before += path.stat().st_size
             # Preserve source order and isolate accidental source-map directives.
             content = re.sub(r"^\s*//# sourceMappingURL=.*$", "", content, flags=re.MULTILINE)
-            chunks.append(f"\n{content.rstrip()}\n")
+            chunks.append(f"\n;\n{content.rstrip()}\n")
         bundle_text = "".join(chunks).lstrip()
         data = bundle_text.encode("utf-8")
         filename = f"site-bundle.{sha12(data)}.js"
@@ -315,6 +315,14 @@ def replace_asset_references(site_dir: Path, mapping: dict[str, str]) -> None:
             write_text(path, updated)
 
 
+def should_skip_lossy_image(path: Path, images_root: Path) -> bool:
+    try:
+        parts = {part.lower() for part in path.relative_to(images_root).parts[:-1]}
+    except ValueError:
+        return False
+    return bool(parts & {"brand", "funders", "infographics"})
+
+
 def optimize_images(site_dir: Path, report: Report, threshold: int, quality: int) -> dict[str, str]:
     images_root = site_dir / "images"
     if not images_root.exists():
@@ -323,6 +331,8 @@ def optimize_images(site_dir: Path, report: Report, threshold: int, quality: int
     mapping: dict[str, str] = {}
     candidates = sorted(path for path in images_root.rglob("*") if path.is_file())
     for path in candidates:
+        if should_skip_lossy_image(path, images_root):
+            continue
         suffix = path.suffix.lower()
         size = path.stat().st_size
         if size < threshold:

@@ -91,7 +91,7 @@ nav:
     </a>
   </div>
 
-  {% assign all_citations = site.data.citations | sort: "date" | reverse %}
+  {% assign all_citations = site.data.citations | where_exp: "citation", "citation.title != empty" | sort: "date" | reverse %}
 
   {% if all_citations and all_citations.size > 0 %}
     <div class="publication-toolbar" aria-label="Publication filters">

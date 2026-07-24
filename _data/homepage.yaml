@@ -63,25 +63,10 @@ featured_papers:
     description: "A multidimensional benchmark for evaluating the readiness, interoperability, and trustworthiness of FHIR-based clinical AI systems."
     link: "https://www.medrxiv.org/content/10.64898/2026.07.08.26357574v1"
 
-software_resources:
-  - title: "DeepFLAME Semantically"
-    type: "Featured Software"
-    description: "Featured semantic AI software and research resource."
-    icon: "fa-solid fa-fire-flame-curved"
-    link: "https://github.com/bukharilab/deepflaim"
-
-  - title: "CEDAR OnDemand"
-    type: "Featured Software"
-    description: "Ontology-controlled scientific metadata entry within existing browser-based submission workflows."
-    icon: "fa-solid fa-wand-magic-sparkles"
-    link: "https://github.com/bukharilab/CEDAROnDemand"
-
-  - title: "GoSemantically"
-    type: "Featured Software"
-    description: "Featured semantic software and research resource."
-    icon: "fa-solid fa-diagram-project"
-
-  - title: "AI Standards"
-    type: "Featured Resource"
-    description: "Featured artificial-intelligence standards resource."
-    icon: "fa-solid fa-scale-balanced"
+# Homepage software cards are selected by canonical IDs from
+# _data/software_catalog.yaml. This prevents title, description, and URL drift.
+featured_software_ids:
+  - deep_flaim
+  - cedar_ondemand
+  - gosemantically
+  - airr_standards
