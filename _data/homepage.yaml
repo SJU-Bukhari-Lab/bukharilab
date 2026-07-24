@@ -1,46 +1,31 @@
 active_projects:
-  - title: "CEDAR OnDemand"
-    label: "FAIR Scientific Metadata"
-    description: "A browser extension for entering ontology-controlled metadata through existing repository submission forms."
-    icon: "fa-solid fa-wand-magic-sparkles"
-    link: "https://github.com/bukharilab/CEDAROnDemand"
-    external: true
-    featured: true
+  - title: "Neuro-Symbolic AI for Drug Repurposing"
+    label: "Drug Repurposing AI"
+    description: "This NIH-funded project develops hybrid neuro-symbolic AI methods to identify and evaluate potential therapeutic uses of existing drugs. It combines biomedical knowledge, clinical evidence, and machine learning to support more explainable and reliable drug-repurposing discoveries."
+    icon: "fa-solid fa-capsules"
+    link: "research"
+    external: false
 
-  - title: "MediLoom"
-    label: "Biomedical Knowledge Graphs"
-    description: "Automated biomedical knowledge graph generation and enrichment using ontologies and embedding-based inference."
-    icon: "fa-solid fa-diagram-project"
-    link: "https://github.com/bukharilab/MediLoom"
-    external: true
+  - title: "Narrative-Driven AI for Clinician Burnout Surveillance"
+    label: "Clinician Well-Being"
+    description: "This project investigates how clinical narratives and healthcare data can reveal early signals associated with clinician burnout. The goal is to develop responsible and interpretable AI methods that support organizational awareness and timely intervention."
+    icon: "fa-solid fa-user-doctor"
+    link: "research"
+    external: false
 
-  - title: "Burnout Surveillance AI"
-    label: "Clinical NLP"
-    description: "A narrative-driven computational framework for studying clinician burnout signals in ICU clinical notes."
-    icon: "fa-solid fa-file-waveform"
-    link: "https://github.com/bukharilab/BurnoutSurveillanceAI"
-    external: true
+  - title: "Trustworthy Algorithms for Extreme Multi-Label Medical Coding"
+    label: "Medical Coding"
+    description: "This project develops trustworthy and hierarchy-aware algorithms for assigning medical codes from large and complex coding systems. The work focuses on extreme multi-label classification, explainability, structural validity, and improved performance for rare clinical codes."
+    icon: "fa-solid fa-code"
+    link: "research"
+    external: false
 
-  - title: "Semantically"
-    label: "Trustworthy Medical Coding"
-    description: "A medical-code recommendation and biomedical semantic content-authoring platform."
-    icon: "fa-solid fa-code-branch"
-    link: "https://github.com/bukharilab/Semantically"
-    external: true
-
-  - title: "Care Escalators"
-    label: "Predictive Clinical AI"
-    description: "Research on early prediction of multi-label care-escalation triggers from electronic health records."
-    icon: "fa-solid fa-heart-pulse"
-    link: "https://arxiv.org/abs/2509.18145"
-    external: true
-
-  - title: "KG-4Bio"
-    label: "Knowledge Engineering"
-    description: "Knowledge graph-based infrastructure for biomedical semantic content authoring and recommendation."
-    icon: "fa-solid fa-network-wired"
-    link: "https://github.com/bukharilab/KG4BioMedCntnAuthoring"
-    external: true
+  - title: "A Socio-Technical Approach to Biomedical Content Authoring and Publishing"
+    label: "Biomedical Publishing"
+    description: "This project explores how researchers, domain experts, semantic technologies, and intelligent systems can work together to improve biomedical content authoring and publishing. The goal is to make scientific content more structured, interoperable, reusable, and accessible to both humans and machines."
+    icon: "fa-solid fa-book-open-reader"
+    link: "research"
+    external: false
 
 benchmarking:
   - title: "FHIRTrustBench"
@@ -55,38 +40,48 @@ benchmarking:
     link: "/projects/how-representative-is-a-sparql-benchmark-an-analysis-of-rdf-triplestore-benchmarks/"
     external: false
 
+benchmarking_note: "A third benchmarking study is currently in development."
+
 featured_papers:
+  - title: "Fish-Pak: Fish species dataset from Pakistan for visual features based classification"
+    venue: "Highly cited data paper · Data in Brief · 2019"
+    description: "A reusable image dataset of six fish species developed for visual-feature-based classification and recognition research."
+    link: "https://doi.org/10.1016/j.dib.2019.104565"
+
+  - title: "Adaptive Immune Receptor Repertoire Community recommendations for sharing immune-repertoire sequencing data"
+    venue: "Highly cited paper · Nature Immunology · 2017"
+    description: "Community recommendations for reporting and sharing adaptive immune receptor repertoire sequencing data."
+    link: "https://doi.org/10.1038/ni.3873"
+
+  - title: "Knowledge Graph Based Trustworthy Medical Code Recommendations"
+    venue: "Important knowledge-resource paper · Medical coding"
+    description: "A trustworthy medical-code recommendation approach grounded in biomedical knowledge graphs."
+    link: "https://www.scitepress.org/Link.aspx?doi=10.5220/0011925700003414"
+
   - title: "FHIRTrustBench: A Benchmark for Interoperability-Driven Clinical AI Readiness and Trustworthiness"
-    venue: "medRxiv · 2026 · Benchmarking"
-    description: "A multidimensional benchmark for evaluating the readiness of FHIR-based clinical AI systems."
+    venue: "Selected recent paper · 2026"
+    description: "A multidimensional benchmark for evaluating the readiness, interoperability, and trustworthiness of FHIR-based clinical AI systems."
     link: "https://www.medrxiv.org/content/10.64898/2026.07.08.26357574v1"
 
-  - title: "How Representative Is a SPARQL Benchmark? An Analysis of RDF Triplestore Benchmarks"
-    venue: "The Web Conference · 2019 · Benchmarking"
-    description: "An analysis of how established SPARQL benchmarks represent real-world RDF datasets and query workloads."
-    link: "https://doi.org/10.1145/3308558.3313556"
-
-  - title: "Graph-Constrained Policy Learning for Extreme Clinical Code Prediction"
-    venue: "arXiv · 2026 · Clinical AI"
-    description: "A hierarchy-aware approach that formulates ICD-10-CM prediction as graph-constrained traversal."
-    link: "https://arxiv.org/abs/2607.11954"
-
 software_resources:
+  - title: "DeepFLAME Semantically"
+    type: "Featured Software"
+    description: "Featured semantic AI software and research resource."
+    icon: "fa-solid fa-fire-flame-curved"
+    link: "https://github.com/bukharilab/deepflaim"
+
   - title: "CEDAR OnDemand"
-    type: "Highlighted Software"
+    type: "Featured Software"
     description: "Ontology-controlled scientific metadata entry within existing browser-based submission workflows."
     icon: "fa-solid fa-wand-magic-sparkles"
     link: "https://github.com/bukharilab/CEDAROnDemand"
-    featured: true
 
-  - title: "Deep-FLAIM"
-    type: "Critical Care Prediction"
-    description: "Research code for deep-learning-based mortality prediction in trauma patients admitted to intensive care."
-    icon: "fa-solid fa-heart-pulse"
-    link: "https://github.com/bukharilab/deepflaim"
+  - title: "GoSemantically"
+    type: "Featured Software"
+    description: "Featured semantic software and research resource."
+    icon: "fa-solid fa-diagram-project"
 
-  - title: "AIRR Standards"
-    type: "Biomedical Data Standards"
-    description: "MiAIRR standards resources supporting consistent adaptive immune receptor repertoire data reporting."
+  - title: "AI Standards"
+    type: "Featured Resource"
+    description: "Featured artificial-intelligence standards resource."
     icon: "fa-solid fa-scale-balanced"
-    link: "https://github.com/bukharilab/airr-standards"

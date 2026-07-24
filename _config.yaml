@@ -7,6 +7,7 @@ footer: images/brand/nyc-banner.jpg
 proofer: false
 url: https://bukharilab.org
 baseurl: ""
+hugging_face_url: https://huggingface.co/bukharilab
 
 # site social media and other links
 links:
