@@ -17,15 +17,15 @@ nav:
 
 {% include section.html %}
 
-{% assign cedar = site.data.software_catalog.featured | where: "title", "CEDAR OnDemand" | first %}
+{% assign featured_software = site.data.software_catalog.featured | where: "id", "semantically" | first %}
 <div class="software-spotlight">
-  <div class="software-spotlight__icon"><i class="{{ cedar.icon }}" aria-hidden="true"></i></div>
+  <div class="software-spotlight__icon"><i class="{{ featured_software.icon }}" aria-hidden="true"></i></div>
   <div class="software-spotlight__content">
     <p class="interior-heading__eyebrow">Featured software</p>
-    <h2>{{ cedar.title }}</h2>
-    <p>{{ cedar.description }}</p>
-    <div class="software-spotlight__meta"><span>{{ cedar.category }}</span><span>{{ cedar.status }}</span></div>
-    <a class="software-spotlight__link" href="{{ cedar.link }}" target="_blank" rel="noopener noreferrer">View repository <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></a>
+    <h2>{{ featured_software.title }}</h2>
+    <p>{{ featured_software.description }}</p>
+    <div class="software-spotlight__meta"><span>{{ featured_software.category }}</span><span>{{ featured_software.status }}</span></div>
+    <a class="software-spotlight__link" href="{{ featured_software.link }}" target="_blank" rel="noopener noreferrer">View repository <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></a>
   </div>
 </div>
 
@@ -40,7 +40,7 @@ nav:
 
   <div class="software-grid">
     {% for item in site.data.software_catalog.featured %}
-      {% unless item.title == "CEDAR OnDemand" %}
+      {% unless item.id == "semantically" %}
         <article class="software-card">
           <a href="{{ item.link }}" target="_blank" rel="noopener noreferrer">
             <span class="software-card__icon"><i class="{{ item.icon }}" aria-hidden="true"></i></span>

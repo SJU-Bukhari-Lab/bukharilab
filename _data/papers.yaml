@@ -11,6 +11,12 @@ benchmarking:
     description: "A peer-reviewed analysis of SPARQL benchmark representativeness, RDF workloads, and triplestore performance characteristics."
     link: "https://doi.org/10.1145/3308558.3313556"
 
+  - title: "SynTrustBench: A Trustworthiness Evidence Standard for Synthetic Clinical Data"
+    venue: "Release candidate"
+    year: 2026
+    description: "A benchmark specification and pilot evidence audit for evaluating trustworthiness claims in synthetic clinical data across fidelity, clinical utility, privacy, equity, and robustness."
+    link: "https://github.com/bukharilab/SynTrustBench"
+
 selected:
   - title: "Graph-Constrained Policy Learning for Extreme Clinical Code Prediction"
     venue: "arXiv"

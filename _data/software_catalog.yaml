@@ -1,12 +1,4 @@
 featured:
-  - id: "cedar_ondemand"
-    title: "CEDAR OnDemand"
-    category: "Ontology-Based Scientific Metadata"
-    status: "Featured Software"
-    description: "A browser extension that enables ontology-based scientific metadata entry through existing web repository submission forms."
-    icon: "fa-solid fa-wand-magic-sparkles"
-    link: "https://github.com/bukharilab/CEDAROnDemand"
-    featured: true
 
   - id: "mediloom"
     title: "MediLoom"
@@ -31,6 +23,7 @@ featured:
     description: "A platform supporting trustworthy medical-code recommendation and biomedical semantic content authoring."
     icon: "fa-solid fa-code-branch"
     link: "https://github.com/bukharilab/Semantically"
+    featured: true
 
   - id: "kg4bio"
     title: "KG-4Bio"

@@ -20,7 +20,7 @@ nav:
 <div class="interior-section">
   <div class="interior-heading">
     <p class="interior-heading__eyebrow">Benchmarking</p>
-    <h2>Benchmarking &amp; Evaluation</h2>
+    <h2>Data and Benchmarking</h2>
     <p>Benchmark-oriented scholarship evaluating clinical AI readiness, interoperability, and biomedical data infrastructure.</p>
   </div>
 
@@ -36,14 +36,6 @@ nav:
         </a>
       </article>
     {% endfor %}
-  </div>
-
-  <div class="development-note development-note--light">
-    <i class="fa-solid fa-flask" aria-hidden="true"></i>
-    <div>
-      <strong>Benchmarking research in progress</strong>
-      <p>The lab continues to expand its benchmarking portfolio across clinical AI and biomedical data infrastructure.</p>
-    </div>
   </div>
 </div>
 

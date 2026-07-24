@@ -32,7 +32,7 @@ PAPER_TITLES = [
 
 FEATURED_SOFTWARE_IDS = [
     "deep_flaim",
-    "cedar_ondemand",
+    "semantically",
     "gosemantically",
     "airr_standards",
 ]
@@ -42,9 +42,9 @@ EXPECTED_SOFTWARE = {
         "title": "Deep-FLAIM",
         "link": "https://github.com/bukharilab/deepflaim",
     },
-    "cedar_ondemand": {
-        "title": "CEDAR OnDemand",
-        "link": "https://github.com/bukharilab/CEDAROnDemand",
+    "semantically": {
+        "title": "Semantically",
+        "link": "https://github.com/bukharilab/Semantically",
     },
     "gosemantically": {
         "title": "goSemantically",
@@ -184,13 +184,22 @@ def main() -> int:
         require(title in active_titles, f"Featured project is missing: {title}", errors)
 
     benchmarks = homepage.get("benchmarking", [])
-    require(len(benchmarks) == 2, "Exactly two completed benchmarks must be displayed.", errors)
-    require(
-        homepage.get("benchmarking_note") == "A third benchmarking study is currently in development.",
-        "The third-benchmark development note is missing or changed.",
-        errors,
-    )
+    require(len(benchmarks) == 3, "Exactly three completed benchmarks must be displayed.", errors)
+    benchmark_titles = {
+        item.get("title") for item in benchmarks if isinstance(item, dict)
+    }
+    require("SynTrustBench" in benchmark_titles, "SynTrustBench is missing from homepage benchmarking.", errors)
+    require("benchmarking_note" not in homepage, "The obsolete third-benchmark development note remains.", errors)
     require("Data and Benchmarking" in index, "Data and Benchmarking heading is missing.", errors)
+    research_page = (repo / "research/index.md").read_text(encoding="utf-8")
+    papers_page = (repo / "papers/index.md").read_text(encoding="utf-8")
+    software_page = (repo / "software/index.md").read_text(encoding="utf-8")
+    for label, page_text in (("Research", research_page), ("Papers", papers_page)):
+        require("Data and Benchmarking" in page_text, f"{label} page is missing the Data and Benchmarking heading.", errors)
+        require("Benchmarking &amp; Evaluation" not in page_text, f"{label} page retains the old benchmarking heading.", errors)
+        require("Benchmarking research in progress" not in page_text, f"{label} page retains the obsolete development note.", errors)
+    require("CEDAR OnDemand" not in software_page, "CEDAR OnDemand remains on the Software page.", errors)
+    require('where: "id", "semantically"' in software_page, "Semantically is not the Software-page spotlight.", errors)
 
     papers = homepage.get("featured_papers", [])
     require(len(papers) == 4, "Exactly four featured papers must be selected.", errors)
@@ -207,6 +216,7 @@ def main() -> int:
     require(selected_ids == FEATURED_SOFTWARE_IDS, "Featured software IDs are missing or out of order.", errors)
 
     featured_records = software_catalog.get("featured", [])
+    require(not any(item.get("id") == "cedar_ondemand" for item in featured_records if isinstance(item, dict)), "CEDAR OnDemand remains in the canonical featured software catalog.", errors)
     by_id = {
         item.get("id"): item
         for item in featured_records

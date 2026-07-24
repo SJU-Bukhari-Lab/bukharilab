@@ -40,7 +40,11 @@ benchmarking:
     link: "/projects/how-representative-is-a-sparql-benchmark-an-analysis-of-rdf-triplestore-benchmarks/"
     external: false
 
-benchmarking_note: "A third benchmarking study is currently in development."
+  - title: "SynTrustBench"
+    status: "Release candidate · 2026"
+    description: "A trustworthiness evidence standard for synthetic clinical data that evaluates source-linked evidence across fidelity, clinical utility, privacy, equity, and robustness."
+    link: "https://github.com/bukharilab/SynTrustBench"
+    external: true
 
 featured_papers:
   - title: "Fish-Pak: Fish species dataset from Pakistan for visual features based classification"
@@ -67,6 +71,6 @@ featured_papers:
 # _data/software_catalog.yaml. This prevents title, description, and URL drift.
 featured_software_ids:
   - deep_flaim
-  - cedar_ondemand
+  - semantically
   - gosemantically
   - airr_standards

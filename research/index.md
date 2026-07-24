@@ -28,7 +28,7 @@ nav:
     <article class="pillar-card"><i class="fa-solid fa-shield-halved" aria-hidden="true"></i><h3>Trustworthy &amp; Auditable AI</h3><p>Systems whose evidence, limitations, decisions, and human oversight can be examined throughout the AI lifecycle.</p></article>
     <article class="pillar-card"><i class="fa-solid fa-eye" aria-hidden="true"></i><h3>Explainable Clinical AI</h3><p>Models and interfaces designed to help clinicians and other stakeholders understand how recommendations are produced.</p></article>
     <article class="pillar-card"><i class="fa-solid fa-diagram-project" aria-hidden="true"></i><h3>Biomedical Knowledge Engineering</h3><p>Ontologies, linked data, semantic technologies, knowledge graphs, and structured scientific metadata.</p></article>
-    <article class="pillar-card"><i class="fa-solid fa-gauge-high" aria-hidden="true"></i><h3>Benchmarking &amp; Evaluation</h3><p>Frameworks that make biomedical AI and data infrastructure measurable, comparable, and reproducible.</p></article>
+    <article class="pillar-card"><i class="fa-solid fa-gauge-high" aria-hidden="true"></i><h3>Data and Benchmarking</h3><p>Frameworks that make biomedical AI and data infrastructure measurable, comparable, and reproducible.</p></article>
   </div>
 </div>
 
@@ -83,8 +83,8 @@ nav:
 <div class="interior-section benchmark-panel">
   <div class="interior-heading">
     <p class="interior-heading__eyebrow">A defining research pillar</p>
-    <h2>Benchmarking &amp; Evaluation</h2>
-    <p>The lab’s benchmark-oriented portfolio includes two completed works spanning clinical AI readiness and RDF data infrastructure.</p>
+    <h2>Data and Benchmarking</h2>
+    <p>The lab’s benchmark-oriented portfolio includes three completed works spanning clinical AI readiness, synthetic clinical data trustworthiness, and RDF data infrastructure.</p>
   </div>
 
   <div class="benchmark-grid">
@@ -98,11 +98,6 @@ nav:
         <small>{{ benchmark.description }}</small>
       </a>
     {% endfor %}
-  </div>
-
-  <div class="development-note">
-    <i class="fa-solid fa-flask" aria-hidden="true"></i>
-    <div><strong>Benchmarking research in progress</strong><p>The lab continues to expand its benchmarking portfolio across trustworthy clinical AI and biomedical data infrastructure.</p></div>
   </div>
 </div>
 
