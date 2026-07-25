@@ -22,7 +22,6 @@ GEM
     ethon (0.16.0)
       ffi (>= 1.15.0)
     eventmachine (1.2.7)
-    eventmachine (1.2.7-x64-mingw32)
     ffi (1.15.5)
     fiber-annotation (0.2.0)
     fiber-local (1.0.0)
@@ -122,8 +121,6 @@ GEM
       google-protobuf (~> 3.21)
     sass-embedded (1.58.3-x64-mingw-ucrt)
       google-protobuf (~> 3.21)
-    sass-embedded (1.58.3-x64-mingw32)
-      google-protobuf (~> 3.21)
     sass-embedded (1.58.3-x86-linux-gnu)
       google-protobuf (~> 3.21)
     sass-embedded (1.58.3-x86_64-linux-gnu)
@@ -135,7 +132,7 @@ GEM
     typhoeus (1.4.1)
       ethon (>= 0.9.0)
     unicode-display_width (2.4.2)
-    webrick (1.8.1)
+    webrick (1.9.2)
     yell (2.2.2)
     zeitwerk (2.6.13)
 
@@ -146,7 +143,6 @@ PLATFORMS
   universal-darwin-21
   universal-darwin-22
   x64-mingw-ucrt
-  x64-mingw32
   x64-unknown
   x86_64-linux
 
@@ -158,7 +154,7 @@ DEPENDENCIES
   jekyll-redirect-from
   jekyll-sitemap
   jekyll-spaceship
-  webrick (~> 1.7)
+  webrick (~> 1.9)
 
 BUNDLED WITH
    2.5.6
