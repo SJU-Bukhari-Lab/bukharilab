@@ -1,31 +1,73 @@
-<footer class="site-footer" data-dark="true">
+<footer class="site-footer site-footer--polished site-footer--expanded" data-dark="true">
+  <div class="site-footer__accent" aria-hidden="true"></div>
+
   <div class="site-footer__inner">
     <div class="site-footer__brand">
-      <a href="{{ '/' | relative_url }}">{{ site.title }}</a>
-      {% if site.subtitle %}<p>{{ site.subtitle }}</p>{% endif %}
+      <a class="site-footer__logo" href="{{ '/' | relative_url }}" aria-label="Bukhari Lab home">
+        <img src="{{ 'images/brand/bukharilab-logo.png' | relative_url }}" alt="Bukhari Lab">
+      </a>
+      <p>We advance trustworthy artificial intelligence, with Health AI as our primary application domain.</p>
+      <div class="site-footer__focus" aria-label="Research focus">
+        <span>Trustworthy AI</span>
+        <span>Health AI</span>
+        <span>Biomedical Data</span>
+      </div>
     </div>
 
-    <nav class="site-footer__nav" aria-label="Footer navigation">
-      {% assign pages = site.pages | where_exp: "nav_page", "nav_page.nav" | sort: "nav.order" %}
-      {% for nav_page in pages %}
-        {% if nav_page.nav %}
-          <a href="{{ nav_page.dir | relative_url | uri_escape }}">{{ nav_page.title }}</a>
-        {% endif %}
-      {% endfor %}
-    </nav>
+    <div class="site-footer__column">
+      <p class="site-footer__heading">Explore</p>
+      <nav class="site-footer__nav" aria-label="Footer navigation">
+        {% assign pages = site.pages | where_exp: "nav_page", "nav_page.nav" | sort: "nav.order" %}
+        {% for nav_page in pages %}
+          {% if nav_page.nav %}
+            <a href="{{ nav_page.dir | relative_url | uri_escape }}">{{ nav_page.title }}</a>
+          {% endif %}
+        {% endfor %}
+      </nav>
+    </div>
 
-    <div class="site-footer__links" aria-label="External links">
-      {% for link in site.links %}
-        {% assign key = link[0] %}
-        {% assign value = link[1] %}
-        {% include button.html type=key text="" link=value style="bare" %}
-      {% endfor %}
+    <div class="site-footer__column site-footer__column--connect">
+      <p class="site-footer__heading">Connect</p>
+      <div class="site-footer__links" aria-label="External links">
+        {% if site.links.google-scholar %}
+          <a class="site-footer__link" href="https://scholar.google.com/citations?user={{ site.links.google-scholar }}" target="_blank" rel="noopener noreferrer">
+            <i class="fa-solid fa-graduation-cap" aria-hidden="true"></i>
+            <span>Google Scholar</span>
+          </a>
+        {% endif %}
+
+        {% if site.links.github %}
+          <a class="site-footer__link" href="https://github.com/{{ site.links.github }}" target="_blank" rel="noopener noreferrer">
+            <i class="fa-brands fa-github" aria-hidden="true"></i>
+            <span>GitHub</span>
+          </a>
+        {% endif %}
+
+        <a class="site-footer__link" href="{{ '/' | relative_url }}">
+          <i class="fa-solid fa-globe" aria-hidden="true"></i>
+          <span>Website</span>
+        </a>
+
+        {% if site.links.linkedin %}
+          <a class="site-footer__link" href="{{ site.links.linkedin }}" target="_blank" rel="noopener noreferrer">
+            <i class="fa-brands fa-linkedin" aria-hidden="true"></i>
+            <span>LinkedIn</span>
+          </a>
+        {% endif %}
+
+        {% if site.hugging_face_url %}
+          <a class="site-footer__link" href="{{ site.hugging_face_url }}" target="_blank" rel="noopener noreferrer">
+            <img class="site-footer__hugging-face-logo" src="{{ 'images/brand/hugging-face-logo.svg' | relative_url }}" alt="">
+            <span>Hugging Face</span>
+          </a>
+        {% endif %}
+      </div>
     </div>
   </div>
 
   <div class="site-footer__bottom">
     <span>&copy; {{ site.time | date: "%Y" }} {{ site.title }}</span>
-    <span>Built with <a href="https://github.com/greenelab/lab-website-template">Lab Website Template</a></span>
+    <span class="site-footer__bottom-message">Trustworthy AI for health and biomedical applications.</span>
     <label class="theme-control">
       <span>Dark mode</span>
       <input

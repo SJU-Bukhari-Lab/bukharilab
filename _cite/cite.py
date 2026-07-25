@@ -7,6 +7,7 @@ from importlib import import_module
 from pathlib import Path
 from dotenv import load_dotenv
 from util import *
+from citation_integrity import normalize_generated_citation, deduplicate_generated_citations
 
 
 # load environment variables
@@ -167,11 +168,18 @@ for index, source in enumerate(sources):
     if get_safe(citation, "date", ""):
         citation["date"] = format_date(get_safe(citation, "date", ""))
 
+    # Canonicalize, validate, and filter every generated citation.
+    citation = normalize_generated_citation(citation, _id)
+    if citation is None:
+        continue
+
     # add new citation to list
     citations.append(citation)
 
 
 log()
+
+citations = deduplicate_generated_citations(citations)
 
 log("Saving updated citations")
 

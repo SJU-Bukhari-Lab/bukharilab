@@ -1,41 +1,41 @@
 benchmarking:
-  - title: "FHIRTrustBench: A Benchmark for Interoperability-Driven Clinical AI Readiness and Trustworthiness"
-    venue: "medRxiv"
-    year: 2026
-    description: "A benchmark for assessing FHIR-based clinical AI readiness across complementary interoperability and trustworthiness dimensions."
-    link: "https://www.medrxiv.org/content/10.64898/2026.07.08.26357574v1"
-
-  - title: "How Representative Is a SPARQL Benchmark? An Analysis of RDF Triplestore Benchmarks"
-    venue: "The Web Conference"
-    year: 2019
-    description: "A peer-reviewed analysis of SPARQL benchmark representativeness, RDF workloads, and triplestore performance characteristics."
-    link: "https://doi.org/10.1145/3308558.3313556"
-
+- title: 'FHIRTrustBench: A Benchmark for Interoperability-Driven Clinical AI Readiness and Trustworthiness'
+  venue: medRxiv
+  year: 2026
+  description: A benchmark for assessing FHIR-based clinical AI readiness across complementary interoperability and trustworthiness dimensions.
+  link: https://doi.org/10.64898/2026.07.08.26357574
+- title: How Representative Is a SPARQL Benchmark? An Analysis of RDF Triplestore Benchmarks
+  venue: The Web Conference
+  year: 2019
+  description: A peer-reviewed analysis of SPARQL benchmark representativeness, RDF workloads, and triplestore performance characteristics.
+  link: https://doi.org/10.1145/3308558.3313556
+- title: 'SynTrustBench: A Trustworthiness Evidence Standard for Synthetic Clinical Data'
+  venue: Release candidate
+  year: 2026
+  description: A benchmark specification and pilot evidence audit for evaluating trustworthiness claims in synthetic clinical data across fidelity, clinical utility, privacy, equity, and robustness.
+  link: https://github.com/bukharilab/SynTrustBench
 selected:
-  - title: "Graph-Constrained Policy Learning for Extreme Clinical Code Prediction"
-    venue: "arXiv"
-    year: 2026
-    area: "Clinical AI"
-    description: "Models ICD-10-CM prediction as graph-constrained traversal through a pruned code hierarchy."
-    link: "https://arxiv.org/abs/2607.11954"
-
-  - title: "Early Prediction of Multi-Label Care Escalation Triggers in the Intensive Care Unit Using Electronic Health Records"
-    venue: "arXiv"
-    year: 2025
-    area: "Predictive Analytics"
-    description: "Predicts multiple care-escalation triggers using the first 24 hours of ICU electronic health record data."
-    link: "https://arxiv.org/abs/2509.18145"
-
-  - title: "A Machine Learning Framework for Pathway-Driven Therapeutic Target Discovery in Metabolic Disorders"
-    venue: "arXiv"
-    year: 2025
-    area: "Precision Medicine"
-    description: "Combines predictive modeling with pathway mapping to study metabolic-disorder risk and potential therapeutic targets."
-    link: "https://arxiv.org/abs/2509.18140"
-
-  - title: "A Narrative-Driven Computational Framework for Clinician Burnout Surveillance"
-    venue: "FLAIRS"
-    year: 2026
-    area: "Clinical NLP"
-    description: "Uses ICU clinical narratives, lexical stress signals, topic modeling, and workload proxies to support burnout surveillance research."
-    link: "https://journals.flvc.org/FLAIRS/article/view/141553"
+- title: Graph-Constrained Policy Learning for Extreme Clinical Code Prediction
+  venue: arXiv
+  year: 2026
+  area: Clinical AI
+  description: Models ICD-10-CM prediction as graph-constrained traversal through a pruned code hierarchy.
+  link: https://arxiv.org/abs/2607.11954
+- title: Early Prediction of Multi-Label Care Escalation Triggers in the Intensive Care Unit Using Electronic Health Records
+  venue: arXiv
+  year: 2025
+  area: Predictive Analytics
+  description: Predicts multiple care-escalation triggers using the first 24 hours of ICU electronic health record data.
+  link: https://arxiv.org/abs/2509.18145
+- title: A Machine Learning Framework for Pathway-Driven Therapeutic Target Discovery in Metabolic Disorders
+  venue: arXiv
+  year: 2025
+  area: Precision Medicine
+  description: Combines predictive modeling with pathway mapping to study metabolic-disorder risk and potential therapeutic targets.
+  link: https://arxiv.org/abs/2509.18140
+- title: A Narrative-Driven Computational Framework for Clinician Burnout Surveillance
+  venue: FLAIRS
+  year: 2026
+  area: Clinical NLP
+  description: Uses ICU clinical narratives, lexical stress signals, topic modeling, and workload proxies to support burnout surveillance research.
+  link: https://journals.flvc.org/FLAIRS/article/view/141553

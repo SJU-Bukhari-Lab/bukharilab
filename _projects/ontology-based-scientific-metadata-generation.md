@@ -1,7 +1,7 @@
 ---
 title: Ontology-based Scientific Metadata Generation
 permalink: /projects/ontology-based-scientific-metadata-generation/
-image: images/projects/ontology-metadata.png
+image: images/projects/infographics/ontology-metadata-generation-infographic.webp
 infographic: images/projects/infographics/ontology-metadata-generation-infographic.webp
 description: Public biomedical data repositories often provide web-based interfaces to collect experimental metadata. …
 tags:

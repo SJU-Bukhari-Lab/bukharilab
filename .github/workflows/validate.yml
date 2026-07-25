@@ -1,27 +1,27 @@
-name: Build and deploy Jekyll site to GitHub Pages
+name: Validate website
 
 on:
-  push:
+  pull_request:
     branches:
       - main
   workflow_dispatch:
 
 permissions:
   contents: read
-  pages: write
-  id-token: write
 
 concurrency:
-  group: pages
+  group: validate-${{ github.workflow }}-${{ github.ref }}
   cancel-in-progress: true
 
 jobs:
-  build:
+  validate:
     runs-on: ubuntu-latest
 
     steps:
       - name: Checkout
         uses: actions/checkout@v7.0.1
+        with:
+          fetch-depth: 0
 
       - name: Setup Ruby
         uses: ruby/setup-ruby@v1.321.0
@@ -42,8 +42,21 @@ jobs:
             -r _cite/requirements.txt \
             Pillow==11.3.0
 
-      # Publication data is committed to the repository so deployments are
-      # reproducible. Refresh it separately with scripts/refresh_publications.sh.
+      - name: Validate Python scripts
+        run: |
+          python -m py_compile \
+            scripts/audit_faculty_feedback.py \
+            scripts/public_release_audit.py \
+            scripts/refresh_project_images.py \
+            scripts/optimize_built_site.py
+
+      - name: Validate JavaScript syntax
+        run: |
+          find _scripts -name '*.js' -print0 | xargs -0 -n1 node --check
+
+      - name: Verify project image mappings
+        run: python scripts/refresh_project_images.py . --check
+
       - name: Build site
         run: bundle exec jekyll build
 
@@ -51,7 +64,6 @@ jobs:
         run: |
           python scripts/public_release_audit.py .
           python scripts/audit_faculty_feedback.py .
-          python scripts/refresh_project_images.py . --check
 
       - name: Check generated HTML
         run: |
@@ -59,25 +71,12 @@ jobs:
             --disable-external \
             --allow-hash-href
 
-      - name: Optimize generated site
-        run: python scripts/optimize_built_site.py --site-dir _site
-
-      - name: Audit generated public site
-        run: python scripts/public_release_audit.py . --include-built
-
-      - name: Upload artifact
-        uses: actions/upload-pages-artifact@v5.0.0
-        with:
-          path: ./_site
-
-  deploy:
-    environment:
-      name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
-    runs-on: ubuntu-latest
-    needs: build
-
-    steps:
-      - name: Deploy to GitHub Pages
-        id: deployment
-        uses: actions/deploy-pages@v5.0.0
+      - name: Check whitespace errors
+        shell: bash
+        run: |
+          if [[ "${{ github.event_name }}" == "pull_request" ]]; then
+            git fetch origin "${{ github.base_ref }}" --depth=1
+            git diff --check "origin/${{ github.base_ref }}...HEAD"
+          else
+            git diff --check
+          fi

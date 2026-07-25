@@ -10,24 +10,30 @@ nav:
     <div class="home-hero__content">
       <p class="home-hero__eyebrow">Auditability · Explainability · Trustworthiness</p>
       <h1>Advancing Biomedical Data Science through Transparent, Explainable, and Trustworthy AI</h1>
-      <p class="home-hero__formula home-hero__formula--trust" aria-label="Better Health is a function of Trustworthy AI"><strong>BetterHealth = f(TrustWorthyAI)</strong></p>
+      <p class="home-hero__formula home-hero__formula--trust" role="math" aria-label="Better Health is a function of Trustworthy AI">
+        <span class="math-equation" aria-hidden="true">
+          <span class="math-equation__term">BetterHealth</span>
+          <span class="math-equation__operator">=</span>
+          <span class="math-equation__function">f</span><span class="math-equation__paren">(</span><span class="math-equation__term">TrustworthyAI</span><span class="math-equation__paren">)</span>
+        </span>
+      </p>
 
       <div class="home-hero__actions">
         {% include button.html link="research" text="Explore our research" %}
         {% include button.html link="team" text="Meet the team" style="bare" %}
-        {% include button.html link="contact" text="Join us" style="bare" %}
+        <a class="button" data-style="bare" href="https://www.linkedin.com/company/bukharilab" target="_blank" rel="noopener noreferrer">Join us on LinkedIn</a>
       </div>
 
-      <div class="home-hero__funding-row" aria-label="Research funding and fellowship acknowledgments">
-        <span class="home-hero__funding-label">Funding &amp; fellowship support</span>
-        <a class="home-hero__funder" href="https://www.stjohns.edu/news-media/news/2024-09-17/st-johns-professor-awarded-grant-study-use-ai-medical-coding" target="_blank" rel="noopener noreferrer">
-          <span class="home-hero__funder-logo"><img src="{{ 'images/funders/nsf-logo.png' | relative_url }}" alt="National Science Foundation logo"></span>
-          <span>National Science Foundation</span>
-        </a>
-        <a class="home-hero__funder" href="https://www.stjohns.edu/academics/faculty/syed-ahmad-chan-bukhari" target="_blank" rel="noopener noreferrer">
-          <span class="home-hero__funder-logo home-hero__funder-logo--nih"><img src="{{ 'images/funders/nih-logo.png' | relative_url }}" alt="National Institutes of Health logo"></span>
-          <span>NIH–NCBI Fellowship</span>
-        </a>
+      <div class="home-hero__funding-row home-hero__funding-row--logos" aria-label="Funding">
+        <span class="home-hero__funding-label">Our work is proudly funded by</span>
+        <div class="home-hero__funding-logos" aria-label="Supported by the National Science Foundation and National Institutes of Health">
+          <span class="home-hero__funder home-hero__funder--logo-only" title="National Science Foundation">
+            <span class="home-hero__funder-logo"><img src="{{ 'images/funders/nsf-logo.svg' | relative_url }}" alt="National Science Foundation logo"></span>
+          </span>
+          <span class="home-hero__funder home-hero__funder--logo-only home-hero__funder--nih" title="National Institutes of Health">
+            <span class="home-hero__funder-logo home-hero__funder-logo--nih"><img src="{{ 'images/funders/nih-logo.png' | relative_url }}" alt="National Institutes of Health logo"></span>
+          </span>
+        </div>
       </div>
     </div>
   </div>
@@ -54,14 +60,13 @@ nav:
     {% for project in site.data.homepage.active_projects %}
       {% assign project_url = project.link %}
       {% unless project.external %}{% assign project_url = project.link | relative_url %}{% endunless %}
-      <article class="trust-project-card{% if project.featured %} trust-project-card--featured{% endif %}">
+      <article class="trust-project-card">
         <a href="{{ project_url }}"{% if project.external %} target="_blank" rel="noopener noreferrer"{% endif %}>
-          {% if project.featured %}<span class="trust-card-badge">Featured</span>{% endif %}
-          <span class="trust-project-card__icon" aria-hidden="true"><i class="{{ project.icon }}"></i></span>
+                    <span class="trust-project-card__icon" aria-hidden="true"><i class="{{ project.icon }}"></i></span>
           <span class="trust-project-card__label">{{ project.label }}</span>
           <h3>{{ project.title }}</h3>
           <p>{{ project.description }}</p>
-          <span class="trust-card-link">Explore <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></span>
+          <span class="trust-card-link">Explore portfolio <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></span>
         </a>
       </article>
     {% endfor %}
@@ -73,8 +78,11 @@ nav:
 <section class="homepage-content-block trust-benchmark" aria-labelledby="benchmark-heading">
   <div class="trust-benchmark__intro">
     <p class="trust-section-heading__eyebrow">A defining research pillar</p>
-    <h2 id="benchmark-heading">Benchmarking &amp; Evaluation</h2>
-    <p>We develop rigorous evaluation frameworks that make biomedical AI and data infrastructure more measurable, comparable, auditable, and trustworthy.</p>
+    <h2 id="benchmark-heading">Data and Benchmarking</h2>
+    <p>We develop rigorous data resources and benchmarking frameworks that make biomedical AI and data infrastructure more measurable, comparable, auditable, and trustworthy.</p>
+    {% if site.data.homepage.benchmarking_note %}
+      <p class="trust-benchmark__note"><i class="fa-solid fa-flask" aria-hidden="true"></i>{{ site.data.homepage.benchmarking_note }}</p>
+    {% endif %}
   </div>
 
   <div class="trust-benchmark__grid">
@@ -101,7 +109,7 @@ nav:
     <div>
       <p class="trust-section-heading__eyebrow">Selected scholarship</p>
       <h2 id="featured-papers-heading">Featured Papers</h2>
-      <p>Recent work spanning trustworthy clinical AI, interoperability, biomedical knowledge engineering, and rigorous evaluation.</p>
+      <p>A balanced selection of highly cited scholarship, important data and resource papers, and recent work that represents the lab's established impact and current research direction.</p>
     </div>
     {% include button.html link="papers" text="View all papers" style="bare" %}
   </div>
@@ -134,19 +142,28 @@ nav:
   </div>
 
   <div class="trust-resource-grid">
-    {% for resource in site.data.homepage.software_resources %}
+    {% for resource_id in site.data.homepage.featured_software_ids %}
+      {% assign resource = site.data.software_catalog.featured | where: "id", resource_id | first %}
+      {% if resource %}
       <article class="trust-resource-card{% if resource.featured %} trust-resource-card--featured{% endif %}">
-        <a href="{{ resource.link }}" target="_blank" rel="noopener noreferrer">
+        {% capture resource_content %}
           {% if resource.featured %}<span class="trust-card-badge">Highlighted</span>{% endif %}
           <span class="trust-resource-card__icon" aria-hidden="true"><i class="{{ resource.icon }}"></i></span>
           <div>
-            <p class="trust-resource-card__type">{{ resource.type }}</p>
+            <p class="trust-resource-card__type">{{ resource.status }}</p>
             <h3>{{ resource.title }}</h3>
-            <p>{{ resource.description }}</p>
-            <span class="trust-card-link">View resource <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></span>
+            {% if resource.description %}<p>{{ resource.description }}</p>{% endif %}
+            {% if resource.link %}<span class="trust-card-link">View resource <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></span>{% endif %}
           </div>
-        </a>
+        {% endcapture %}
+
+        {% if resource.link %}
+          <a href="{{ resource.link }}" target="_blank" rel="noopener noreferrer">{{ resource_content }}</a>
+        {% else %}
+          <div class="trust-resource-card__body">{{ resource_content }}</div>
+        {% endif %}
       </article>
+          {% endif %}
     {% endfor %}
   </div>
 </section>

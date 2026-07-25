@@ -1,14 +1,20 @@
-/*
-  for site search component. searches site/domain via google.
-*/
-
-{
-  // when user submits site search form/box
+/* Site search component. Searches the current domain through Google. */
+(() => {
   window.onSiteSearchSubmit = (event) => {
     event.preventDefault();
-    const google = "https://www.google.com/search?q=site:";
-    const site = window.location.origin;
-    const query = event.target.elements.query.value;
-    window.location = google + site + " " + query;
+
+    const queryInput = event.currentTarget?.elements?.query;
+    const query = queryInput?.value?.trim();
+
+    if (!query) {
+      queryInput?.focus();
+      return;
+    }
+
+    const params = new URLSearchParams({
+      q: `site:${window.location.hostname} ${query}`,
+    });
+
+    window.location.assign(`https://www.google.com/search?${params.toString()}`);
   };
-}
+})();

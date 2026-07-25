@@ -1,7 +1,7 @@
 ---
 title: 'LDA–GA–SVM: improved hepatocellular carcinoma prediction through dimensionality reduction and genetically optimized support vector machine'
 permalink: /projects/lda-ga-svm-improved-hepatocellular-carcinoma-prediction-through-dimensionality-reduction-and-genetically-optimized-support-vector-machine/
-image: images/photo.jpg
+image: images/projects/infographics/lda-ga-svm-infographic.webp
 infographic: images/projects/infographics/lda-ga-svm-infographic.webp
 description: Hepatocellular carcinoma (HCC) is a common type of liver cancer worldwide. …
 tags:
