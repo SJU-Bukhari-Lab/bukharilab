@@ -31,20 +31,20 @@ PAPER_TITLES = [
 ]
 
 FEATURED_SOFTWARE_IDS = [
-    "deep_flaim",
+    "mediloom",
     "semantically",
     "gosemantically",
     "airr_standards",
 ]
 
 EXPECTED_SOFTWARE = {
-    "deep_flaim": {
-        "title": "Deep-FLAIM",
-        "link": "https://github.com/bukharilab/deepflaim",
+    "mediloom": {
+        "title": "MediLoom",
+        "link": "https://github.com/bukharilab/MediLoom",
     },
     "semantically": {
         "title": "Semantically",
-        "link": "https://github.com/bukharilab/Semantically",
+        "link": "https://ceur-ws.org/Vol-2980/paper367.pdf",
     },
     "gosemantically": {
         "title": "goSemantically",
@@ -244,7 +244,7 @@ def main() -> int:
     require("target=\"_blank\"" not in website_anchor, "Internal Website link opens a new tab.", errors)
     for label in ("Google Scholar", "GitHub", "Website", "LinkedIn", "Hugging Face"):
         require(label in footer, f"Footer link is missing: {label}", errors)
-    require("https://huggingface.co/bukharilab" in config_text, "Hugging Face URL is missing.", errors)
+    require("https://huggingface.co/BukhariLab" in config_text, "Hugging Face URL is missing.", errors)
     require("mathjax@4.1.3/tex-mml-chtml.js" in config_text, "MathJax is not pinned to version 4.1.3.", errors)
 
     require("rel=\"canonical\"" in meta, "Canonical URL metadata is missing.", errors)

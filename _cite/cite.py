@@ -7,6 +7,7 @@ from importlib import import_module
 from pathlib import Path
 from dotenv import load_dotenv
 from util import *
+from citation_integrity import normalize_generated_citation, deduplicate_generated_citations
 
 
 # load environment variables
@@ -167,20 +168,9 @@ for index, source in enumerate(sources):
     if get_safe(citation, "date", ""):
         citation["date"] = format_date(get_safe(citation, "date", ""))
 
-    # Normalize and validate every generated citation before saving.
-    normalized_id = _id.lower()
-    if normalized_id in {"doi:10.32473/flairs.36"}:
-        continue
-
-    link = get_safe(citation, "link", "")
-    if isinstance(link, str) and link:
-        citation["link"] = link.replace(
-            "http://www.scopus.com/",
-            "https://www.scopus.com/",
-        )
-
-    title = str(get_safe(citation, "title", "")).strip()
-    if not title:
+    # Canonicalize, validate, and filter every generated citation.
+    citation = normalize_generated_citation(citation, _id)
+    if citation is None:
         continue
 
     # add new citation to list
@@ -188,6 +178,8 @@ for index, source in enumerate(sources):
 
 
 log()
+
+citations = deduplicate_generated_citations(citations)
 
 log("Saving updated citations")
 

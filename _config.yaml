@@ -1,4 +1,3 @@
-# site properties and page defaults
 title: Bukhari Lab
 subtitle: Biomedical Data Science & Healthcare AI
 description: Advancing Biomedical Data Science through Transparent, Explainable, and Trustworthy AI.
@@ -6,93 +5,61 @@ header: images/brand/nyc-banner.jpg
 footer: images/brand/nyc-banner.jpg
 proofer: false
 url: https://bukharilab.org
-baseurl: ""
-hugging_face_url: https://huggingface.co/bukharilab
-
-# site social media and other links
+baseurl: ''
+hugging_face_url: https://huggingface.co/BukhariLab
 links:
-  # email: contact@your-lab.com
-  # orcid: 0000-0001-8713-9213
   google-scholar: JhWJ5PEAAAAJ
   github: bukharilab
   website: https://bukharilab.org
   linkedin: https://www.linkedin.com/company/bukharilab
-  # twitter: YourLabHandle
-  # youtube: YourLabChannel
-
-### jekyll settings
-
-# front matter defaults
 defaults:
-  # all markdown files
-  - scope:
-      path: ""
-    values:
-      layout: default
-  # markdown files in /_members
-  - scope:
-      type: "members"
-    values:
-      layout: member
-  # markdown files in /_projects
-  - scope:
-      type: "projects"
-    values:
-      layout: project
-  # markdown files in /_posts
-  - scope:
-      type: "posts"
-    values:
-      layout: post
-
+- scope:
+    path: ''
+  values:
+    layout: default
+- scope:
+    type: members
+  values:
+    layout: member
+- scope:
+    type: projects
+  values:
+    layout: project
+- scope:
+    type: posts
+  values:
+    layout: post
 collections:
-  # generate page for each member
   members:
     output: true
-  # generate page for each project
   projects:
     output: true
-  # generate page for each post
   posts:
     output: true
-
-# jekyll plugins
 plugins:
-  - jekyll-spaceship
-  - jekyll-sitemap
-  - jekyll-redirect-from
-  - jekyll-feed
-  - jekyll-last-modified-at
-
-# code block syntax highlighting
+- jekyll-spaceship
+- jekyll-sitemap
+- jekyll-redirect-from
+- jekyll-feed
+- jekyll-last-modified-at
 highlighter: rouge
-
-# jekyll theme
 theme: null
-
-# sass settings
 sass:
   sass_dir: _styles
-
-# force jekyll to include certain files/folders
 include:
-  - _styles
-  - _scripts
-
-# force jekyll to exclude certain files/folders
+- _styles
+- _scripts
 exclude:
-  - "*-backup-*"
-  - "**/*-backup-*"
-  - README.md
-  - LICENSE.md
-  - _site
-  - vendor
-  - .jekyll-cache
-  - .bundle
-  - .sass-cache
-
-# configure jekyll spaceship
+- '*-backup-*'
+- '**/*-backup-*'
+- README.md
+- LICENSE.md
+- _site
+- vendor
+- .jekyll-cache
+- .bundle
+- .sass-cache
 jekyll-spaceship:
   mathjax-processor:
     src:
-      - https://cdn.jsdelivr.net/npm/mathjax@4.1.3/tex-mml-chtml.js
+    - https://cdn.jsdelivr.net/npm/mathjax@4.1.3/tex-mml-chtml.js

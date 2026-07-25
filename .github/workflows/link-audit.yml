@@ -1,0 +1,78 @@
+name: Link and content audit
+
+on:
+  pull_request:
+    branches:
+      - main
+  workflow_dispatch:
+  schedule:
+    - cron: "17 13 * * 1"
+
+permissions:
+  contents: read
+
+concurrency:
+  group: link-audit-${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  audit:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Ruby
+        uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: "3.2"
+          bundler-cache: true
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+          cache-dependency-path: _cite/requirements.txt
+
+      - name: Install Python dependencies
+        run: |
+          python -m pip install --disable-pip-version-check \
+            -r _cite/requirements.txt \
+            certifi \
+            Pillow==11.3.0
+
+      - name: Compile audit scripts
+        run: |
+          python -m py_compile \
+            _cite/cite.py \
+            _cite/citation_integrity.py \
+            scripts/audit_content_integrity.py \
+            scripts/audit_external_links.py
+
+      - name: Audit structured content
+        run: python scripts/audit_content_integrity.py .
+
+      - name: Build site
+        run: bundle exec jekyll build
+
+      - name: Check internal links and assets
+        run: |
+          bundle exec htmlproofer ./_site \
+            --disable-external \
+            --allow-hash-href
+
+      - name: Check every rendered external link
+        run: |
+          python scripts/audit_external_links.py ./_site \
+            --timeout 15 \
+            --retries 2 \
+            --workers 6
+
+      - name: Upload external-link report
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: external-link-report
+          path: _site/external-link-report.json
+          if-no-files-found: ignore

@@ -1,76 +1,63 @@
 active_projects:
-  - title: "Neuro-Symbolic AI for Drug Repurposing"
-    label: "Drug Repurposing AI"
-    description: "This NIH-funded project develops hybrid neuro-symbolic AI methods to identify and evaluate potential therapeutic uses of existing drugs. It combines biomedical knowledge, clinical evidence, and machine learning to support more explainable and reliable drug-repurposing discoveries."
-    icon: "fa-solid fa-capsules"
-    link: "research"
-    external: false
-
-  - title: "Narrative-Driven AI for Clinician Burnout Surveillance"
-    label: "Clinician Well-Being"
-    description: "This project investigates how clinical narratives and healthcare data can reveal early signals associated with clinician burnout. The goal is to develop responsible and interpretable AI methods that support organizational awareness and timely intervention."
-    icon: "fa-solid fa-user-doctor"
-    link: "research"
-    external: false
-
-  - title: "Trustworthy Algorithms for Extreme Multi-Label Medical Coding"
-    label: "Medical Coding"
-    description: "This project develops trustworthy and hierarchy-aware algorithms for assigning medical codes from large and complex coding systems. The work focuses on extreme multi-label classification, explainability, structural validity, and improved performance for rare clinical codes."
-    icon: "fa-solid fa-code"
-    link: "research"
-    external: false
-
-  - title: "A Socio-Technical Approach to Biomedical Content Authoring and Publishing"
-    label: "Biomedical Publishing"
-    description: "This project explores how researchers, domain experts, semantic technologies, and intelligent systems can work together to improve biomedical content authoring and publishing. The goal is to make scientific content more structured, interoperable, reusable, and accessible to both humans and machines."
-    icon: "fa-solid fa-book-open-reader"
-    link: "research"
-    external: false
-
+- title: Neuro-Symbolic AI for Drug Repurposing
+  label: Drug Repurposing AI
+  description: This NIH-funded project develops hybrid neuro-symbolic AI methods to identify and evaluate potential therapeutic uses of existing drugs. It combines biomedical knowledge, clinical evidence, and machine learning to support more explainable and reliable drug-repurposing discoveries.
+  icon: fa-solid fa-capsules
+  link: research
+  external: false
+- title: Narrative-Driven AI for Clinician Burnout Surveillance
+  label: Clinician Well-Being
+  description: This project investigates how clinical narratives and healthcare data can reveal early signals associated with clinician burnout. The goal is to develop responsible and interpretable AI methods that support organizational awareness and timely intervention.
+  icon: fa-solid fa-user-doctor
+  link: https://github.com/bukharilab/BurnoutSurveillanceAI
+  external: true
+- title: Trustworthy Algorithms for Extreme Multi-Label Medical Coding
+  label: Medical Coding
+  description: This project develops trustworthy and hierarchy-aware algorithms for assigning medical codes from large and complex coding systems. The work focuses on extreme multi-label classification, explainability, structural validity, and improved performance for rare clinical codes.
+  icon: fa-solid fa-code
+  link: https://arxiv.org/abs/2607.11954
+  external: true
+- title: A Socio-Technical Approach to Biomedical Content Authoring and Publishing
+  label: Biomedical Publishing
+  description: This project explores how researchers, domain experts, semantic technologies, and intelligent systems can work together to improve biomedical content authoring and publishing. The goal is to make scientific content more structured, interoperable, reusable, and accessible to both humans and machines.
+  icon: fa-solid fa-book-open-reader
+  link: /projects/our-socio-technical-approach-for-biomedical-content-authoring-and-structured-web-publishing/
+  external: false
 benchmarking:
-  - title: "FHIRTrustBench"
-    status: "Benchmark preprint · 2026"
-    description: "FHIR-based clinical AI readiness, interoperability, and trustworthiness."
-    link: "https://www.medrxiv.org/content/10.64898/2026.07.08.26357574v1"
-    external: true
-
-  - title: "SPARQL Benchmark Analysis"
-    status: "Peer-reviewed benchmark study · 2019"
-    description: "Representativeness and performance characteristics of RDF triplestore benchmarks."
-    link: "/projects/how-representative-is-a-sparql-benchmark-an-analysis-of-rdf-triplestore-benchmarks/"
-    external: false
-
-  - title: "SynTrustBench"
-    status: "Release candidate · 2026"
-    description: "A trustworthiness evidence standard for synthetic clinical data that evaluates source-linked evidence across fidelity, clinical utility, privacy, equity, and robustness."
-    link: "https://github.com/bukharilab/SynTrustBench"
-    external: true
-
+- title: FHIRTrustBench
+  status: Benchmark preprint · 2026
+  description: FHIR-based clinical AI readiness, interoperability, and trustworthiness.
+  link: https://doi.org/10.64898/2026.07.08.26357574
+  external: true
+- title: SPARQL Benchmark Analysis
+  status: Peer-reviewed benchmark study · 2019
+  description: Representativeness and performance characteristics of RDF triplestore benchmarks.
+  link: /projects/how-representative-is-a-sparql-benchmark-an-analysis-of-rdf-triplestore-benchmarks/
+  external: false
+- title: SynTrustBench
+  status: Release candidate · 2026
+  description: A trustworthiness evidence standard for synthetic clinical data that evaluates source-linked evidence across fidelity, clinical utility, privacy, equity, and robustness.
+  link: https://github.com/bukharilab/SynTrustBench
+  external: true
 featured_papers:
-  - title: "Fish-Pak: Fish species dataset from Pakistan for visual features based classification"
-    venue: "Highly cited data paper · Data in Brief · 2019"
-    description: "A reusable image dataset of six fish species developed for visual-feature-based classification and recognition research."
-    link: "https://doi.org/10.1016/j.dib.2019.104565"
-
-  - title: "Adaptive Immune Receptor Repertoire Community recommendations for sharing immune-repertoire sequencing data"
-    venue: "Highly cited paper · Nature Immunology · 2017"
-    description: "Community recommendations for reporting and sharing adaptive immune receptor repertoire sequencing data."
-    link: "https://doi.org/10.1038/ni.3873"
-
-  - title: "Knowledge Graph Based Trustworthy Medical Code Recommendations"
-    venue: "Important knowledge-resource paper · Medical coding"
-    description: "A trustworthy medical-code recommendation approach grounded in biomedical knowledge graphs."
-    link: "https://www.scitepress.org/Link.aspx?doi=10.5220/0011925700003414"
-
-  - title: "FHIRTrustBench: A Benchmark for Interoperability-Driven Clinical AI Readiness and Trustworthiness"
-    venue: "Selected recent paper · 2026"
-    description: "A multidimensional benchmark for evaluating the readiness, interoperability, and trustworthiness of FHIR-based clinical AI systems."
-    link: "https://www.medrxiv.org/content/10.64898/2026.07.08.26357574v1"
-
-# Homepage software cards are selected by canonical IDs from
-# _data/software_catalog.yaml. This prevents title, description, and URL drift.
+- title: 'Fish-Pak: Fish species dataset from Pakistan for visual features based classification'
+  venue: Highly cited data paper · Data in Brief · 2019
+  description: A reusable image dataset of six fish species developed for visual-feature-based classification and recognition research.
+  link: https://doi.org/10.1016/j.dib.2019.104565
+- title: Adaptive Immune Receptor Repertoire Community recommendations for sharing immune-repertoire sequencing data
+  venue: Highly cited paper · Nature Immunology · 2017
+  description: Community recommendations for reporting and sharing adaptive immune receptor repertoire sequencing data.
+  link: https://doi.org/10.1038/ni.3873
+- title: Knowledge Graph Based Trustworthy Medical Code Recommendations
+  venue: Important knowledge-resource paper · Medical coding
+  description: A trustworthy medical-code recommendation approach grounded in biomedical knowledge graphs.
+  link: https://doi.org/10.5220/0011925700003414
+- title: 'FHIRTrustBench: A Benchmark for Interoperability-Driven Clinical AI Readiness and Trustworthiness'
+  venue: Selected recent paper · 2026
+  description: A multidimensional benchmark for evaluating the readiness, interoperability, and trustworthiness of FHIR-based clinical AI systems.
+  link: https://doi.org/10.64898/2026.07.08.26357574
 featured_software_ids:
-  - deep_flaim
-  - semantically
-  - gosemantically
-  - airr_standards
+- mediloom
+- semantically
+- gosemantically
+- airr_standards

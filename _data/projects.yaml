@@ -1,6 +1,3 @@
-# Bukhari Lab research projects.
-# Each project has an internal detail page and a verified public publication link.
-
 - title: Our Socio-technical Approach for Biomedical Content Authoring and Structured Web Publishing
   subtitle: NSF Award 2101350
   group: featured
@@ -101,7 +98,7 @@
   - medical imaging
   detail: /projects/classification-of-positive-covid-19-ct-scans-using-deep-learning/
   publication: https://doi.org/10.32604/cmc.2021.013191
-- title: A Deep Learning Approach for COVID-19 8 Viral Pneumonia Screening with X-ray Images
+- title: A Deep Learning Approach for COVID-19 & Viral Pneumonia Screening with X-ray Images
   image: images/projects/infographics/covid-xray-screening-infographic.webp
   link: https://doi.org/10.1145/3431804
   description: Beginning in December 2019, the spread of the novel Coronavirus (COVID-19) has exposed weaknesses in healthcare systems across the world. …

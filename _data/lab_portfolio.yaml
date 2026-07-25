@@ -1,108 +1,59 @@
 documented:
-  - slug: "cedar-ondemand"
-    title: "CEDAR OnDemand"
-    category: "Ontology-Based Scientific Metadata"
-    status: "Published Software"
-    description: "A browser extension that enables ontology-based scientific metadata entry through existing web repository submission forms."
-    icon: "fa-solid fa-wand-magic-sparkles"
-    link: "https://github.com/bukharilab/CEDAROnDemand"
-    software: true
-    featured: true
-
-  - slug: "mediloom"
-    title: "MediLoom"
-    category: "Biomedical Knowledge Graphs"
-    status: "Research Platform"
-    description: "Automated biomedical knowledge graph generation and enrichment using biomedical ontologies and embedding-based inference."
-    icon: "fa-solid fa-diagram-project"
-    link: "https://github.com/bukharilab/MediLoom"
-    software: true
-
-  - slug: "burnout-surveillance"
-    title: "Burnout Surveillance AI"
-    category: "Clinical Natural Language Processing"
-    status: "Research Project"
-    description: "A narrative-based natural language processing and machine learning framework for clinician burnout surveillance."
-    icon: "fa-solid fa-file-waveform"
-    link: "https://github.com/bukharilab/BurnoutSurveillanceAI"
-    software: true
-
-  - slug: "semantically"
-    title: "Semantically"
-    category: "Medical Coding and Semantic Content"
-    status: "Research Platform"
-    description: "A platform supporting trustworthy medical-code recommendation and biomedical semantic content authoring."
-    icon: "fa-solid fa-code-branch"
-    link: "https://github.com/bukharilab/Semantically"
-    software: true
-
-  - slug: "care-escalators"
-    title: "Care Escalators"
-    category: "Predictive Clinical AI"
-    status: "Research Initiative"
-    description: "Research on early prediction of respiratory, hemodynamic, renal, and neurological care-escalation triggers using electronic health records."
-    icon: "fa-solid fa-arrow-trend-up"
-    link: "https://arxiv.org/abs/2509.18145"
-    software: false
-
-  - slug: "kg-4bio"
-    title: "KG-4Bio"
-    category: "Biomedical Knowledge Representation"
-    status: "Research Platform"
-    description: "Knowledge graph-based recommendation infrastructure for biomedical semantic content authoring."
-    icon: "fa-solid fa-network-wired"
-    link: "https://github.com/bukharilab/KG4BioMedCntnAuthoring"
-    software: true
-
-  - slug: "deep-flaim"
-    title: "Deep-FLAIM"
-    category: "Critical Care Prediction"
-    status: "Research Project"
-    description: "Deep neural network research for early mortality prediction in trauma patients admitted to intensive care."
-    icon: "fa-solid fa-heart-pulse"
-    link: "https://github.com/bukharilab/deepflaim"
-    software: true
-
-  - slug: "airr-standards"
-    title: "AIRR Standards"
-    category: "Biomedical Data Standards"
-    status: "Standards Resource"
-    description: "MiAIRR standards resources supporting reproducible reporting, curation, and sharing of adaptive immune receptor repertoire data."
-    icon: "fa-solid fa-scale-balanced"
-    link: "https://github.com/bukharilab/airr-standards"
-    software: true
-
-additional_repositories:
-  - slug: "linked-im"
-    title: "Linked IM"
-    category: "Research Repository"
-    status: "Lab Project"
-    icon: "fa-solid fa-link"
-    link: "https://github.com/bukharilab/linkedimm"
-
-  - slug: "disease-prediction-model"
-    title: "Disease Prediction Model"
-    category: "Predictive Modeling"
-    status: "Lab Project"
-    icon: "fa-solid fa-chart-line"
-    link: "https://github.com/bukharilab/diseasepredictionmodels"
-
-  - slug: "lyme-detector"
-    title: "Lyme Detector"
-    category: "Disease Detection"
-    status: "Lab Project"
-    icon: "fa-solid fa-microscope"
-    link: "https://github.com/bukharilab/LymeDetector"
-
-additional_initiatives:
-  - slug: "ghost-semanticly"
-    title: "Ghost Semanticly"
-    category: "Semantic Technologies"
-    status: "Research Initiative"
-    icon: "fa-solid fa-ghost"
-
-  - slug: "anaplasia"
-    title: "Anaplasia"
-    category: "Biomedical AI"
-    status: "Research Initiative"
-    icon: "fa-solid fa-dna"
+- slug: mediloom
+  title: MediLoom
+  category: Biomedical Knowledge Graphs
+  status: Research Platform
+  description: Automated biomedical knowledge graph generation and enrichment using biomedical ontologies and embedding-based inference.
+  icon: fa-solid fa-diagram-project
+  link: https://github.com/bukharilab/MediLoom
+  software: true
+- slug: burnout-surveillance
+  title: Burnout Surveillance AI
+  category: Clinical Natural Language Processing
+  status: Research Project
+  description: A narrative-based natural language processing and machine learning framework for clinician burnout surveillance.
+  icon: fa-solid fa-file-waveform
+  link: https://github.com/bukharilab/BurnoutSurveillanceAI
+  software: true
+- slug: semantically
+  title: Semantically
+  category: Semantic Biomedical Publishing
+  status: Published Open-Source Framework
+  description: An open-source framework for structured, ontology-enriched biomedical content authoring and Web publishing.
+  icon: fa-solid fa-code-branch
+  link: https://ceur-ws.org/Vol-2980/paper367.pdf
+  software: false
+- slug: care-escalators
+  title: Care Escalators
+  category: Predictive Clinical AI
+  status: Research Initiative
+  description: Research on early prediction of respiratory, hemodynamic, renal, and neurological care-escalation triggers using electronic health records.
+  icon: fa-solid fa-arrow-trend-up
+  link: https://arxiv.org/abs/2509.18145
+  software: false
+- slug: kg-4bio
+  title: KG-4Bio
+  category: Biomedical Knowledge Representation
+  status: Research Platform
+  description: Knowledge graph-based recommendation infrastructure for biomedical semantic content authoring.
+  icon: fa-solid fa-network-wired
+  link: https://github.com/bukharilab/KG4BioMedCntnAuthoring
+  software: true
+- slug: deep-flaim
+  title: Deep-FLAIM
+  category: Critical Care Prediction
+  status: Published Research Model
+  description: A statistically rigorous deep neural network approach for mortality prediction in trauma patients admitted to intensive care.
+  icon: fa-solid fa-heart-pulse
+  link: https://pubmed.ncbi.nlm.nih.gov/32773672/
+  software: false
+- slug: airr-standards
+  title: AIRR Standards
+  category: Biomedical Data Standards
+  status: Standards Resource
+  description: MiAIRR standards resources supporting reproducible reporting, curation, and sharing of adaptive immune receptor repertoire data.
+  icon: fa-solid fa-scale-balanced
+  link: https://github.com/bukharilab/airr-standards
+  software: true
+additional_repositories: []
+additional_initiatives: []
