@@ -1,7 +1,8 @@
 {% assign member = include.member %}
 {% assign member_url = member.url | relative_url | uri_escape %}
 
-<article class="team-profile{% if include.variant %} team-profile--{{ include.variant }}{% endif %}">
+{% if include.variant == "pi" %}
+<article class="team-profile team-profile--pi">
   <a class="team-profile__media" href="{{ member_url }}" aria-label="View {{ member.name | xml_escape }}'s profile">
     {% if member.image %}
       <img
@@ -33,50 +34,35 @@
     </div>
 
     <div class="team-profile__actions">
-      {% if member.links %}
-        <nav class="team-profile__links" aria-label="{{ member.name | xml_escape }} links">
-          {% for link in member.links %}
-            {% assign link_type = link[0] %}
-            {% assign link_value = link[1] %}
-            {% assign link_url = link_value %}
-            {% assign link_label = link_type | replace: "-", " " | capitalize %}
-
-            {% case link_type %}
-              {% when "linkedin" %}
-                {% assign link_label = "LinkedIn" %}
-                {% unless link_value contains "://" %}
-                  {% assign link_url = "https://www.linkedin.com/in/" | append: link_value %}
-                {% endunless %}
-              {% when "google-scholar" %}
-                {% assign link_label = "Google Scholar" %}
-                {% unless link_value contains "://" %}
-                  {% assign link_url = "https://scholar.google.com/citations?user=" | append: link_value %}
-                {% endunless %}
-              {% when "orcid" %}
-                {% assign link_label = "ORCID" %}
-                {% unless link_value contains "://" %}
-                  {% assign link_url = "https://orcid.org/" | append: link_value %}
-                {% endunless %}
-              {% when "github" %}
-                {% assign link_label = "GitHub" %}
-                {% unless link_value contains "://" %}
-                  {% assign link_url = "https://github.com/" | append: link_value %}
-                {% endunless %}
-              {% when "website" %}
-                {% assign link_label = "Website" %}
-              {% when "email" %}
-                {% assign link_label = "Email" %}
-                {% unless link_value contains "mailto:" %}
-                  {% assign link_url = "mailto:" | append: link_value %}
-                {% endunless %}
-            {% endcase %}
-
-            <a href="{{ link_url }}"{% unless link_type == "email" %} target="_blank" rel="noopener noreferrer"{% endunless %}>{{ link_label }}</a>
-          {% endfor %}
-        </nav>
-      {% endif %}
-
+      {% include team-links.html member=member %}
       <a class="team-profile__profile-link" href="{{ member_url }}">View profile</a>
     </div>
   </div>
 </article>
+
+{% else %}
+<details class="team-profile{% if include.variant %} team-profile--{{ include.variant }}{% endif %}">
+  <summary class="team-profile__summary">
+    {% if member.name %}
+      <span class="team-profile__name">{{ member.name }}</span>
+    {% endif %}
+    {% if member.description %}
+      <span class="team-profile__role">{{ member.description }}</span>
+    {% endif %}
+    <span class="team-profile__toggle" aria-hidden="true"></span>
+  </summary>
+
+  <div class="team-profile__body">
+    {% if member.affiliation %}
+      <p class="team-profile__affiliation">{{ member.affiliation }}</p>
+    {% endif %}
+
+    <div class="team-profile__actions">
+      {% unless include.variant == "current" %}
+        {% include team-links.html member=member %}
+      {% endunless %}
+      <a class="team-profile__profile-link" href="{{ member_url }}">View profile</a>
+    </div>
+  </div>
+</details>
+{% endif %}

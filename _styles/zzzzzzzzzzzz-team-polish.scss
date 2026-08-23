@@ -217,25 +217,16 @@
   font-size: 1.1rem;
 }
 
-/* Current members: three evenly sized profiles. */
+/* Current members: wide dropdown rows. */
 .page-team .team-grid {
-  display: grid;
+  display: flex;
   min-width: 0;
-  gap: 24px;
-}
-
-.page-team .team-grid--current {
-  grid-template-columns: repeat(3, minmax(0, 1fr));
+  flex-direction: column;
+  gap: 14px;
 }
 
 .page-team .team-profile--current {
-  display: flex;
-  min-height: 100%;
-  flex-direction: column;
-}
-
-.page-team .team-profile--current .team-profile__media {
-  aspect-ratio: 1 / 1;
+  display: block;
 }
 
 /* Previous members: compact four-column alumni directory. */
@@ -291,45 +282,104 @@
   transform: translate(-50%, -50%) rotate(0deg);
 }
 
-.page-team .team-grid--previous {
-  grid-template-columns: repeat(4, minmax(0, 1fr));
-}
-
 .page-team .team-profile--previous {
-  display: flex;
-  flex-direction: column;
+  display: block;
   box-shadow: none;
 }
 
-.page-team .team-profile--previous .team-profile__media {
-  aspect-ratio: 1 / 1;
-}
-
-.page-team .team-profile--previous .team-profile__body {
-  padding: 18px;
-}
-
 .page-team .team-profile--previous .team-profile__name {
-  font-size: 1.1rem !important;
+  font-size: 1.05rem !important;
 }
 
 .page-team .team-profile--previous .team-profile__role,
 .page-team .team-profile--previous .team-profile__affiliation {
-  font-size: 0.88rem;
+  font-size: 0.85rem;
 }
 
-.page-team .team-profile--previous .team-profile__actions {
-  margin-top: 14px;
+/* Wide dropdown rows shared by current & previous members. */
+.page-team .team-profile--current,
+.page-team .team-profile--previous {
+  border-radius: 14px;
+  box-shadow: none;
 }
 
-@media (max-width: 1050px) {
-  .page-team .team-grid--current {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-  }
+.page-team .team-profile--current:hover,
+.page-team .team-profile--previous:hover,
+.page-team .team-profile--current:focus-within,
+.page-team .team-profile--previous:focus-within {
+  transform: none;
+  box-shadow: 0 8px 20px rgba(20, 42, 68, 0.08);
+}
 
-  .page-team .team-grid--previous {
-    grid-template-columns: repeat(3, minmax(0, 1fr));
-  }
+.page-team .team-profile--current .team-profile__summary,
+.page-team .team-profile--previous .team-profile__summary {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding: 16px 20px;
+  cursor: pointer;
+  list-style: none;
+}
+
+.page-team .team-profile--current .team-profile__summary::-webkit-details-marker,
+.page-team .team-profile--previous .team-profile__summary::-webkit-details-marker {
+  display: none;
+}
+
+.page-team .team-profile--current .team-profile__name,
+.page-team .team-profile--previous .team-profile__name {
+  flex: 0 0 auto;
+  margin: 0 !important;
+}
+
+.page-team .team-profile--current .team-profile__role,
+.page-team .team-profile--previous .team-profile__role {
+  flex: 1;
+  margin: 0;
+  color: #66788d;
+  font-weight: 500;
+}
+
+.page-team .team-profile--current .team-profile__toggle,
+.page-team .team-profile--previous .team-profile__toggle {
+  position: relative;
+  width: 30px;
+  height: 30px;
+  flex: 0 0 30px;
+  border: 1px solid #c7d9e6;
+  border-radius: 50%;
+  background: #f8fbfd;
+}
+
+.page-team .team-profile--current .team-profile__toggle::before,
+.page-team .team-profile--current .team-profile__toggle::after,
+.page-team .team-profile--previous .team-profile__toggle::before,
+.page-team .team-profile--previous .team-profile__toggle::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 12px;
+  height: 2px;
+  border-radius: 999px;
+  background: #2e5f7c;
+  transform: translate(-50%, -50%);
+}
+
+.page-team .team-profile--current .team-profile__toggle::after,
+.page-team .team-profile--previous .team-profile__toggle::after {
+  transform: translate(-50%, -50%) rotate(90deg);
+  transition: transform 180ms ease;
+}
+
+.page-team .team-profile--current[open] .team-profile__toggle::after,
+.page-team .team-profile--previous[open] .team-profile__toggle::after {
+  transform: translate(-50%, -50%) rotate(0deg);
+}
+
+.page-team .team-profile--current .team-profile__body,
+.page-team .team-profile--previous .team-profile__body {
+  padding: 0 20px 20px;
 }
 
 @media (max-width: 780px) {
@@ -340,11 +390,6 @@
   .page-team .team-profile--pi .team-profile__media {
     min-height: 0;
     aspect-ratio: 4 / 3;
-  }
-
-  .page-team .team-grid--current,
-  .page-team .team-grid--previous {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 }
 
@@ -363,13 +408,19 @@
     font-size: 1.65rem;
   }
 
-  .page-team .team-grid--current,
-  .page-team .team-grid--previous {
-    grid-template-columns: 1fr;
-  }
-
   .page-team .team-profile--pi .team-profile__body {
     padding: 24px;
+  }
+
+  .page-team .team-profile--current .team-profile__summary,
+  .page-team .team-profile--previous .team-profile__summary {
+    flex-wrap: wrap;
+    row-gap: 6px;
+  }
+
+  .page-team .team-profile--current .team-profile__role,
+  .page-team .team-profile--previous .team-profile__role {
+    flex: 1 0 100%;
   }
 }
 
@@ -412,48 +463,10 @@
     font-size: clamp(1.85rem, 2.7vw, 2.7rem) !important;
   }
 
-  .page-team .team-grid--current {
-    width: min(100%, 1030px);
-    margin-inline: auto;
-    gap: 20px;
-  }
-
-  .page-team .team-profile--current .team-profile__media {
-    aspect-ratio: 5 / 4;
-  }
-
-  .page-team .team-profile--current .team-profile__body {
-    padding: 18px;
-  }
-
-  .page-team .team-profile--current .team-profile__name {
-    font-size: 1.2rem !important;
-  }
-
-  .page-team .team-profile--current .team-profile__actions {
-    margin-top: 14px;
-  }
-
+  .page-team .team-grid--current,
   .page-team .team-grid--previous {
-    width: min(100%, 1100px);
+    width: min(100%, 900px);
     margin-inline: auto;
-    gap: 18px;
-  }
-
-  .page-team .team-profile--previous .team-profile__media {
-    aspect-ratio: 5 / 4;
-  }
-
-  .page-team .team-profile--previous .team-profile__body {
-    padding: 15px;
-  }
-
-  .page-team .team-profile--previous .team-profile__name {
-    font-size: 1rem !important;
-  }
-
-  .page-team .team-profile--previous .team-profile__actions {
-    margin-top: 10px;
   }
 }
 
