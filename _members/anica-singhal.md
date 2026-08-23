@@ -1,6 +1,7 @@
 ---
 name: Anica Singhal
 group: previous
+description: Research Scholar
 affiliation: Jericho High School
 ---
 
