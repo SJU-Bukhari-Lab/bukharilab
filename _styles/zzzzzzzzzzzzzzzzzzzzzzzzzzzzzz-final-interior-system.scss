@@ -60,6 +60,7 @@
   margin: 0 0 10px !important;
   color: #fff !important;
   font-size: clamp(2.05rem, 3.8vw, 3.15rem) !important;
+  text-align: left !important;
 }
 
 .interior-hero > p:not(.interior-hero__eyebrow),
@@ -299,6 +300,27 @@
   font-size: .85rem;
   font-weight: 750;
 }
+
+.github-stats {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 10px;
+  gap: 4px 12px;
+  color: var(--interior-muted);
+  font-size: .78rem;
+}
+
+.software-spotlight .github-stats { margin-top: 4px; }
+
+.github-stats__item {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.github-stats__item .fa-star { color: #e0ad35; }
+
+.github-stats__item--archived { color: var(--bl-red, #a82338); font-weight: 750; }
 
 .benchmark-panel {
   padding: 30px;
@@ -702,43 +724,6 @@ body.page-team .team-alumni__toggle {
   font-size: .8rem;
 }
 
-.repository-link-grid {
-  display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
-  gap: 12px;
-}
-
-.repository-link-grid > a {
-  display: grid;
-  grid-template-columns: minmax(0, 1fr) 18px;
-  gap: 4px 10px;
-  padding: 16px;
-  border: 1px solid var(--interior-line, #d9e5ed);
-  border-radius: 12px;
-  color: inherit !important;
-  background: var(--interior-surface, #fff);
-  text-decoration: none !important;
-}
-
-.repository-link-grid strong {
-  color: var(--bl-ink, #172536);
-  font-size: .9rem;
-}
-
-.repository-link-grid span {
-  grid-column: 1;
-  color: var(--interior-muted, #6f7f8d);
-  font-size: .76rem;
-}
-
-.repository-link-grid i {
-  grid-column: 2;
-  grid-row: 1 / span 2;
-  align-self: center;
-  color: var(--bl-red, #a82338);
-  font-size: .75rem;
-}
-
 .catalog-count {
   display: inline-flex;
   flex: 0 0 auto;
@@ -803,6 +788,7 @@ body.page-team .team-alumni__toggle {
   margin: 0 0 7px !important;
   font-size: clamp(1.7rem, 2.5vw, 2.25rem) !important;
   line-height: 1.15 !important;
+  text-align: left !important;
 }
 
 .member-detail__role {
@@ -819,6 +805,7 @@ body.page-team .team-alumni__toggle {
 .member-detail__links {
   display: flex;
   flex-wrap: wrap;
+  justify-content: flex-start;
   gap: 7px;
   margin-top: 18px;
 }
@@ -862,10 +849,6 @@ body.page-team .team-alumni__toggle {
     grid-template-columns: 1fr;
   }
 
-  .repository-link-grid {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-  }
-
   .member-detail {
     grid-template-columns: minmax(220px, 300px) minmax(0, 1fr);
     gap: 32px;
@@ -879,10 +862,6 @@ body.page-team .team-alumni__toggle {
 
   .publication-row__action {
     display: none;
-  }
-
-  .repository-link-grid {
-    grid-template-columns: 1fr;
   }
 
   .member-detail {

@@ -50,6 +50,7 @@ nav:
           <p class="portfolio-card__status">{{ item.status }}</p>
           <h3>{{ item.title }}</h3>
           <p>{{ item.description }}</p>
+          {% include github-stats.html link=item.link %}
           <span class="portfolio-card__link">View source <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></span>
         </a>
       </article>

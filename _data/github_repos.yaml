@@ -1,0 +1,189 @@
+# DO NOT EDIT, GENERATED AUTOMATICALLY
+
+- name: annotatia
+  description: null
+  link: https://github.com/bukharilab/annotatia
+  stars: 1
+  languages: []
+  updated: '2019-01-23'
+  archived: false
+  open_issues: 0
+- name: BIM-Biomedical-Image-Ontology
+  description: 'BIM: Biomedical Image Ontology'
+  link: https://github.com/bukharilab/BIM-Biomedical-Image-Ontology
+  stars: 1
+  languages: []
+  updated: '2014-10-07'
+  archived: false
+  open_issues: 0
+- name: bio-ont
+  description: Automatically exported from code.google.com/p/bio-ont
+  link: https://github.com/bukharilab/bio-ont
+  stars: 1
+  languages: []
+  updated: '2015-03-13'
+  archived: false
+  open_issues: 3
+- name: BioNLP-SADI
+  description: A programming free framework of Bio Medical Text Mining Services
+  link: https://github.com/bukharilab/BioNLP-SADI
+  stars: 1
+  languages: []
+  updated: '2013-10-07'
+  archived: false
+  open_issues: 0
+- name: BurnoutSurveillanceAI
+  description: Narrative-Based NLP and Machine Learning for Clinician Burnout Surveillance
+  link: https://github.com/bukharilab/BurnoutSurveillanceAI
+  stars: 1
+  languages:
+  - Jupyter Notebook
+  updated: '2026-03-25'
+  archived: false
+  open_issues: 0
+- name: Causal-ESUS
+  description: null
+  link: https://github.com/bukharilab/Causal-ESUS
+  stars: 0
+  languages: []
+  updated: '2026-07-25'
+  archived: false
+  open_issues: 0
+- name: CEDAROnDemand
+  description: 'CEDAR OnDemand: A browser extension to generate ontology-based scientific
+    metadata '
+  link: https://github.com/bukharilab/CEDAROnDemand
+  stars: 4
+  languages:
+  - JavaScript
+  - CSS
+  updated: '2018-11-13'
+  archived: false
+  open_issues: 0
+- name: diseasepredictionmodels
+  description: null
+  link: https://github.com/bukharilab/diseasepredictionmodels
+  stars: 1
+  languages: []
+  updated: '2019-06-23'
+  archived: false
+  open_issues: 0
+- name: gosemantically
+  description: null
+  link: https://github.com/bukharilab/gosemantically
+  stars: 2
+  languages:
+  - HTML
+  - JavaScript
+  updated: '2023-06-13'
+  archived: false
+  open_issues: 0
+- name: Immunological-Standards-Mapping
+  description: Sample Mapping for  Immunological Data Standards
+  link: https://github.com/bukharilab/Immunological-Standards-Mapping
+  stars: 1
+  languages: []
+  updated: '2016-08-29'
+  archived: false
+  open_issues: 0
+- name: KG4BioMedCntnAuthoring
+  description: ENHANCING BIOMEDICAL SEMANTIC CONTENT AUTHORING THROUGH KNOWLEDGE REPRESENTATION
+  link: https://github.com/bukharilab/KG4BioMedCntnAuthoring
+  stars: 0
+  languages:
+  - JavaScript
+  - PHP
+  - CSS
+  updated: '2025-01-15'
+  archived: false
+  open_issues: 0
+- name: linkedimm
+  description: null
+  link: https://github.com/bukharilab/linkedimm
+  stars: 2
+  languages: []
+  updated: '2020-04-16'
+  archived: false
+  open_issues: 0
+- name: LymeDetector
+  description: null
+  link: https://github.com/bukharilab/LymeDetector
+  stars: 1
+  languages: []
+  updated: '2018-11-13'
+  archived: false
+  open_issues: 1
+- name: MediLoom
+  description: null
+  link: https://github.com/bukharilab/MediLoom
+  stars: 1
+  languages:
+  - Jupyter Notebook
+  updated: '2026-03-25'
+  archived: false
+  open_issues: 0
+- name: open-link-health-census
+  description: Automatically exported from code.google.com/p/open-link-health-census
+  link: https://github.com/bukharilab/open-link-health-census
+  stars: 1
+  languages: []
+  updated: '2015-03-13'
+  archived: false
+  open_issues: 0
+- name: PIcsC
+  description: null
+  link: https://github.com/bukharilab/PIcsC
+  stars: 0
+  languages:
+  - Jupyter Notebook
+  updated: '2026-07-17'
+  archived: false
+  open_issues: 0
+- name: projectairr
+  description: Adaptive Immune Receptor Repertoire (AIRR) templates to submit data
+    to SRA and Genbank
+  link: https://github.com/bukharilab/projectairr
+  stars: 1
+  languages: []
+  updated: '2017-05-11'
+  archived: false
+  open_issues: 0
+- name: support-tools
+  description: Automatically exported from code.google.com/p/support-tools
+  link: https://github.com/bukharilab/support-tools
+  stars: 1
+  languages:
+  - Python
+  - Shell
+  updated: '2015-03-13'
+  archived: false
+  open_issues: 17
+- name: syAI4ML_PIMA
+  description: null
+  link: https://github.com/bukharilab/syAI4ML_PIMA
+  stars: 2
+  languages:
+  - Jupyter Notebook
+  updated: '2024-08-17'
+  archived: false
+  open_issues: 0
+- name: SynTrustBench
+  description: null
+  link: https://github.com/bukharilab/SynTrustBench
+  stars: 1
+  languages:
+  - Python
+  - TeX
+  - Jupyter Notebook
+  updated: '2026-08-11'
+  archived: false
+  open_issues: 0
+- name: World-Models
+  description: null
+  link: https://github.com/bukharilab/World-Models
+  stars: 0
+  languages:
+  - Jupyter Notebook
+  updated: '2026-07-14'
+  archived: false
+  open_issues: 0

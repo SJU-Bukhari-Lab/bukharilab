@@ -78,22 +78,6 @@ header a {
   transition: background var(--transition);
 }
 
-.nav-toggle:after {
-  content: "\f0c9";
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  color: var(--text);
-  font-size: 15px;
-  font-family: "Font Awesome 6 Free";
-  font-weight: 900;
-  transform: translate(-50%, -50%);
-}
-
-.nav-toggle:checked:after {
-  content: "\f00d";
-}
-
 nav {
   display: flex;
   justify-content: center;
@@ -112,25 +96,7 @@ nav > a:hover {
   color: var(--primary);
 }
 
-header:not([data-big]) {
-  @media (max-width: $collapse) {
-    justify-content: flex-end;
-
-    .nav-toggle {
-      display: flex;
-    }
-
-    .nav-toggle:not(:checked) + nav {
-      display: none;
-    }
-
-    nav {
-      align-items: flex-end;
-      flex-direction: column;
-      width: 100%;
-    }
-  }
-}
+// Mobile nav open/close is handled by [data-menu-open] in zzzzz-final.scss, not a checkbox-hack here.
 
 header[data-big] {
   justify-content: center;

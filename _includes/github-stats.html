@@ -1,0 +1,15 @@
+{% assign gh = site.data.github_repos | where_exp: "repo", "repo.link == include.link" | first %}
+{% if gh %}
+  <div class="github-stats">
+    <span class="github-stats__item"><i class="fa-solid fa-star" aria-hidden="true"></i>{{ gh.stars }}</span>
+    {% if gh.languages.size > 0 %}
+      <span class="github-stats__item">{{ gh.languages | join: " · " }}</span>
+    {% endif %}
+    {% if gh.updated %}
+      <span class="github-stats__item">Updated {{ gh.updated | date: "%b %Y" }}</span>
+    {% endif %}
+    {% if gh.archived %}
+      <span class="github-stats__item github-stats__item--archived">Archived</span>
+    {% endif %}
+  </div>
+{% endif %}

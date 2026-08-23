@@ -41,12 +41,17 @@ def main(entry):
     # go through response and format sources
     for work in response:
         # create source
+        # api's citation_id is Scholar's internal cluster id, never a real
+        # doi/pmid/etc, so manubot can never resolve it - omit "id" entirely
+        # rather than let cite.py try and discard the source on failure
         year = get_safe(work, "year", "")
         source = {
-            "id": get_safe(work, "citation_id", ""),
-            # api does not provide Manubot-citeable id, so keep citation details
             "title": get_safe(work, "title", ""),
-            "authors": list(map(str.strip, get_safe(work, "authors", "").split(","))),
+            "authors": [
+                author
+                for author in map(str.strip, get_safe(work, "authors", "").split(","))
+                if author and author != "..."
+            ],
             "publisher": get_safe(work, "publication", ""),
             "date": (year + "-01-01") if year else "",
             "link": get_safe(work, "link", ""),

@@ -7,8 +7,12 @@ vendor/
 *.gem
 .env
 .env.*
+!.env.example
 
 # Generated validation and local-system files
 tmp/.htmlproofer/
 *.pyc
 __pycache__/
+
+# Citation fetch cache (diskcache) - regenerable, not source content
+_cite/.cache/

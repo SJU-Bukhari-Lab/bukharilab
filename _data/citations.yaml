@@ -1,317 +1,42 @@
-- id: doi:10.64898/2026.07.08.26357574
-  title: 'FHIRTrustBench: A Benchmark for Interoperability-Driven Clinical AI Readiness and Trustworthiness'
-  authors:
-  - Syed Ahmad Chan Bukhari
-  - Neeam Shahriar Hayder
-  - Iram Wajahat
-  publisher: openRxiv
-  date: '2026-07-13'
-  link: https://doi.org/10.64898/2026.07.08.26357574
-  orcid: 0000-0002-6517-5261
-  plugin: sources.py
-  file: sources.yaml
-  tags:
-  - benchmarking
-  - clinical AI
-- id: doi:10.3390/jdad3020018
-  title: 'Digital Biomarkers for Early Detection of Alzheimer’s Disease: A Comprehensive Review and Bibliometric Analysis'
-  authors:
-  - Rahmat Ullah
-  - Saeed Akbar
-  - Rab Nawaz
-  - Zulfiqar Ali
-  - Vishal Krishna Singh
-  - Syed Ahmad Chan Bukhari
-  publisher: Journal of Dementia and Alzheimer's Disease
-  date: '2026-04-03'
-  link: https://doi.org/10.3390/jdad3020018
-  orcid: 0000-0002-6517-5261
-  plugin: orcid.py
-  file: orcid.yaml
-- id: doi:10.3390/life15020316
-  title: 'Correction: Zafar et al. Skin Lesion Analysis and Cancer Detection Based on Machine/Deep Learning Techniques: A Comprehensive Survey. Life 2023, 13, 146'
-  authors:
-  - Mehwish Zafar
-  - Muhammad Imran Sharif
-  - Muhammad Irfan Sharif
-  - Seifedine Kadry
-  - Syed Ahmad Chan Bukhari
-  - Hafiz Tayyab Rauf
-  publisher: Life
-  date: '2025-02-18'
-  link: https://doi.org/10.3390/life15020316
-  orcid: 0000-0002-6517-5261
-  plugin: orcid.py
-  file: orcid.yaml
-- id: doi:10.1145/3578364
-  title: Introduction to the Special Issue on DNA-centric Modeling and Practice for Next-generation Computing and Communication Systems
-  authors:
-  - Suyel Namasudra
-  - Pascal Lorenz
-  - Seifedine Kadry
-  - Syed Ahmad Chan Bukhari
-  publisher: ACM Transactions on Multimedia Computing, Communications, and Applications
-  date: '2023-09-27'
-  link: https://doi.org/10.1145/3578364
-  orcid: 0000-0002-6517-5261
-  plugin: orcid.py
-  file: orcid.yaml
-- id: doi:10.32473/flairs.36.133253
-  title: Enhancing Biomedical Semantic Annotations through a Knowledge Graph-Based Approach
-  authors:
-  - Asim Abbas
-  - Mutahira Khalid
-  - Sebastian Chalarca
-  - Fazel Keshtkar
-  - Syed Ahmad Chan Bukhari
-  publisher: The International FLAIRS Conference Proceedings
-  date: '2023-05-08'
-  link: https://doi.org/10.32473/flairs.36.133253
-  orcid: 0000-0002-6517-5261
-  plugin: orcid.py
-  file: orcid.yaml
-- id: doi:10.3390/life13010146
-  title: 'Skin Lesion Analysis and Cancer Detection Based on Machine/Deep Learning Techniques: A Comprehensive Survey'
-  authors:
-  - Mehwish Zafar
-  - Muhammad Sharif
-  - Muhammad Sharif
-  - Seifedine Kadry
-  - Syed Bukhari
-  - Hafiz Rauf
-  publisher: Life
-  date: '2023-01-04'
-  link: https://doi.org/10.3390/life13010146
-  orcid: 0000-0002-6517-5261
-  plugin: orcid.py
-  file: orcid.yaml
-- id: doi:10.1007/978-3-031-25380-5_6
-  title: A Decentralized Environment for Biomedical Semantic Content Authoring and Publishing
-  authors:
-  - Asim Abbas
-  - Steve Fonin Mbouadeu
-  - Fazel Keshtkar
-  - Hasan Ali Khattak
-  - Tahir Hameed
-  - Syed Ahmad Chan Bukhari
-  publisher: Communications in Computer and Information Science
-  date: '2023-01-01'
-  link: https://doi.org/10.1007/978-3-031-25380-5_6
-  orcid: 0000-0002-6517-5261
-  plugin: orcid.py
-  file: orcid.yaml
-- id: doi:10.3390/curroncol29100590
-  title: Classification of Brain Tumor from Magnetic Resonance Imaging Using Vision Transformers Ensembling
-  authors:
-  - Sudhakar Tummala
-  - Seifedine Kadry
-  - Syed Ahmad Chan Bukhari
-  - Hafiz Tayyab Rauf
-  publisher: Current Oncology
-  date: '2022-10-07'
-  link: https://doi.org/10.3390/curroncol29100590
-  orcid: 0000-0002-6517-5261
-  plugin: orcid.py
-  file: orcid.yaml
-- id: doi:10.1155/2022/1672677
-  title: Detection of Cardiovascular Disease Based on PPG Signals Using Machine Learning with Cloud Computing
-  authors:
-  - Tariq Sadad
-  - Syed Ahmad Chan Bukhari
-  - Asim Munir
-  - Anwar Ghani
-  - Ahmed M. El-Sherbeeny
-  - Hafiz Tayyab Rauf
-  publisher: Computational Intelligence and Neuroscience
-  date: '2022-08-04'
-  link: https://doi.org/10.1155/2022/1672677
-  orcid: 0000-0002-6517-5261
-  plugin: orcid.py
-  file: orcid.yaml
-- id: doi:10.1155/2022/5475313
-  title: 'Exploration of Black Boxes of Supervised Machine Learning Models: A Demonstration on Development of Predictive Heart Risk Score'
-  authors:
-  - Mirza Rizwan Sajid
-  - Arshad Ali Khan
-  - Haitham M. Albar
-  - Noryanti Muhammad
-  - Waqas Sami
-  - Syed Ahmad Chan Bukhari
-  - Iram Wajahat
-  publisher: Computational Intelligence and Neuroscience
-  date: '2022-05-12'
-  link: https://doi.org/10.1155/2022/5475313
-  orcid: 0000-0002-6517-5261
-  plugin: orcid.py
-  file: orcid.yaml
-- id: doi:10.1109/JSEN.2021.3076114
-  title: Neuromechanical Signal-Based Parallel and Scalable Model for Lower Limb Movement Recognition
-  authors:
-  - Nadeem Iqbal
-  - Tufail Khan
-  - Mukhtaj Khan
-  - Tahir Hussain
-  - Tahir Hameed
-  - Syed Ahmad Chan Bukhari
-  publisher: IEEE Sensors Journal
-  date: '2021-07-15'
-  link: https://doi.org/10.1109/JSEN.2021.3076114
-  orcid: 0000-0002-6517-5261
-  plugin: orcid.py
-  file: orcid.yaml
-- id: doi:10.1007/s00521-020-05157-2
-  title: 'LDA–GA–SVM: improved hepatocellular carcinoma prediction through dimensionality reduction and genetically optimized support vector machine'
-  authors:
-  - Liaqat Ali
-  - Iram Wajahat
-  - Noorbakhsh Amiri Golilarz
-  - Fazel Keshtkar
-  - Syed Ahmad Chan Bukhari
-  publisher: Neural Computing and Applications
-  date: '2020-07-10'
-  link: https://doi.org/10.1007/s00521-020-05157-2
-  orcid: 0000-0002-6517-5261
-  plugin: orcid.py
-  file: orcid.yaml
-- id: doi:10.1109/ACCESS.2021.3059343
-  title: 'Detection and Prediction of Diabetes Using Data Mining: A Comprehensive Review'
-  authors:
-  - Farrukh Aslam Khan
-  - Khan Zeb
-  - Mabrook Al-Rakhami
-  - Abdelouahid Derhab
-  - Syed Ahmad Chan Bukhari
-  publisher: IEEE Access
-  date: '2021-01-01'
-  link: https://doi.org/10.1109/ACCESS.2021.3059343
-  orcid: 0000-0002-6517-5261
-  plugin: orcid.py
-  file: orcid.yaml
-- id: doi:10.4081/jphr.2020.1893
-  title: 'Modifiable Risk Factors and Overall Cardiovascular Mortality: Moderation of Urbanization'
-  authors:
-  - Mirza Rizwan Sajid
-  - Noryanti Muhammad
-  - Roslinazairimah Zakaria
-  - Syed Ahmad Chan Bukhari
-  publisher: Journal of Public Health Research
-  date: '2020-10-14'
-  link: https://doi.org/10.4081/jphr.2020.1893
-  orcid: 0000-0002-6517-5261
-  plugin: orcid.py
-  file: orcid.yaml
-- id: doi:10.3390/diagnostics10080565
-  title: 'Multimodal Brain Tumor Classification Using Deep Learning and Robust Feature Selection: A Machine Learning Application for Radiologists'
+# DO NOT EDIT, GENERATED AUTOMATICALLY
+
+- id: pubmed:32781795
+  title: 'Multimodal Brain Tumor Classification Using Deep Learning and Robust Feature
+    Selection: A Machine Learning Application for Radiologists.'
   authors:
   - Muhammad Attique Khan
   - Imran Ashraf
   - Majed Alhaisoni
-  - Robertas Damaševičius
+  - "Robertas Dama\u0161evi\u010Dius"
   - Rafal Scherer
   - Amjad Rehman
   - Syed Ahmad Chan Bukhari
-  publisher: Diagnostics
+  publisher: Diagnostics (Basel, Switzerland)
   date: '2020-08-06'
-  link: https://doi.org/10.3390/diagnostics10080565
+  link: https://www.ncbi.nlm.nih.gov/pubmed/32781795
+  term: 0000-0002-6517-5261[auid]
+  plugin: pubmed.py
+  file: pubmed.yaml
+  gsid: JhWJ5PEAAAAJ
   orcid: 0000-0002-6517-5261
-  plugin: orcid.py
-  file: orcid.yaml
-- id: doi:10.1101/2020.04.08.032011
-  title: 'D4: Deep Drug-drug interaction Discovery and Demystification'
+- title: An Optimized Stacked Support Vector Machines Based Expert System for the
+    Effective Prediction of Heart Failure
   authors:
-  - Adeeb Noor
-  - Wang Liu-Wei
-  - Ahmed Barnawi
-  - Redhwan Nour
-  - Abdullah A Assiri
-  - Syed Ahmad Chan Bukhari
-  - Robert Hoehndorf
-  publisher: openRxiv
-  date: '2020-04-09'
-  link: https://doi.org/10.1101/2020.04.08.032011
-  orcid: 0000-0002-6517-5261
-  plugin: orcid.py
-  file: orcid.yaml
-- id: doi:10.1016/j.patrec.2019.11.042
-  title: Integrated design of deep features fusion for localization and classification of skin cancer
-  authors:
-  - Javeria Amin
-  - Abida Sharif
-  - Nadia Gul
-  - Muhammad Almas Anjum
-  - Muhammad Wasif Nisar
-  - Faisal Azam
-  - Syed Ahmad Chan Bukhari
-  publisher: Pattern Recognition Letters
-  date: '2020-03-01'
-  link: https://doi.org/10.1016/j.patrec.2019.11.042
-  orcid: 0000-0002-6517-5261
-  plugin: orcid.py
-  file: orcid.yaml
-- id: doi:10.1101/2020.02.04.20020222
-  title: Machine Learning Can Predict Deaths in Patients with Diverticulitis During their Hospital Stay
-  authors:
-  - Fahad Shabbir Ahmed
-  - ' Raza-Ul-Mustafa'
-  - Liaqat Ali
-  - ' Imad-ud-Deen'
-  - Tahir Hameed
-  - Asad Ikram
-  - Syed Ahmad Chan Bukhari
-  publisher: openRxiv
-  date: '2020-02-07'
-  link: https://doi.org/10.1101/2020.02.04.20020222
-  orcid: 0000-0002-6517-5261
-  plugin: orcid.py
-  file: orcid.yaml
-- id: doi:10.1007/s10462-019-09693-9
-  title: A comprehensive review of type-2 fuzzy Ontology
-  authors:
-  - Iqbal Qasim
-  - Mahmood Alam
-  - Shumaila Khan
-  - Abdul Wahid Khan
-  - Khalid Mahmood Malik
-  - Muhammad Saleem
-  - Syed Ahmad Chan Bukhari
-  publisher: Artificial Intelligence Review
-  date: '2019-03-01'
-  link: https://doi.org/10.1007/s10462-019-09693-9
-  orcid: 0000-0002-6517-5261
-  plugin: orcid.py
-  file: orcid.yaml
-- id: doi:10.1016/j.patrec.2019.11.034
-  title: Developed Newton-Raphson based deep features selection framework for skin lesion recognition
-  authors:
-  - Muhammad Attique Khan
-  - Muhammad Sharif
-  - Tallha Akram
-  - Syed Ahmad Chan Bukhari
-  - Ramesh Sunder Nayak
-  publisher: Pattern Recognition Letters
-  date: '2020-01-01'
-  link: https://doi.org/10.1016/j.patrec.2019.11.034
-  orcid: 0000-0002-6517-5261
-  plugin: orcid.py
-  file: orcid.yaml
-- id: doi:10.1016/j.dib.2019.104565
-  title: 'Fish-Pak: Fish species dataset from Pakistan for visual features based classification'
-  authors:
-  - Syed Zakir Hussain Shah
-  - Hafiz Tayyab Rauf
-  - Muhammad IkramUllah
-  - Malik Shahzaib Khalid
-  - Muhammad Farooq
-  - Mahroze Fatima
-  - Syed Ahmad Chan Bukhari
-  publisher: Data in Brief
-  date: '2019-12-01'
-  link: https://doi.org/10.1016/j.dib.2019.104565
-  orcid: 0000-0002-6517-5261
-  plugin: orcid.py
-  file: orcid.yaml
+  - L ALI
+  - A NIAMAT
+  - JALI KHAN
+  - NA GOLILARZ
+  - X XINGZHONG
+  - A NOOR
+  publisher: IEEE Access 7, 54007 - 54014, 2019
+  date: '2019-01-01'
+  link: https://scholar.google.com/citations?view_op=view_citation&hl=en&user=JhWJ5PEAAAAJ&pagesize=100&citation_for_view=JhWJ5PEAAAAJ:5qfkUJPXOUwC
+  gsid: JhWJ5PEAAAAJ
+  plugin: google-scholar.py
+  file: google-scholar.yaml
 - id: doi:10.1016/j.dib.2019.104340
-  title: A citrus fruits and leaves dataset for detection and classification of citrus diseases through machine learning
+  title: A citrus fruits and leaves dataset for detection and classification of citrus
+    diseases through machine learning
   authors:
   - Hafiz Tayyab Rauf
   - Basharat Ali Saleem
@@ -325,73 +50,76 @@
   orcid: 0000-0002-6517-5261
   plugin: orcid.py
   file: orcid.yaml
-- id: doi:10.1101/19006254
-  title: A Hybrid Machine Learning Framework to Predict Early Risk of Mortality in Paralytic Ileus Patients using Electronic Health Records
+  gsid: JhWJ5PEAAAAJ
+- id: pubmed:36290867
+  title: Classification of Brain Tumor from Magnetic Resonance Imaging Using Vision
+    Transformers Ensembling.
   authors:
-  - Fahad Shabbir Ahmad
-  - Liaqat Ali
-  - ' Raza-Ul-Mustafa'
-  - Hasan Ali Khattak
+  - Sudhakar Tummala
+  - Seifedine Kadry
   - Syed Ahmad Chan Bukhari
-  publisher: openRxiv
-  date: '2019-09-16'
-  link: https://doi.org/10.1101/19006254
-  orcid: 0000-0002-6517-5261
-  plugin: orcid.py
-  file: orcid.yaml
-- id: doi:10.20944/preprints201909.0139.v1
-  title: Lungs Nodule Detection Using Semantic Segmentation and Classification with Optimal Features
-  authors:
-  - Talha Meraj
-  - Arslan Hassan
-  - Saliha Zahoor
   - Hafiz Tayyab Rauf
-  - M.IkramUllah Lali
-  - Liaqat Ali
-  - Syed Ahmad Chan Bukhari
-  publisher: MDPI AG
-  date: '2019-09-14'
-  link: https://doi.org/10.20944/preprints201909.0139.v1
+  publisher: Current oncology (Toronto, Ont.)
+  date: '2022-10-07'
+  link: https://www.ncbi.nlm.nih.gov/pubmed/36290867
+  term: 0000-0002-6517-5261[auid]
+  plugin: pubmed.py
+  file: pubmed.yaml
+  gsid: JhWJ5PEAAAAJ
   orcid: 0000-0002-6517-5261
-  plugin: orcid.py
-  file: orcid.yaml
-- id: doi:10.1186/s12859-018-2247-6
-  title: 'CEDAR OnDemand: a browser extension to generate ontology-based scientific metadata'
+- title: Brain tumor detection by using stacked autoencoders in deep learning
   authors:
-  - Syed Ahmad Chan Bukhari
-  - Marcos Martínez-Romero
-  - Martin J. O’ Connor
-  - Attila L. Egyedi
-  - Debra Willrett
-  - John Graybeal
-  - Mark A. Musen
-  - Kei-Hoi Cheung
-  - Steven H. Kleinstein
-  publisher: BMC Bioinformatics
-  date: '2018-07-16'
-  link: https://doi.org/10.1186/s12859-018-2247-6
-  orcid: 0000-0002-6517-5261
-  plugin: orcid.py
-  file: orcid.yaml
-- id: doi:10.31219/osf.io/mwjtq
-  title: 'Semantic Web in the Age of Big Data: A Perspective'
+  - J Amin
+  - M Sharif
+  - N Gul
+  - M Raza
+  - MA Anjum
+  - MW Nisar
+  - SAC Bukhari
+  publisher: Journal of medical systems 44 (2), 32, 2020
+  date: '2020-01-01'
+  link: https://scholar.google.com/citations?view_op=view_citation&hl=en&user=JhWJ5PEAAAAJ&pagesize=100&citation_for_view=JhWJ5PEAAAAJ:FAceZFleit8C
+  gsid: JhWJ5PEAAAAJ
+  plugin: google-scholar.py
+  file: google-scholar.yaml
+- id: doi:10.1016/j.eswa.2012.08.016
+  title: An intelligent real-time multi-vessel collision risk assessment system from
+    VTS view point based on fuzzy inference system
   authors:
-  - Syed Ahmad Chan Bukhari
-  - ' dr.alikashif.b@ieee.org'
-  - Khalid Mahmood Malik
-  publisher: Center for Open Science
-  date: '2018-06-12'
-  link: https://doi.org/10.31219/osf.io/mwjtq
+  - Ahmad C. Bukhari
+  - Inara Tusseyeva
+  - Byung-Gil lee
+  - Yong-Gi Kim
+  publisher: Expert Systems with Applications
+  date: '2013-03-01'
+  link: https://doi.org/10.1016/j.eswa.2012.08.016
   orcid: 0000-0002-6517-5261
   plugin: orcid.py
   file: orcid.yaml
+  gsid: JhWJ5PEAAAAJ
+- title: Visual features based automated identification of fish species using deep
+    convolutional neural networks
+  authors:
+  - HT Rauf
+  - MIU Lali
+  - S Zahoor
+  - SZH Shah
+  - AU Rehman
+  - SAC Bukhari
+  publisher: Computers and electronics in agriculture 167, 105075, 2019
+  date: '2019-01-01'
+  link: https://scholar.google.com/citations?view_op=view_citation&hl=en&user=JhWJ5PEAAAAJ&pagesize=100&citation_for_view=JhWJ5PEAAAAJ:9pM33mqn1YgC
+  gsid: JhWJ5PEAAAAJ
+  plugin: google-scholar.py
+  file: google-scholar.yaml
 - id: doi:10.1038/ni.3873
-  title: Adaptive Immune Receptor Repertoire Community recommendations for sharing immune-repertoire sequencing data
+  title: Adaptive Immune Receptor Repertoire Community recommendations for sharing
+    immune-repertoire sequencing data
   authors:
   - Florian Rubelt
   - Christian E Busse
   - Syed Ahmad Chan Bukhari
-  - Jean-Philippe Bürckert
+  - "Jean-Philippe B\xFCrckert"
   - Encarnita Mariotti-Ferrandiz
   - Lindsay G Cowell
   - Corey T Watson
@@ -413,6 +141,121 @@
   orcid: 0000-0002-6517-5261
   plugin: orcid.py
   file: orcid.yaml
+  gsid: JhWJ5PEAAAAJ
+- id: doi:10.1016/j.patrec.2019.11.034
+  title: Developed Newton-Raphson based deep features selection framework for skin
+    lesion recognition
+  authors:
+  - Muhammad Attique Khan
+  - Muhammad Sharif
+  - Tallha Akram
+  - Syed Ahmad Chan Bukhari
+  - Ramesh Sunder Nayak
+  publisher: Pattern Recognition Letters
+  date: '2020-01-01'
+  link: https://doi.org/10.1016/j.patrec.2019.11.034
+  orcid: 0000-0002-6517-5261
+  plugin: orcid.py
+  file: orcid.yaml
+  gsid: JhWJ5PEAAAAJ
+- title: The center for expanded data annotation and retrieval
+  authors:
+  - MA Musen
+  - CA Bean
+  - KH Cheung
+  - M Dumontier
+  - KA Durante
+  - O Gevaert
+  publisher: Journal of the American Medical Informatics Association 22 (6), 1148-1152,
+    2015
+  date: '2015-01-01'
+  link: https://doi.org/10.1093/jamia/ocv048
+  gsid: JhWJ5PEAAAAJ
+  plugin: google-scholar.py
+  file: google-scholar.yaml
+  orcid: 0000-0002-6517-5261
+- id: doi:10.1007/s00521-020-05157-2
+  title: "LDA\u2013GA\u2013SVM: improved hepatocellular carcinoma prediction through\
+    \ dimensionality reduction and genetically optimized support vector machine"
+  authors:
+  - Liaqat Ali
+  - Iram Wajahat
+  - Noorbakhsh Amiri Golilarz
+  - Fazel Keshtkar
+  - Syed Ahmad Chan Bukhari
+  publisher: Neural Computing and Applications
+  date: '2020-07-10'
+  link: https://doi.org/10.1007/s00521-020-05157-2
+  orcid: 0000-0002-6517-5261
+  plugin: orcid.py
+  file: orcid.yaml
+  gsid: JhWJ5PEAAAAJ
+- id: doi:10.1016/j.patrec.2019.11.042
+  title: Integrated design of deep features fusion for localization and classification
+    of skin cancer
+  authors:
+  - Javeria Amin
+  - Abida Sharif
+  - Nadia Gul
+  - Muhammad Almas Anjum
+  - Muhammad Wasif Nisar
+  - Faisal Azam
+  - Syed Ahmad Chan Bukhari
+  publisher: Pattern Recognition Letters
+  date: '2020-03-01'
+  link: https://doi.org/10.1016/j.patrec.2019.11.042
+  orcid: 0000-0002-6517-5261
+  plugin: orcid.py
+  file: orcid.yaml
+  gsid: JhWJ5PEAAAAJ
+- id: doi:10.1109/ACCESS.2021.3059343
+  title: 'Detection and Prediction of Diabetes Using Data Mining: A Comprehensive
+    Review'
+  authors:
+  - Farrukh Aslam Khan
+  - Khan Zeb
+  - Mabrook Al-Rakhami
+  - Abdelouahid Derhab
+  - Syed Ahmad Chan Bukhari
+  publisher: IEEE Access
+  date: '2021-01-01'
+  link: https://doi.org/10.1109/ACCESS.2021.3059343
+  orcid: 0000-0002-6517-5261
+  plugin: orcid.py
+  file: orcid.yaml
+  gsid: JhWJ5PEAAAAJ
+- title: A hybrid mental health prediction model using Support Vector Machine, Multilayer
+    Perceptron, and Random Forest algorithms
+  authors:
+  - ES Mohamed
+  - TA Naqishbandi
+  - SAC Bukhari
+  - I Rauf
+  - V Sawrikar
+  publisher: Healthcare Analytics 3, 100185, 2023
+  date: '2023-01-01'
+  link: https://scholar.google.com/citations?view_op=view_citation&hl=en&user=JhWJ5PEAAAAJ&pagesize=100&citation_for_view=JhWJ5PEAAAAJ:lgwcVrK6X84C
+  gsid: JhWJ5PEAAAAJ
+  plugin: google-scholar.py
+  file: google-scholar.yaml
+- id: doi:10.20944/preprints201909.0139.v1
+  title: Lungs Nodule Detection Using Semantic Segmentation and Classification with
+    Optimal Features
+  authors:
+  - Talha Meraj
+  - Arslan Hassan
+  - Saliha Zahoor
+  - Hafiz Tayyab Rauf
+  - M.IkramUllah Lali
+  - Liaqat Ali
+  - Syed Ahmad Chan Bukhari
+  publisher: MDPI AG
+  date: '2019-09-14'
+  link: https://doi.org/10.20944/preprints201909.0139.v1
+  orcid: 0000-0002-6517-5261
+  plugin: orcid.py
+  file: orcid.yaml
+  gsid: JhWJ5PEAAAAJ
 - id: doi:10.3389/fimmu.2017.01418
   title: Reproducibility and Reuse of Adaptive Immune Receptor Repertoire Data
   authors:
@@ -445,192 +288,84 @@
   orcid: 0000-0002-6517-5261
   plugin: orcid.py
   file: orcid.yaml
-- title: Leveraging the CEDAR Workbench for Ontology-linked Submission of Adaptive Immune Receptor Repertoire Data to the Sequence Read Archive (SRA)
-  date: '2018-07-02'
-  orcid: 0000-0002-6517-5261
-  plugin: orcid.py
-  file: orcid.yaml
-  link: https://doi.org/10.6084/m9.figshare.4244126
-- title: Role of Telemedicine in Developed and Under-Developed Countries
-  publisher: IEEE Internet Initiative
-  date: '2018-07-02'
-  orcid: 0000-0002-6517-5261
-  plugin: orcid.py
-  file: orcid.yaml
-- title: Semantic enrichment and similarity approximation for biomedical sequence images
-  date: '2019-01-15'
-  orcid: 0000-0002-6517-5261
-  plugin: orcid.py
-  file: orcid.yaml
-- title: Towards Ontological Mapping of Immunological Data Standards
-  publisher: BioOntologies 2016
-  date: '2018-07-02'
-  orcid: 0000-0002-6517-5261
-  plugin: orcid.py
-  file: orcid.yaml
-- title: 'BIM: An open ontology for the annotation of biomedical images'
-  publisher: CEUR Workshop Proceedings
-  date: '2022-05-25'
-  link: https://ceur-ws.org/Vol-1515/regular8.pdf
-  orcid: 0000-0002-6517-5261
-  plugin: orcid.py
-  file: orcid.yaml
-- title: Biomedical Image Ontology on BioPortal.
-  publisher: https://bioportal.bioontology.org/ontologies/BIM
-  date: '2018-07-02'
-  orcid: 0000-0002-6517-5261
-  plugin: orcid.py
-  file: orcid.yaml
-  link: https://bioportal.bioontology.org/ontologies/BIM
-- title: 'ICyrus: A semantic framework for biomedical image discovery'
-  publisher: CEUR Workshop Proceedings
-  date: '2022-05-25'
-  link: https://ceur-ws.org/Vol-1546/paper_30.pdf
-  orcid: 0000-0002-6517-5261
-  plugin: orcid.py
-  file: orcid.yaml
-- title: The center for expanded data annotation and retrieval
-  publisher: Journal of the American Medical Informatics Association
-  date: '2018-07-02'
-  orcid: 0000-0002-6517-5261
-  plugin: orcid.py
-  file: orcid.yaml
-  link: https://doi.org/10.1093/jamia/ocv048
-- title: An Interoperable Framework for Biomedical Image Retrieval and Knowledge Discovery
-  publisher: Conference on Semantics in Healthcare and Life Sciences 2014
-  date: '2018-07-02'
-  orcid: 0000-0002-6517-5261
-  plugin: orcid.py
-  file: orcid.yaml
-- id: doi:10.1155/2014/676729
-  title: An Obstacle Recognizing Mechanism for Autonomous Underwater Vehicles Powered by Fuzzy Domain Ontology and Support Vector Machine
+  gsid: JhWJ5PEAAAAJ
+- id: pubmed:36676093
+  title: 'Skin Lesion Analysis and Cancer Detection Based on Machine/Deep Learning
+    Techniques: A Comprehensive Survey.'
   authors:
-  - Zhen-Shu Mi
-  - Ahmad C. Bukhari
-  - Yong-Gi Kim
-  publisher: Mathematical Problems in Engineering
-  date: '2014-01-01'
-  link: https://doi.org/10.1155/2014/676729
+  - Mehwish Zafar
+  - Muhammad Imran Sharif
+  - Muhammad Irfan Sharif
+  - Seifedine Kadry
+  - Syed Ahmad Chan Bukhari
+  - Hafiz Tayyab Rauf
+  publisher: Life (Basel, Switzerland)
+  date: '2023-01-04'
+  link: https://www.ncbi.nlm.nih.gov/pubmed/36676093
+  term: 0000-0002-6517-5261[auid]
+  plugin: pubmed.py
+  file: pubmed.yaml
+  gsid: JhWJ5PEAAAAJ
   orcid: 0000-0002-6517-5261
-  plugin: orcid.py
-  file: orcid.yaml
-- title: Next-generation semantic search platform for biomedical images
-  publisher: 5th Atlantic Workshop on Semantics and Services  February 24, 2014, Saint John, New Brunswick, Canada
-  date: '2018-07-02'
-  orcid: 0000-0002-6517-5261
-  plugin: orcid.py
-  file: orcid.yaml
-- title: 'SEBI: An Architecture for Biomedical Image Discovery, Interoperability and Reusability Based on Semantic Enrichment.'
-  publisher: International SWAT4LS 2014
-  date: '2018-07-02'
-  orcid: 0000-0002-6517-5261
-  plugin: orcid.py
-  file: orcid.yaml
-  link: https://ceur-ws.org/Vol-1320/paper_8.pdf
-- id: doi:10.1007/s10489-012-0365-9
-  title: A research on an intelligent multipurpose fuzzy semantic enhanced 3D virtual reality simulator for complex maritime missions
+- title: AIRR community standardized representations for annotated immune repertoires
   authors:
-  - Ahmad C. Bukhari
-  - Yong-Gi Kim
-  publisher: Applied Intelligence
-  date: '2012-07-08'
-  link: https://doi.org/10.1007/s10489-012-0365-9
-  orcid: 0000-0002-6517-5261
-  plugin: orcid.py
-  file: orcid.yaml
-- id: doi:10.1016/j.eswa.2012.08.016
-  title: An intelligent real-time multi-vessel collision risk assessment system from VTS view point based on fuzzy inference system
+  - JA Vander Heiden
+  - S Marquez
+  - N Marthandan
+  - SAC Bukhari
+  - CE Busse
+  publisher: Frontiers in immunology 9, 2206, 2018
+  date: '2018-01-01'
+  link: https://scholar.google.com/citations?view_op=view_citation&hl=en&user=JhWJ5PEAAAAJ&pagesize=100&citation_for_view=JhWJ5PEAAAAJ:XoXfffV-tXoC
+  gsid: JhWJ5PEAAAAJ
+  plugin: google-scholar.py
+  file: google-scholar.yaml
+- title: Convolutional neural network with batch normalization for glioma and stroke
+    lesion detection using MRI
   authors:
-  - Ahmad C. Bukhari
-  - Inara Tusseyeva
-  - Byung-Gil lee
-  - Yong-Gi Kim
-  publisher: Expert Systems with Applications
-  date: '2013-03-01'
-  link: https://doi.org/10.1016/j.eswa.2012.08.016
-  orcid: 0000-0002-6517-5261
-  plugin: orcid.py
-  file: orcid.yaml
-- title: Personalized Information Seeking Powered by Mobile Ontology for Sightless Residents of under Developing States
-  publisher: International Journal of Computer and Communication Engineering (IJCCE)
-  date: '2018-07-02'
-  orcid: 0000-0002-6517-5261
-  plugin: orcid.py
-  file: orcid.yaml
-- title: 'The Canadian health census as Linked Open Data: towards policy making in public health'
-  publisher: Data Integration in the Life Sciences
-  date: '2018-07-02'
-  orcid: 0000-0002-6517-5261
-  plugin: orcid.py
-  file: orcid.yaml
-- id: doi:10.1007/978-3-642-39437-9_6
-  title: Towards Interoperable BioNLP Semantic Web Services Using the SADI Framework
+  - J Amin
+  - M Sharif
+  - MA Anjum
+  - M Raza
+  - SAC Bukhari
+  publisher: Cognitive Systems Research 59, 304-311, 2020
+  date: '2020-01-01'
+  link: https://scholar.google.com/citations?view_op=view_citation&hl=en&user=JhWJ5PEAAAAJ&pagesize=100&citation_for_view=JhWJ5PEAAAAJ:kh2fBNsKQNwC
+  gsid: JhWJ5PEAAAAJ
+  plugin: google-scholar.py
+  file: google-scholar.yaml
+- title: An integrated framework of skin lesion detection and recognition through
+    saliency method and optimal deep neural network features selection
   authors:
-  - Ahmad C. Bukhari
-  - Artjom Klein
-  - Christopher J. O. Baker
-  publisher: Lecture Notes in Computer Science
-  date: '2013-01-01'
-  link: https://doi.org/10.1007/978-3-642-39437-9_6
-  orcid: 0000-0002-6517-5261
-  plugin: orcid.py
-  file: orcid.yaml
-- id: doi:10.1016/j.ins.2012.02.036
-  title: 'Integration of a secure type-2 fuzzy ontology with a multi-agent platform: A proposal to automate the personalized flight ticket booking domain'
+  - MA Khan
+  - T Akram
+  - M Sharif
+  - K Javed
+  - M Rashid
+  - SAC Bukhari
+  publisher: Neural Computing and Applications, 1-20, 2019
+  date: '2019-01-01'
+  link: https://scholar.google.com/citations?view_op=view_citation&hl=en&user=JhWJ5PEAAAAJ&pagesize=100&citation_for_view=JhWJ5PEAAAAJ:bz8QjSJIRt4C
+  gsid: JhWJ5PEAAAAJ
+  plugin: google-scholar.py
+  file: google-scholar.yaml
+- title: An approach based on mutually informed neural networks to optimize the generalization
+    capabilities of decision support systems developed for heart failure prediction
   authors:
-  - Ahmad C. Bukhari
-  - Yong-Gi Kim
-  publisher: Information Sciences
-  date: '2012-09-01'
-  link: https://doi.org/10.1016/j.ins.2012.02.036
-  orcid: 0000-0002-6517-5261
-  plugin: orcid.py
-  file: orcid.yaml
-- id: doi:10.1007/s10462-011-9238-6
-  title: Ontology-assisted automatic precise information extractor for visually impaired inhabitants
-  authors:
-  - Ahmad C. Bukhari
-  - Yong-Gi Kim
-  publisher: Artificial Intelligence Review
-  date: '2011-05-26'
-  link: https://doi.org/10.1007/s10462-011-9238-6
-  orcid: 0000-0002-6517-5261
-  plugin: orcid.py
-  file: orcid.yaml
-- id: doi:10.4156/ijact.vol3.issue6.27
-  title: 'Exploiting the Heavyweight Ontology with Multi-Agent System Using Vocal Command System: A Case Study on E-Mall'
-  authors:
-  - Ahmad C. Bukhari -
-  - YongGi Kim -
-  publisher: International Journal of Advancements in Computing Technology
-  date: '2011-07-31'
-  link: https://doi.org/10.4156/ijact.vol3.issue6.27
-  orcid: 0000-0002-6517-5261
-  plugin: orcid.py
-  file: orcid.yaml
-- title: 'HO2IEV: Heavyweight ontology based web information extraction technique for visionless users'
-  publisher: Proceedings - 7th International Conference on Networked Computing and Advanced Information Management, NCM 2011
-  date: '2022-05-25'
-  link: https://ieeexplore.ieee.org/document/5967523/
-  orcid: 0000-0002-6517-5261
-  plugin: orcid.py
-  file: orcid.yaml
-- title: Incorporation of Fuzzy Theory with Heavyweight Ontology and Its Application on Vague Information Retrieval for Decision Making
-  publisher: International Journal of Fuzzy Logic and Intelligent Systems
-  date: '2018-07-02'
-  orcid: 0000-0002-6517-5261
-  plugin: orcid.py
-  file: orcid.yaml
-- title: 'Ontology Learning: Information Logistic'
-  date: '2018-07-02'
-  orcid: 0000-0002-6517-5261
-  plugin: orcid.py
-  file: orcid.yaml
+  - L Ali
+  - SAC Bukhari
+  publisher: Irbm 42 (5), 345-352, 2021
+  date: '2021-01-01'
+  link: https://scholar.google.com/citations?view_op=view_citation&hl=en&user=JhWJ5PEAAAAJ&pagesize=100&citation_for_view=JhWJ5PEAAAAJ:4hFrxpcac9AC
+  gsid: JhWJ5PEAAAAJ
+  plugin: google-scholar.py
+  file: google-scholar.yaml
 - id: doi:10.1145/3308558.3313556
-  title: How Representative Is a SPARQL Benchmark? An Analysis of RDF Triplestore Benchmarks
+  title: How Representative Is a SPARQL Benchmark? An Analysis of RDF Triplestore
+    Benchmarks
   authors:
   - Muhammad Saleem
-  - Gábor Szárnyas
+  - "G\xE1bor Sz\xE1rnyas"
   - Felix Conrads
   - Syed Ahmad Chan Bukhari
   - Qaiser Mehmood
@@ -643,6 +378,1190 @@
   - semantic web
   plugin: sources.py
   file: sources.yaml
+  gsid: JhWJ5PEAAAAJ
+- id: pubmed:35965760
+  title: Detection of Cardiovascular Disease Based on PPG Signals Using Machine Learning
+    with Cloud Computing.
+  authors:
+  - Tariq Sadad
+  - Syed Ahmad Chan Bukhari
+  - Asim Munir
+  - Anwar Ghani
+  - Ahmed M El-Sherbeeny
+  - Hafiz Tayyab Rauf
+  publisher: Computational intelligence and neuroscience
+  date: '2022-08-04'
+  link: https://www.ncbi.nlm.nih.gov/pubmed/35965760
+  term: 0000-0002-6517-5261[auid]
+  plugin: pubmed.py
+  file: pubmed.yaml
+  gsid: JhWJ5PEAAAAJ
+  orcid: 0000-0002-6517-5261
+- id: doi:10.1016/j.dib.2019.104565
+  title: 'Fish-Pak: Fish species dataset from Pakistan for visual features based classification'
+  authors:
+  - Syed Zakir Hussain Shah
+  - Hafiz Tayyab Rauf
+  - Muhammad IkramUllah
+  - Malik Shahzaib Khalid
+  - Muhammad Farooq
+  - Mahroze Fatima
+  - Syed Ahmad Chan Bukhari
+  publisher: Data in Brief
+  date: '2019-12-01'
+  link: https://doi.org/10.1016/j.dib.2019.104565
+  orcid: 0000-0002-6517-5261
+  plugin: orcid.py
+  file: orcid.yaml
+  gsid: JhWJ5PEAAAAJ
+- title: Planning a secure and reliable IoT-enabled FOG-assisted computing infrastructure
+    for healthcare
+  authors:
+  - HM Ali
+  - J Liu
+  - SAC Bukhari
+  - HT Rauf
+  publisher: Cluster Computing 25 (3), 2143-2161, 2022
+  date: '2022-01-01'
+  link: https://scholar.google.com/citations?view_op=view_citation&hl=en&user=JhWJ5PEAAAAJ&pagesize=100&citation_for_view=JhWJ5PEAAAAJ:yqoGN6RLRZoC
+  gsid: JhWJ5PEAAAAJ
+  plugin: google-scholar.py
+  file: google-scholar.yaml
+- title: Classification of positive COVID-19 CT scans using deep learning
+  authors:
+  - MA Khan
+  - N Hussain
+  - A Majid
+  - M Alhaisoni
+  - SAC Bukhari
+  - S Kadry
+  - Y Nam
+  publisher: Computers, Materials and Continua 66 (3), 2923-2938, 2020
+  date: '2020-01-01'
+  link: https://scholar.google.com/citations?view_op=view_citation&hl=en&user=JhWJ5PEAAAAJ&pagesize=100&citation_for_view=JhWJ5PEAAAAJ:4vMrXwiscB8C
+  gsid: JhWJ5PEAAAAJ
+  plugin: google-scholar.py
+  file: google-scholar.yaml
+- title: 'The ADC API: a web API for the programmatic query of the AIRR data commons'
+  authors:
+  - S Christley
+  - A Aguiar
+  - G Blanck
+  - F Breden
+  - SAC Bukhari
+  - CE Busse
+  publisher: Frontiers in big Data 3, 22, 2020
+  date: '2020-01-01'
+  link: https://scholar.google.com/citations?view_op=view_citation&hl=en&user=JhWJ5PEAAAAJ&pagesize=100&citation_for_view=JhWJ5PEAAAAJ:-mN3Mh-tlDkC
+  gsid: JhWJ5PEAAAAJ
+  plugin: google-scholar.py
+  file: google-scholar.yaml
+- title: The Future of Blood Testing Is the Immunome
+  authors:
+  - RA Arnaout
+  - ETL Prak
+  - N Schwab
+  - F Rubelt
+  - SACS Bukhari
+  publisher: Frontiers in Immunology 12, 2021
+  date: '2021-01-01'
+  link: https://scholar.google.com/citations?view_op=view_citation&hl=en&user=JhWJ5PEAAAAJ&pagesize=100&citation_for_view=JhWJ5PEAAAAJ:OcBU2YAGkTUC
+  gsid: JhWJ5PEAAAAJ
+  plugin: google-scholar.py
+  file: google-scholar.yaml
+- title: A statistically rigorous deep neural network approach to predict mortality
+    in trauma patients admitted to the intensive care unit
+  authors:
+  - FS Ahmed
+  - L Ali
+  - BA Joseph
+  - A Ikram
+  - RU Mustafa
+  - SAC Bukhari
+  publisher: Journal of Trauma and Acute Care Surgery 89 (4), 736-742, 2020
+  date: '2020-01-01'
+  link: https://scholar.google.com/citations?view_op=view_citation&hl=en&user=JhWJ5PEAAAAJ&pagesize=100&citation_for_view=JhWJ5PEAAAAJ:OTTXONDVkokC
+  gsid: JhWJ5PEAAAAJ
+  plugin: google-scholar.py
+  file: google-scholar.yaml
+- title: Issues of sustainability in AI and new-age thematic investing
+  authors:
+  - M Irfan
+  - K Hussainey
+  - SAC Bukhari
+  - Y Nam
+  publisher: IGI Global, 2024
+  date: '2024-01-01'
+  link: https://scholar.google.com/citations?view_op=view_citation&hl=en&user=JhWJ5PEAAAAJ&pagesize=100&citation_for_view=JhWJ5PEAAAAJ:LdasjJ6CEcoC
+  gsid: JhWJ5PEAAAAJ
+  plugin: google-scholar.py
+  file: google-scholar.yaml
+- title: A blockchain based framework for stomach abnormalities recognition
+  authors:
+  - MA Khan
+  - IM Nasir
+  - M Sharif
+  - M Alhaisoni
+  - S Kadry
+  - SAC Bukhari
+  - Y Nam
+  publisher: Computers, Materials and Continua 67 (1), 141-158, 2020
+  date: '2020-01-01'
+  link: https://scholar.google.com/citations?view_op=view_citation&hl=en&user=JhWJ5PEAAAAJ&pagesize=100&citation_for_view=JhWJ5PEAAAAJ:5MTHONV0fEkC
+  gsid: JhWJ5PEAAAAJ
+  plugin: google-scholar.py
+  file: google-scholar.yaml
+- id: doi:10.1016/j.ins.2012.02.036
+  title: 'Integration of a secure type-2 fuzzy ontology with a multi-agent platform:
+    A proposal to automate the personalized flight ticket booking domain'
+  authors:
+  - Ahmad C. Bukhari
+  - Yong-Gi Kim
+  publisher: Information Sciences
+  date: '2012-09-01'
+  link: https://doi.org/10.1016/j.ins.2012.02.036
+  orcid: 0000-0002-6517-5261
+  plugin: orcid.py
+  file: orcid.yaml
+  gsid: JhWJ5PEAAAAJ
+- title: Hand-sketchs based Parkinson's disease screening using lightweight deep-learning
+    with two-fold training and fused optimal features
+  authors:
+  - V Rajinikanth
+  - S Yassine
+  - SAC Bukhari
+  publisher: International Journal of Mathematics, Statistics, and Computer Science
+    2, 9-18, 2024
+  date: '2024-01-01'
+  link: https://scholar.google.com/citations?view_op=view_citation&hl=en&user=JhWJ5PEAAAAJ&pagesize=100&citation_for_view=JhWJ5PEAAAAJ:IaI1MmNe2tcC
+  gsid: JhWJ5PEAAAAJ
+  plugin: google-scholar.py
+  file: google-scholar.yaml
+- title: A deep learning approach for COVID-19 8 viral pneumonia screening with X-ray
+    images
+  authors:
+  - F Ahmed
+  - SAC Bukhari
+  - F Keshtkar
+  publisher: 'Digital Government: Research and Practice 2 (2), 1-12, 2021'
+  date: '2021-01-01'
+  link: https://scholar.google.com/citations?view_op=view_citation&hl=en&user=JhWJ5PEAAAAJ&pagesize=100&citation_for_view=JhWJ5PEAAAAJ:HIFyuExEbWQC
+  gsid: JhWJ5PEAAAAJ
+  plugin: google-scholar.py
+  file: google-scholar.yaml
+- id: doi:10.1007/s10462-019-09693-9
+  title: A comprehensive review of type-2 fuzzy Ontology
+  authors:
+  - Iqbal Qasim
+  - Mahmood Alam
+  - Shumaila Khan
+  - Abdul Wahid Khan
+  - Khalid Mahmood Malik
+  - Muhammad Saleem
+  - Syed Ahmad Chan Bukhari
+  publisher: Artificial Intelligence Review
+  date: '2019-03-01'
+  link: https://doi.org/10.1007/s10462-019-09693-9
+  orcid: 0000-0002-6517-5261
+  plugin: orcid.py
+  file: orcid.yaml
+  gsid: JhWJ5PEAAAAJ
+- id: doi:10.1007/s10489-012-0365-9
+  title: A research on an intelligent multipurpose fuzzy semantic enhanced 3D virtual
+    reality simulator for complex maritime missions
+  authors:
+  - Ahmad C. Bukhari
+  - Yong-Gi Kim
+  publisher: Applied Intelligence
+  date: '2012-07-08'
+  link: https://doi.org/10.1007/s10489-012-0365-9
+  orcid: 0000-0002-6517-5261
+  plugin: orcid.py
+  file: orcid.yaml
+  gsid: JhWJ5PEAAAAJ
+- title: 'Nonclinical features in predictive modeling of cardiovascular diseases:
+    a machine learning approach'
+  authors:
+  - MR Sajid
+  - N Muhammad
+  - R Zakaria
+  - A Shahbaz
+  - SAC Bukhari
+  - S Kadry
+  publisher: 'Interdisciplinary Sciences: Computational Life Sciences 13 (2), 201-211,
+    2021'
+  date: '2021-01-01'
+  link: https://scholar.google.com/citations?view_op=view_citation&hl=en&user=JhWJ5PEAAAAJ&pagesize=100&citation_for_view=JhWJ5PEAAAAJ:DJbcl8HfkQkC
+  gsid: JhWJ5PEAAAAJ
+  plugin: google-scholar.py
+  file: google-scholar.yaml
+- title: A hybrid query expansion framework for the optimal retrieval of the biomedical
+    literature
+  authors:
+  - S Malik
+  - U Shoaib
+  - SAC Bukhari
+  - H El Sayed
+  - MA Khan
+  publisher: Smart Health 23, 100247, 2022
+  date: '2022-01-01'
+  link: https://scholar.google.com/citations?view_op=view_citation&hl=en&user=JhWJ5PEAAAAJ&pagesize=100&citation_for_view=JhWJ5PEAAAAJ:Ehil0879vHcC
+  gsid: JhWJ5PEAAAAJ
+  plugin: google-scholar.py
+  file: google-scholar.yaml
+- title: 'Frameworks for querying databases using natural language: a literature review'
+  authors:
+  - HS Dar
+  - MI Lali
+  - MU Din
+  - KM Malik
+  - SAC Bukhari
+  publisher: arXiv preprint arXiv:1909.01822, 2019
+  date: '2019-01-01'
+  link: https://scholar.google.com/citations?view_op=view_citation&hl=en&user=JhWJ5PEAAAAJ&pagesize=100&citation_for_view=JhWJ5PEAAAAJ:_axFR9aDTf0C
+  gsid: JhWJ5PEAAAAJ
+  plugin: google-scholar.py
+  file: google-scholar.yaml
+- id: doi:10.1007/s10462-011-9238-6
+  title: Ontology-assisted automatic precise information extractor for visually impaired
+    inhabitants
+  authors:
+  - Ahmad C. Bukhari
+  - Yong-Gi Kim
+  publisher: Artificial Intelligence Review
+  date: '2011-05-26'
+  link: https://doi.org/10.1007/s10462-011-9238-6
+  orcid: 0000-0002-6517-5261
+  plugin: orcid.py
+  file: orcid.yaml
+  gsid: JhWJ5PEAAAAJ
+- title: Power-aware fog supported IoT network for healthcare infrastructure using
+    swarm intelligence-based algorithms
+  authors:
+  - HM Ali
+  - AB Bomgni
+  - SAC Bukhari
+  - T Hameed
+  - J Liu
+  publisher: Mobile Networks and Applications 28 (2), 824-838, 2023
+  date: '2023-01-01'
+  link: https://scholar.google.com/citations?view_op=view_citation&hl=en&user=JhWJ5PEAAAAJ&pagesize=100&citation_for_view=JhWJ5PEAAAAJ:wMgC3FpKEyYC
+  gsid: JhWJ5PEAAAAJ
+  plugin: google-scholar.py
+  file: google-scholar.yaml
+- title: Eeg forecasting with univariate and multivariate time series using windowing
+    and baseline method
+  authors:
+  - DK Thara
+  - BG Premasudha
+  - SAC Murthy
+  - TV
+  - Bukhari
+  publisher: "International Journal of E-Health and Medical Communications (IJEHMC)\
+    \ 13 (5 \u2026, 2022"
+  date: '2022-01-01'
+  link: https://scholar.google.com/citations?view_op=view_citation&hl=en&user=JhWJ5PEAAAAJ&pagesize=100&citation_for_view=JhWJ5PEAAAAJ:4xDN1ZYqzskC
+  gsid: JhWJ5PEAAAAJ
+  plugin: google-scholar.py
+  file: google-scholar.yaml
+- title: Analysis of dimensionality reduction techniques on Internet of Things data
+    using machine learning
+  authors:
+  - L Rashid
+  - S Rubab
+  - M Alhaisoni
+  - A Alqahtani
+  - S Alsubai
+  - A Binbusayyis
+  publisher: Sustainable Energy Technologies and Assessments 52, 102304, 2022
+  date: '2022-01-01'
+  link: https://scholar.google.com/citations?view_op=view_citation&hl=en&user=JhWJ5PEAAAAJ&pagesize=100&citation_for_view=JhWJ5PEAAAAJ:vDZJ-YLwNdEC
+  gsid: JhWJ5PEAAAAJ
+  plugin: google-scholar.py
+  file: google-scholar.yaml
+- title: 'The Canadian health census as Linked Open Data: towards policy making in
+    public health'
+  authors:
+  - AC Bukhari
+  - CJO Baker
+  publisher: Data Integration in the Life Sciences, 2013
+  date: '2013-01-01'
+  link: https://scholar.google.com/citations?view_op=view_citation&hl=en&user=JhWJ5PEAAAAJ&pagesize=100&citation_for_view=JhWJ5PEAAAAJ:WF5omc3nYNoC
+  gsid: JhWJ5PEAAAAJ
+  plugin: google-scholar.py
+  file: google-scholar.yaml
+  orcid: 0000-0002-6517-5261
+- title: The CAIRR pipeline for Submitting Standards-compliant B and T cell Receptor
+    Repertoire Sequencing Studies to the national center for Biotechnology Information
+    Repositories
+  authors:
+  - SAC Bukhari
+  - "MJ O\u2019Connor"
+  - "M Mart\xEDnez-Romero"
+  - AL Egyedi
+  - D Willrett
+  publisher: Frontiers in Immunology 9 (1877), 1, 2018
+  date: '2018-01-01'
+  link: https://scholar.google.com/citations?view_op=view_citation&hl=en&user=JhWJ5PEAAAAJ&pagesize=100&citation_for_view=JhWJ5PEAAAAJ:ruyezt5ZtCIC
+  gsid: JhWJ5PEAAAAJ
+  plugin: google-scholar.py
+  file: google-scholar.yaml
+- id: pubmed:30012108
+  title: 'CEDAR OnDemand: a browser extension to generate ontology-based scientific
+    metadata.'
+  authors:
+  - Syed Ahmad Chan Bukhari
+  - "Marcos Mart\xEDnez-Romero"
+  - Martin J O' Connor
+  - Attila L Egyedi
+  - Debra Willrett
+  - John Graybeal
+  - Mark A Musen
+  - Kei-Hoi Cheung
+  - Steven H Kleinstein
+  publisher: BMC bioinformatics
+  date: '2018-07-16'
+  link: https://www.ncbi.nlm.nih.gov/pubmed/30012108
+  term: 0000-0002-6517-5261[auid]
+  plugin: pubmed.py
+  file: pubmed.yaml
+  gsid: JhWJ5PEAAAAJ
+  orcid: 0000-0002-6517-5261
+- title: Assessing covid-19 and other pandemics and epidemics using computational
+    modelling and data analysis
+  authors:
+  - SK Pani
+  - S Dash
+  - WP dos Santos
+  - SAC Bukhari
+  - F Flammini
+  publisher: Springer International Publishing, 2022
+  date: '2022-01-01'
+  link: https://scholar.google.com/citations?view_op=view_citation&hl=en&user=JhWJ5PEAAAAJ&pagesize=100&citation_for_view=JhWJ5PEAAAAJ:4X0JR2_MtJMC
+  gsid: JhWJ5PEAAAAJ
+  plugin: google-scholar.py
+  file: google-scholar.yaml
+- id: doi:10.1109/JSEN.2021.3076114
+  title: Neuromechanical Signal-Based Parallel and Scalable Model for Lower Limb Movement
+    Recognition
+  authors:
+  - Nadeem Iqbal
+  - Tufail Khan
+  - Mukhtaj Khan
+  - Tahir Hussain
+  - Tahir Hameed
+  - Syed Ahmad Chan Bukhari
+  publisher: IEEE Sensors Journal
+  date: '2021-07-15'
+  link: https://doi.org/10.1109/JSEN.2021.3076114
+  orcid: 0000-0002-6517-5261
+  plugin: orcid.py
+  file: orcid.yaml
+  gsid: JhWJ5PEAAAAJ
+- title: Attention-based explainability approaches in healthcare natural language
+    processing
+  authors:
+  - H Amjad
+  - M Ashraf
+  - S Sherazi
+  - S Khan
+  - MM Fraz
+  - T Hameed
+  - SAC Bukhari
+  publisher: ''
+  date: '2023-01-01'
+  link: https://scholar.google.com/citations?view_op=view_citation&hl=en&user=JhWJ5PEAAAAJ&pagesize=100&citation_for_view=JhWJ5PEAAAAJ:48xauSegjOkC
+  gsid: JhWJ5PEAAAAJ
+  plugin: google-scholar.py
+  file: google-scholar.yaml
+- id: doi:10.1007/978-3-642-39437-9_6
+  title: Towards Interoperable BioNLP Semantic Web Services Using the SADI Framework
+  authors:
+  - Ahmad C. Bukhari
+  - Artjom Klein
+  - Christopher J. O. Baker
+  publisher: Lecture Notes in Computer Science
+  date: '2013-01-01'
+  link: https://doi.org/10.1007/978-3-642-39437-9_6
+  orcid: 0000-0002-6517-5261
+  plugin: orcid.py
+  file: orcid.yaml
+  gsid: JhWJ5PEAAAAJ
+- title: Reporting and connecting cell type names and gating definitions through ontologies
+  authors:
+  - JA Overton
+  - R Vita
+  - P Dunn
+  - JG Burel
+  - SAC Bukhari
+  - KH Cheung
+  publisher: BMC bioinformatics 20 (Suppl 5), 182, 2019
+  date: '2019-01-01'
+  link: https://scholar.google.com/citations?view_op=view_citation&hl=en&user=JhWJ5PEAAAAJ&pagesize=100&citation_for_view=JhWJ5PEAAAAJ:hCrLmN-GePgC
+  gsid: JhWJ5PEAAAAJ
+  plugin: google-scholar.py
+  file: google-scholar.yaml
+- title: 'AI tutor: Student''s perceptions and expectations of AI-driven tutoring
+    systems: A survey-based investigation'
+  authors:
+  - F Keshtkar
+  - N Rastogi
+  - S Chalarca
+  - SAC Bukhari
+  publisher: The International FLAIRS Conference Proceedings 37, 2024
+  date: '2024-01-01'
+  link: https://scholar.google.com/citations?view_op=view_citation&hl=en&user=JhWJ5PEAAAAJ&pagesize=100&citation_for_view=JhWJ5PEAAAAJ:PaBasH6fAo0C
+  gsid: JhWJ5PEAAAAJ
+  plugin: google-scholar.py
+  file: google-scholar.yaml
+- title: Semantic enrichment and similarity approximation for biomedical sequence
+    images
+  authors:
+  - SAC Bukhari
+  publisher: University of New Brunswick, Canada, 2016
+  date: '2016-01-01'
+  link: https://scholar.google.com/citations?view_op=view_citation&hl=en&user=JhWJ5PEAAAAJ&pagesize=100&citation_for_view=JhWJ5PEAAAAJ:WZBGuue-350C
+  gsid: JhWJ5PEAAAAJ
+  plugin: google-scholar.py
+  file: google-scholar.yaml
+  orcid: 0000-0002-6517-5261
+- id: doi:10.4081/jphr.2020.1893
+  title: 'Modifiable Risk Factors and Overall Cardiovascular Mortality: Moderation
+    of Urbanization'
+  authors:
+  - Mirza Rizwan Sajid
+  - Noryanti Muhammad
+  - Roslinazairimah Zakaria
+  - Syed Ahmad Chan Bukhari
+  publisher: Journal of Public Health Research
+  date: '2020-10-14'
+  link: https://doi.org/10.4081/jphr.2020.1893
+  orcid: 0000-0002-6517-5261
+  plugin: orcid.py
+  file: orcid.yaml
+  gsid: JhWJ5PEAAAAJ
+- title: Deep convolutional neural networks accurately predict breast cancer using
+    mammograms
+  authors:
+  - L Hussain
+  - S Ansari
+  - M Shabir
+  - SA Qureshi
+  - A Aldweesh
+  - A Omar
+  - Z Iqbal
+  publisher: Waves in Random and Complex Media 36 (3), 4512-4535, 2026
+  date: '2026-01-01'
+  link: https://scholar.google.com/citations?view_op=view_citation&hl=en&user=JhWJ5PEAAAAJ&pagesize=100&citation_for_view=JhWJ5PEAAAAJ:WHdLCjDvYFkC
+  gsid: JhWJ5PEAAAAJ
+  plugin: google-scholar.py
+  file: google-scholar.yaml
+- id: doi:10.31219/osf.io/mwjtq
+  title: 'Semantic Web in the Age of Big Data: A Perspective'
+  authors:
+  - Syed Ahmad Chan Bukhari
+  - ' dr.alikashif.b@ieee.org'
+  - Khalid Mahmood Malik
+  publisher: Center for Open Science
+  date: '2018-06-12'
+  link: https://doi.org/10.31219/osf.io/mwjtq
+  orcid: 0000-0002-6517-5261
+  plugin: orcid.py
+  file: orcid.yaml
+  gsid: JhWJ5PEAAAAJ
+- title: Regional precipitation response to regional warming in past and future climate
+  authors:
+  - B Ahmad
+  - S Haider
+  - SAA Bukhari
+  publisher: Pakistan Journal of Meteorology Vol 11 (22), 2015
+  date: '2015-01-01'
+  link: https://scholar.google.com/citations?view_op=view_citation&hl=en&user=JhWJ5PEAAAAJ&pagesize=100&citation_for_view=JhWJ5PEAAAAJ:PYBJJbyH-FwC
+  gsid: JhWJ5PEAAAAJ
+  plugin: google-scholar.py
+  file: google-scholar.yaml
+- title: 'SEBI: An Architecture for Biomedical Image Discovery, Interoperability and
+    Reusability Based on Semantic Enrichment.'
+  authors:
+  - SAC Bukhari
+  - M Krauthammer
+  - CJO Baker
+  publisher: "International Semantic Web Applications and Tools for Life Sciences\
+    \ \u2026, 2014"
+  date: '2014-01-01'
+  link: https://ceur-ws.org/Vol-1320/paper_8.pdf
+  gsid: JhWJ5PEAAAAJ
+  plugin: google-scholar.py
+  file: google-scholar.yaml
+  orcid: 0000-0002-6517-5261
+- id: doi:10.1145/3578364
+  title: Introduction to the Special Issue on DNA-centric Modeling and Practice for
+    Next-generation Computing and Communication Systems
+  authors:
+  - Suyel Namasudra
+  - Pascal Lorenz
+  - Seifedine Kadry
+  - Syed Ahmad Chan Bukhari
+  publisher: ACM Transactions on Multimedia Computing, Communications, and Applications
+  date: '2023-09-27'
+  link: https://doi.org/10.1145/3578364
+  orcid: 0000-0002-6517-5261
+  plugin: orcid.py
+  file: orcid.yaml
+  gsid: JhWJ5PEAAAAJ
+- title: Towards structured biomedical content authoring and publishing
+  authors:
+  - SF Mbouadeu
+  - A Abbas
+  - F Ahmed
+  - F Keshtkar
+  - J DeBello
+  - SAC Bukhari
+  publisher: 2022 IEEE 16th International Conference on Semantic Computing (ICSC)
+    175 (176), 2022
+  date: '2022-01-01'
+  link: https://scholar.google.com/citations?view_op=view_citation&hl=en&user=JhWJ5PEAAAAJ&pagesize=100&citation_for_view=JhWJ5PEAAAAJ:gVv57TyPmFsC
+  gsid: JhWJ5PEAAAAJ
+  plugin: google-scholar.py
+  file: google-scholar.yaml
+- title: 'BIM: An Open Ontology for the Annotation of Biomedical Images'
+  authors:
+  - AC Bukhari
+  - ML Nagy
+  - M Krauthammer
+  - P Ciccarese
+  - CJO Baker
+  publisher: International Conference on Biomedical Ontology (ICBO) 2015 1515, 2015
+  date: '2015-01-01'
+  link: https://ceur-ws.org/Vol-1515/regular8.pdf
+  gsid: JhWJ5PEAAAAJ
+  plugin: google-scholar.py
+  file: google-scholar.yaml
+  orcid: 0000-0002-6517-5261
+- title: 'Empowering health data fusion: A federated virtual knowledge graph approach
+    leveraging the Ontop platform'
+  authors:
+  - AA Fareedi
+  - M Ismail
+  - A Ghazawneh
+  - S Ahmed
+  - SAC Bukhari
+  publisher: ''
+  date: '2024-01-01'
+  link: https://scholar.google.com/citations?view_op=view_citation&hl=en&user=JhWJ5PEAAAAJ&pagesize=100&citation_for_view=JhWJ5PEAAAAJ:7BrZ7Jt4UNcC
+  gsid: JhWJ5PEAAAAJ
+  plugin: google-scholar.py
+  file: google-scholar.yaml
+- title: 'Harnessing the power of artificial intelligence and machine learning in
+    the islamic capital market: A comprehensive analysis'
+  authors:
+  - T Pal
+  - M Irfan
+  - SAC Bukhari
+  - SB Kassim
+  publisher: "Fintech Applications in Islamic Finance: AI, Machine Learning, and \u2026\
+    , 2024"
+  date: '2024-01-01'
+  link: https://scholar.google.com/citations?view_op=view_citation&hl=en&user=JhWJ5PEAAAAJ&pagesize=100&citation_for_view=JhWJ5PEAAAAJ:zCSUwVk65WsC
+  gsid: JhWJ5PEAAAAJ
+  plugin: google-scholar.py
+  file: google-scholar.yaml
+- title: 'iCyrus: A Semantic Framework for Biomedical Image Discovery.'
+  authors:
+  - SAC Bukhari
+  - ML Nagy
+  - P Ciccarese
+  - M Krauthammer
+  - CJO Baker
+  publisher: "International Semantic Web Applications and Tools for Life Sciences\
+    \ \u2026, 2015"
+  date: '2015-01-01'
+  link: https://ceur-ws.org/Vol-1546/paper_30.pdf
+  gsid: JhWJ5PEAAAAJ
+  plugin: google-scholar.py
+  file: google-scholar.yaml
+  orcid: 0000-0002-6517-5261
+- id: doi:10.1155/2014/676729
+  title: An Obstacle Recognizing Mechanism for Autonomous Underwater Vehicles Powered
+    by Fuzzy Domain Ontology and Support Vector Machine
+  authors:
+  - Zhen-Shu Mi
+  - Ahmad C. Bukhari
+  - Yong-Gi Kim
+  publisher: Mathematical Problems in Engineering
+  date: '2014-01-01'
+  link: https://doi.org/10.1155/2014/676729
+  orcid: 0000-0002-6517-5261
+  plugin: orcid.py
+  file: orcid.yaml
+  gsid: JhWJ5PEAAAAJ
+- id: doi:10.4156/ijact.vol3.issue6.27
+  title: 'Exploiting the Heavyweight Ontology with Multi-Agent System Using Vocal
+    Command System: A Case Study on E-Mall'
+  authors:
+  - Ahmad C. Bukhari -
+  - YongGi Kim -
+  publisher: International Journal of Advancements in Computing Technology
+  date: '2011-07-31'
+  link: https://doi.org/10.4156/ijact.vol3.issue6.27
+  orcid: 0000-0002-6517-5261
+  plugin: orcid.py
+  file: orcid.yaml
+  gsid: JhWJ5PEAAAAJ
+- id: pubmed:35602638
+  title: 'Exploration of Black Boxes of Supervised Machine Learning Models: A Demonstration
+    on Development of Predictive Heart Risk Score.'
+  authors:
+  - Mirza Rizwan Sajid
+  - Arshad Ali Khan
+  - Haitham M Albar
+  - Noryanti Muhammad
+  - Waqas Sami
+  - Syed Ahmad Chan Bukhari
+  - Iram Wajahat
+  publisher: Computational intelligence and neuroscience
+  date: '2022-05-12'
+  link: https://www.ncbi.nlm.nih.gov/pubmed/35602638
+  term: 0000-0002-6517-5261[auid]
+  plugin: pubmed.py
+  file: pubmed.yaml
+  gsid: JhWJ5PEAAAAJ
+  orcid: 0000-0002-6517-5261
+- title: 'LinkedImm: a linked data graph database for integrating immunological data'
+  authors:
+  - SAC Bukhari
+  - S Pawar
+  - J Mandell
+  - SH Kleinstein
+  - KH Cheung
+  publisher: BMC bioinformatics 22 (Suppl 9), 105, 2021
+  date: '2021-01-01'
+  link: https://scholar.google.com/citations?view_op=view_citation&hl=en&user=JhWJ5PEAAAAJ&pagesize=100&citation_for_view=JhWJ5PEAAAAJ:a3BOlSfXSfwC
+  gsid: JhWJ5PEAAAAJ
+  plugin: google-scholar.py
+  file: google-scholar.yaml
+- title: 'Sketch-based facial recognition: a weighted component-based approach (WCBA)'
+  authors:
+  - FU Mangla
+  - M Shahzad
+  - MIU Lali
+  - SAC Bukhari
+  publisher: Multimedia Tools and Applications 79 (37), 27533-27553, 2020
+  date: '2020-01-01'
+  link: https://scholar.google.com/citations?view_op=view_citation&hl=en&user=JhWJ5PEAAAAJ&pagesize=100&citation_for_view=JhWJ5PEAAAAJ:IRz6iEL74y4C
+  gsid: JhWJ5PEAAAAJ
+  plugin: google-scholar.py
+  file: google-scholar.yaml
+- title: A novel key-frame selection-based sign language recognition framework for
+    the video data
+  authors:
+  - FU Mangla
+  - A Bashir
+  - I Lali
+  - AC Bukhari
+  - B Shahzad
+  publisher: The Imaging Science Journal 68 (3), 156-169, 2020
+  date: '2020-01-01'
+  link: https://scholar.google.com/citations?view_op=view_citation&hl=en&user=JhWJ5PEAAAAJ&pagesize=100&citation_for_view=JhWJ5PEAAAAJ:_5tno0g5mFcC
+  gsid: JhWJ5PEAAAAJ
+  plugin: google-scholar.py
+  file: google-scholar.yaml
+- title: 'AIRR community, Luning Prak ET, Kleinstein SH: adaptive immune receptor
+    repertoire community recommendations for sharing immune-repertoire sequencing
+    data'
+  authors:
+  - F Rubelt
+  - CE Busse
+  - SAC Bukhari
+  - "JP B\xFCrckert"
+  - E Mariotti-Ferrandiz
+  publisher: Nat Immunol 18, 1274-8, 2017
+  date: '2017-01-01'
+  link: https://scholar.google.com/citations?view_op=view_citation&hl=en&user=JhWJ5PEAAAAJ&pagesize=100&citation_for_view=JhWJ5PEAAAAJ:ClCfbGk0d_YC
+  gsid: JhWJ5PEAAAAJ
+  plugin: google-scholar.py
+  file: google-scholar.yaml
+- title: Incorporation of Fuzzy Theory with Heavyweight Ontology and Its Application
+    on Vague Information Retrieval for Decision Making
+  authors:
+  - AC Bukhari
+  - YG Kim
+  publisher: International Journal of Fuzzy Logic and Intelligent Systems 11 (3),
+    171-177, 2011
+  date: '2011-01-01'
+  link: https://scholar.google.com/citations?view_op=view_citation&hl=en&user=JhWJ5PEAAAAJ&pagesize=100&citation_for_view=JhWJ5PEAAAAJ:IjCSPb-OGe4C
+  gsid: JhWJ5PEAAAAJ
+  plugin: google-scholar.py
+  file: google-scholar.yaml
+  orcid: 0000-0002-6517-5261
+- title: Accelerating medical knowledge discovery through automated knowledge graph
+    generation and enrichment
+  authors:
+  - M Khalid
+  - R Rahman
+  - A Abbas
+  - S Kumari
+  - I Wajahat
+  - SAC Bukhari
+  publisher: International Knowledge Graph and Semantic Web Conference, 62-77, 2024
+  date: '2024-01-01'
+  link: https://scholar.google.com/citations?view_op=view_citation&hl=en&user=JhWJ5PEAAAAJ&pagesize=100&citation_for_view=JhWJ5PEAAAAJ:7Hz3ACDFbsoC
+  gsid: JhWJ5PEAAAAJ
+  plugin: google-scholar.py
+  file: google-scholar.yaml
+- title: 'Advancing Precision Healthcare Analytics: Machine Learning Approaches for
+    Diabetes Prognosis using the PIMA Indian Dataset'
+  authors:
+  - I Wajahat
+  - F Keshtkar
+  - SAC Bukhari
+  publisher: The International FLAIRS Conference Proceedings 37, 2024
+  date: '2024-01-01'
+  link: https://scholar.google.com/citations?view_op=view_citation&hl=en&user=JhWJ5PEAAAAJ&pagesize=100&citation_for_view=JhWJ5PEAAAAJ:FiytvqdAVhgC
+  gsid: JhWJ5PEAAAAJ
+  plugin: google-scholar.py
+  file: google-scholar.yaml
+- title: Explainable prediction of medical codes through automated knowledge graph
+    curation framework
+  authors:
+  - M Khalid
+  - HA Khattak
+  - A Ahmad
+  - SAC Bukhari
+  publisher: "2022 19th International Bhurban Conference on Applied Sciences and \u2026\
+    , 2022"
+  date: '2022-01-01'
+  link: https://scholar.google.com/citations?view_op=view_citation&hl=en&user=JhWJ5PEAAAAJ&pagesize=100&citation_for_view=JhWJ5PEAAAAJ:PVgj2kMGcgYC
+  gsid: JhWJ5PEAAAAJ
+  plugin: google-scholar.py
+  file: google-scholar.yaml
+- title: Biomedical scholarly article editing and sharing using holistic semantic
+    uplifting approach
+  authors:
+  - A Abbas
+  - SF Mbouadeu
+  - F Keshtkar
+  - J DeBello
+  - SAC Bukhari
+  publisher: The International FLAIRS Conference Proceedings 35, 2022
+  date: '2022-01-01'
+  link: https://scholar.google.com/citations?view_op=view_citation&hl=en&user=JhWJ5PEAAAAJ&pagesize=100&citation_for_view=JhWJ5PEAAAAJ:tH6gc1N1XXoC
+  gsid: JhWJ5PEAAAAJ
+  plugin: google-scholar.py
+  file: google-scholar.yaml
+- title: "Iv, Duncan K Ralph, Aaron M Rosenfeld, Chaim A Schramm, AIRR Community,\
+    \ Scott Christley, and Uri Laserson. AIRR community standardized representations\
+    \ for annotated immune \u2026"
+  authors:
+  - JA Vander Heiden
+  - S Marquez
+  - N Marthandan
+  - SAC Bukhari
+  - CE Busse
+  publisher: Front. Immunol 9, 2206, 2018
+  date: '2018-01-01'
+  link: https://scholar.google.com/citations?view_op=view_citation&hl=en&user=JhWJ5PEAAAAJ&pagesize=100&citation_for_view=JhWJ5PEAAAAJ:lvd772isFD0C
+  gsid: JhWJ5PEAAAAJ
+  plugin: google-scholar.py
+  file: google-scholar.yaml
+- title: Discriminative Sequence Features for DNA-Binding Protein Detection Using
+    ML and DL Techniques
+  authors:
+  - I Uddin
+  - N Iqbal
+  - SAC Bukhari
+  publisher: "2025 IEEE International Conference on Future Machine Learning and Data\
+    \ \u2026, 2026"
+  date: '2026-01-01'
+  link: https://scholar.google.com/citations?view_op=view_citation&hl=en&user=JhWJ5PEAAAAJ&pagesize=100&citation_for_view=JhWJ5PEAAAAJ:1Ye0OR6EYb4C
+  gsid: JhWJ5PEAAAAJ
+  plugin: google-scholar.py
+  file: google-scholar.yaml
+- title: Multifaceted Fusion of Glove and Additive Attention Models for Scalable Fake
+    News Detection
+  authors:
+  - AU Rahman
+  - N Iqbal
+  - I Uddin
+  - SAC Bukhari
+  publisher: "2025 IEEE International Conference on Future Machine Learning and Data\
+    \ \u2026, 2026"
+  date: '2026-01-01'
+  link: https://scholar.google.com/citations?view_op=view_citation&hl=en&user=JhWJ5PEAAAAJ&pagesize=100&citation_for_view=JhWJ5PEAAAAJ:jFemdcug13IC
+  gsid: JhWJ5PEAAAAJ
+  plugin: google-scholar.py
+  file: google-scholar.yaml
+- title: 'AI tutor: Transforming education with intelligent learning'
+  authors:
+  - F Keshtkar
+  - S Chalarca
+  - G Bardelli
+  - A Ilyasov
+  - S Torres
+  - SAC Bukhari
+  publisher: The International FLAIRS Conference Proceedings 38, 2025
+  date: '2025-01-01'
+  link: https://scholar.google.com/citations?view_op=view_citation&hl=en&user=JhWJ5PEAAAAJ&pagesize=100&citation_for_view=JhWJ5PEAAAAJ:3NQIlFlcGxIC
+  gsid: JhWJ5PEAAAAJ
+  plugin: google-scholar.py
+  file: google-scholar.yaml
+- title: An NLP-enhanced approach to test comorbidities risk scoring based on unstructured
+    health data for hospital readmissions prediction
+  authors:
+  - T Hameed
+  - HJ Khan
+  - S Khan
+  - M Khalid
+  - A Abbas
+  - SAC Bukhari
+  publisher: ''
+  date: '2023-01-01'
+  link: https://scholar.google.com/citations?view_op=view_citation&hl=en&user=JhWJ5PEAAAAJ&pagesize=100&citation_for_view=JhWJ5PEAAAAJ:otzGkya1bYkC
+  gsid: JhWJ5PEAAAAJ
+  plugin: google-scholar.py
+  file: google-scholar.yaml
+- id: doi:10.1101/2020.02.04.20020222
+  title: Machine Learning Can Predict Deaths in Patients with Diverticulitis During
+    their Hospital Stay
+  authors:
+  - Fahad Shabbir Ahmed
+  - ' Raza-Ul-Mustafa'
+  - Liaqat Ali
+  - ' Imad-ud-Deen'
+  - Tahir Hameed
+  - Asad Ikram
+  - Syed Ahmad Chan Bukhari
+  publisher: openRxiv
+  date: '2020-02-07'
+  link: https://doi.org/10.1101/2020.02.04.20020222
+  orcid: 0000-0002-6517-5261
+  plugin: orcid.py
+  file: orcid.yaml
+  gsid: JhWJ5PEAAAAJ
+- title: Predicting 30-days All-cause Hospital Readmissions Considering Discharge-to-alternate-care-facilities
+  authors:
+  - T Hameed
+  - SAC Bukhari
+  publisher: "13th International Joint Conference on Biomedical Engineering Systems\
+    \ and \u2026, 2020"
+  date: '2020-01-01'
+  link: https://scholar.google.com/citations?view_op=view_citation&hl=en&user=JhWJ5PEAAAAJ&pagesize=100&citation_for_view=JhWJ5PEAAAAJ:a9-T7VOCCH8C
+  gsid: JhWJ5PEAAAAJ
+  plugin: google-scholar.py
+  file: google-scholar.yaml
+- title: 'Semantically: a framework for structured biomedical content authoring and
+    publishing'
+  authors:
+  - SF Mbouadeu
+  - F Keshtkar
+  - SAC Bukhari
+  publisher: 2021 International Semantic Web Conference 2980, 2021
+  date: '2021-01-01'
+  link: https://scholar.google.com/citations?view_op=view_citation&hl=en&user=JhWJ5PEAAAAJ&pagesize=100&citation_for_view=JhWJ5PEAAAAJ:F9fV5C73w3QC
+  gsid: JhWJ5PEAAAAJ
+  plugin: google-scholar.py
+  file: google-scholar.yaml
+- id: doi:10.1101/2020.04.08.032011
+  title: 'D4: Deep Drug-drug interaction Discovery and Demystification'
+  authors:
+  - Adeeb Noor
+  - Wang Liu-Wei
+  - Ahmed Barnawi
+  - Redhwan Nour
+  - Abdullah A Assiri
+  - Syed Ahmad Chan Bukhari
+  - Robert Hoehndorf
+  publisher: openRxiv
+  date: '2020-04-09'
+  link: https://doi.org/10.1101/2020.04.08.032011
+  orcid: 0000-0002-6517-5261
+  plugin: orcid.py
+  file: orcid.yaml
+  gsid: JhWJ5PEAAAAJ
+- title: Clinical ketosis in lactating dairy cows and its therapeutic management.
+  authors:
+  - S Bashir
+  - I Ashraf
+  - S Bukhari
+  - AA Dar
+  publisher: ''
+  date: '2016-01-01'
+  link: https://scholar.google.com/citations?view_op=view_citation&hl=en&user=JhWJ5PEAAAAJ&pagesize=100&citation_for_view=JhWJ5PEAAAAJ:u-coK7KVo8oC
+  gsid: JhWJ5PEAAAAJ
+  plugin: google-scholar.py
+  file: google-scholar.yaml
+- title: A Symbolic AI Framework for Enhanced Diabetes Prognosis Accuracy and Explainability
+  authors:
+  - I Wajahat
+  - A Singh
+  - F Keshtkar
+  - SAC Bukhari
+  publisher: "2024 IEEE International Conference on Future Machine Learning and Data\
+    \ \u2026, 2024"
+  date: '2024-01-01'
+  link: https://scholar.google.com/citations?view_op=view_citation&hl=en&user=JhWJ5PEAAAAJ&pagesize=100&citation_for_view=JhWJ5PEAAAAJ:CB2v5VPnA5kC
+  gsid: JhWJ5PEAAAAJ
+  plugin: google-scholar.py
+  file: google-scholar.yaml
+- title: A socio-technical approach to trustworthy semantic biomedical content generation
+    and sharing
+  authors:
+  - A Abbas
+  - T Hameed
+  - F Keshtkar
+  - S Kadry
+  - SAC Bukhari
+  publisher: Information Sciences 666, 120441, 2024
+  date: '2024-01-01'
+  link: https://scholar.google.com/citations?view_op=view_citation&hl=en&user=JhWJ5PEAAAAJ&pagesize=100&citation_for_view=JhWJ5PEAAAAJ:kVjdVfd2voEC
+  gsid: JhWJ5PEAAAAJ
+  plugin: google-scholar.py
+  file: google-scholar.yaml
+- id: doi:10.32473/flairs.36.133253
+  title: Enhancing Biomedical Semantic Annotations through a Knowledge Graph-Based
+    Approach
+  authors:
+  - Asim Abbas
+  - Mutahira Khalid
+  - Sebastian Chalarca
+  - Fazel Keshtkar
+  - Syed Ahmad Chan Bukhari
+  publisher: The International FLAIRS Conference Proceedings
+  date: '2023-05-08'
+  link: https://doi.org/10.32473/flairs.36.133253
+  orcid: 0000-0002-6517-5261
+  plugin: orcid.py
+  file: orcid.yaml
+  gsid: JhWJ5PEAAAAJ
+- title: Personalized semantic annotation recommendations on biomedical content through
+    an expanded socio-technical approach
+  authors:
+  - A Abbas
+  - S Mbouadeu
+  - T Hameed
+  - SAC Bukhari
+  publisher: ''
+  date: '2023-01-01'
+  link: https://scholar.google.com/citations?view_op=view_citation&hl=en&user=JhWJ5PEAAAAJ&pagesize=100&citation_for_view=JhWJ5PEAAAAJ:CaZNVDsoPx4C
+  gsid: JhWJ5PEAAAAJ
+  plugin: google-scholar.py
+  file: google-scholar.yaml
+- title: Knowledge Graph Based Trustworthy Medical Code Recommendations
+  authors:
+  - M Khalid
+  - A Abbas
+  - H Sajjad
+  - H Khattak
+  - T Hameed
+  - SAC Bukhari
+  publisher: ''
+  date: '2023-01-01'
+  link: https://scholar.google.com/citations?view_op=view_citation&hl=en&user=JhWJ5PEAAAAJ&pagesize=100&citation_for_view=JhWJ5PEAAAAJ:buQ7SEKw-1sC
+  gsid: JhWJ5PEAAAAJ
+  plugin: google-scholar.py
+  file: google-scholar.yaml
+- title: Proficient annotation recommendation in a biomedical content authoring environment
+  authors:
+  - A Abbas
+  - S Mbouadeu
+  - A Bisram
+  - N Iqbal
+  - F Keshtkar
+  - SAC Bukhari
+  publisher: Iberoamerican Knowledge Graphs and Semantic Web Conference, 149-162,
+    2022
+  date: '2022-01-01'
+  link: https://scholar.google.com/citations?view_op=view_citation&hl=en&user=JhWJ5PEAAAAJ&pagesize=100&citation_for_view=JhWJ5PEAAAAJ:0CzhzZyukY4C
+  gsid: JhWJ5PEAAAAJ
+  plugin: google-scholar.py
+  file: google-scholar.yaml
+- title: Role of Telemedicine in Developed and Under-Developed Countries
+  authors:
+  - MD Farhan Khan
+  - FS Chaudhary
+  - MN Yousaf
+  - SAC Bukhari
+  publisher: IEEE Internet Initiative 2016, 2016
+  date: '2016-01-01'
+  link: https://scholar.google.com/citations?view_op=view_citation&hl=en&user=JhWJ5PEAAAAJ&pagesize=100&citation_for_view=JhWJ5PEAAAAJ:kz9GbA2Ns4gC
+  gsid: JhWJ5PEAAAAJ
+  plugin: google-scholar.py
+  file: google-scholar.yaml
+  orcid: 0000-0002-6517-5261
+- title: Leveraging the CEDAR Workbench for Ontology-linked Submission of Adaptive
+    Immune Receptor Repertoire Data to the Sequence Read Archive (SRA)
+  authors:
+  - SAC Bukhari
+  - MJ O'Connor
+  - J Graybeal
+  - MA Musen
+  - KH Cheung
+  publisher: ''
+  date: '2016-01-01'
+  link: https://doi.org/10.6084/m9.figshare.4244126
+  gsid: JhWJ5PEAAAAJ
+  plugin: google-scholar.py
+  file: google-scholar.yaml
+  orcid: 0000-0002-6517-5261
+- title: 'HO2IEV: Heavyweight ontology based web information extraction technique
+    for visionless users'
+  authors:
+  - AC Bukhari
+  - AA Fareedi
+  - YG Kim
+  publisher: "The 7th International Conference on Networked Computing and Advanced\
+    \ \u2026, 2011"
+  date: '2011-01-01'
+  link: https://ieeexplore.ieee.org/document/5967523/
+  gsid: JhWJ5PEAAAAJ
+  plugin: google-scholar.py
+  file: google-scholar.yaml
+  orcid: 0000-0002-6517-5261
+- id: pubmed:40003734
+  title: 'Correction: Zafar et al. Skin Lesion Analysis and Cancer Detection Based
+    on Machine/Deep Learning Techniques: A Comprehensive Survey.'
+  authors:
+  - Mehwish Zafar
+  - Muhammad Imran Sharif
+  - Muhammad Irfan Sharif
+  - Seifedine Kadry
+  - Syed Ahmad Chan Bukhari
+  - Hafiz Tayyab Rauf
+  publisher: Life (Basel, Switzerland)
+  date: '2025-02-18'
+  link: https://www.ncbi.nlm.nih.gov/pubmed/40003734
+  term: 0000-0002-6517-5261[auid]
+  plugin: pubmed.py
+  file: pubmed.yaml
+- id: doi:10.64898/2026.08.05.26359803
+  title: 'SynTrustBench: An Evidence-Gated and Executable Benchmark for Trustworthiness
+    Claims in Synthetic Clinical Data'
+  authors:
+  - Neeam Shahriar Hayder
+  - Syed Ahmad Chan Bukhari
+  publisher: openRxiv
+  date: '2026-08-10'
+  link: https://doi.org/10.64898/2026.08.05.26359803
+  orcid: 0000-0002-6517-5261
+  plugin: orcid.py
+  file: orcid.yaml
+- id: doi:10.64898/2026.07.08.26357574
+  title: 'FHIRTrustBench: A Benchmark for Interoperability-Driven Clinical AI Readiness
+    and Trustworthiness'
+  authors:
+  - Syed Ahmad Chan Bukhari
+  - Neeam Shahriar Hayder
+  - Iram Wajahat
+  publisher: openRxiv
+  date: '2026-07-13'
+  link: https://doi.org/10.64898/2026.07.08.26357574
+  orcid: 0000-0002-6517-5261
+  plugin: sources.py
+  file: sources.yaml
+  tags:
+  - benchmarking
+  - clinical AI
+- id: doi:10.3390/jdad3020018
+  title: "Digital Biomarkers for Early Detection of Alzheimer\u2019s Disease: A Comprehensive\
+    \ Review and Bibliometric Analysis"
+  authors:
+  - Rahmat Ullah
+  - Saeed Akbar
+  - Rab Nawaz
+  - Zulfiqar Ali
+  - Vishal Krishna Singh
+  - Syed Ahmad Chan Bukhari
+  publisher: Journal of Dementia and Alzheimer's Disease
+  date: '2026-04-03'
+  link: https://doi.org/10.3390/jdad3020018
+  orcid: 0000-0002-6517-5261
+  plugin: orcid.py
+  file: orcid.yaml
+- id: doi:10.3390/life15020316
+  title: 'Correction: Zafar et al. Skin Lesion Analysis and Cancer Detection Based
+    on Machine/Deep Learning Techniques: A Comprehensive Survey. Life 2023, 13, 146'
+  authors:
+  - Mehwish Zafar
+  - Muhammad Imran Sharif
+  - Muhammad Irfan Sharif
+  - Seifedine Kadry
+  - Syed Ahmad Chan Bukhari
+  - Hafiz Tayyab Rauf
+  publisher: Life
+  date: '2025-02-18'
+  link: https://doi.org/10.3390/life15020316
+  orcid: 0000-0002-6517-5261
+  plugin: orcid.py
+  file: orcid.yaml
+- id: doi:10.1007/978-3-031-25380-5_6
+  title: "A Decentralized Environment for\_Biomedical Semantic Content Authoring and\_\
+    Publishing"
+  authors:
+  - Asim Abbas
+  - Steve Fonin Mbouadeu
+  - Fazel Keshtkar
+  - Hasan Ali Khattak
+  - Tahir Hameed
+  - Syed Ahmad Chan Bukhari
+  publisher: Communications in Computer and Information Science
+  date: '2023-01-01'
+  link: https://doi.org/10.1007/978-3-031-25380-5_6
+  orcid: 0000-0002-6517-5261
+  plugin: orcid.py
+  file: orcid.yaml
+- id: doi:10.1101/19006254
+  title: A Hybrid Machine Learning Framework to Predict Early Risk of Mortality in
+    Paralytic Ileus Patients using Electronic Health Records
+  authors:
+  - Fahad Shabbir Ahmad
+  - Liaqat Ali
+  - ' Raza-Ul-Mustafa'
+  - Hasan Ali Khattak
+  - Syed Ahmad Chan Bukhari
+  publisher: openRxiv
+  date: '2019-09-16'
+  link: https://doi.org/10.1101/19006254
+  orcid: 0000-0002-6517-5261
+  plugin: orcid.py
+  file: orcid.yaml
+- title: Towards Ontological Mapping of Immunological Data Standards
+  publisher: BioOntologies 2016
+  date: '2018-07-02'
+  orcid: 0000-0002-6517-5261
+  plugin: orcid.py
+  file: orcid.yaml
+- title: Biomedical Image Ontology on BioPortal.
+  publisher: https://bioportal.bioontology.org/ontologies/BIM
+  date: '2018-07-02'
+  orcid: 0000-0002-6517-5261
+  plugin: orcid.py
+  file: orcid.yaml
+  link: https://bioportal.bioontology.org/ontologies/BIM
+- title: An Interoperable Framework for Biomedical Image Retrieval and Knowledge Discovery
+  publisher: Conference on Semantics in Healthcare and Life Sciences 2014
+  date: '2018-07-02'
+  orcid: 0000-0002-6517-5261
+  plugin: orcid.py
+  file: orcid.yaml
+- title: Next-generation semantic search platform for biomedical images
+  publisher: 5th Atlantic Workshop on Semantics and Services  February 24, 2014, Saint
+    John, New Brunswick, Canada
+  date: '2018-07-02'
+  orcid: 0000-0002-6517-5261
+  plugin: orcid.py
+  file: orcid.yaml
+- title: Personalized Information Seeking Powered by Mobile Ontology for Sightless
+    Residents of under Developing States
+  publisher: International Journal of Computer and Communication Engineering (IJCCE)
+  date: '2018-07-02'
+  orcid: 0000-0002-6517-5261
+  plugin: orcid.py
+  file: orcid.yaml
+- title: 'Ontology Learning: Information Logistic'
+  date: '2018-07-02'
+  orcid: 0000-0002-6517-5261
+  plugin: orcid.py
+  file: orcid.yaml
 - id: arxiv:2607.11954
   title: Graph-Constrained Policy Learning for Extreme Clinical Code Prediction
   authors:
@@ -659,7 +1578,8 @@
   plugin: sources.py
   file: sources.yaml
 - id: arxiv:2509.18145
-  title: Early Prediction of Multi-Label Care Escalation Triggers in the Intensive Care Unit Using Electronic Health Records
+  title: Early Prediction of Multi-Label Care Escalation Triggers in the Intensive
+    Care Unit Using Electronic Health Records
   authors:
   - Syed Ahmad Chan Bukhari
   - Amritpal Singh
@@ -674,7 +1594,8 @@
   plugin: sources.py
   file: sources.yaml
 - id: arxiv:2509.18140
-  title: A Machine Learning Framework for Pathway-Driven Therapeutic Target Discovery in Metabolic Disorders
+  title: A Machine Learning Framework for Pathway-Driven Therapeutic Target Discovery
+    in Metabolic Disorders
   authors:
   - Iram Wajahat
   - Amritpal Singh

@@ -23,9 +23,46 @@ LINK_OVERRIDES = {
         "https://ieeexplore.ieee.org/document/5967523/",
 }
 
+# Known same-paper title variants that differ in wording (not just trailing
+# citation-string junk) across sources, so plain prefix-matching in
+# deduplicate_generated_citations can't catch them. Maps a variant's
+# normalized title to the canonical normalized title it should merge with.
+TITLE_ALIASES = {
+    "lung nodules detection using semantic segmentation and classification with optimal features":
+        "lungs nodule detection using semantic segmentation and classification with optimal features",
+}
+
 
 def normalize_title(value: Any) -> str:
     return " ".join(re.sub(r"[^a-z0-9]+", " ", str(value or "").lower()).split())
+
+
+def canonical_title_key(value: Any) -> str:
+    key = normalize_title(value)
+    return TITLE_ALIASES.get(key, key)
+
+
+def is_scholar_only(citation: dict[str, Any]) -> bool:
+    return bool(citation.get("gsid")) and not citation.get("id")
+
+
+def same_paper(key_a: str, citation_a: dict[str, Any], key_b: str, citation_b: dict[str, Any]) -> bool:
+    if key_a == key_b:
+        return True
+
+    # Google Scholar sometimes returns the title with trailing citation
+    # metadata appended (journal name, volume/pages, "et al."), e.g.
+    # "Foo Bar. Diagnostics, 2020, 10 (8), 565" for the real title "Foo Bar".
+    # Only merge on a prefix match when one side is Scholar-only (no
+    # doi/pmid), so two independently-identified papers that legitimately
+    # share a title prefix (e.g. a short paper and its extended journal
+    # version) are never merged.
+    if is_scholar_only(citation_a) or is_scholar_only(citation_b):
+        shorter, longer = sorted([key_a, key_b], key=len)
+        if len(shorter) > 15 and longer.startswith(shorter):
+            return True
+
+    return False
 
 
 def citation_quality(citation: dict[str, Any]) -> int:
@@ -70,20 +107,25 @@ def normalize_generated_citation(
 def deduplicate_generated_citations(
     citations: list[dict[str, Any]],
 ) -> list[dict[str, Any]]:
-    selected: dict[str, dict[str, Any]] = {}
-    order: list[str] = []
+    selected: list[dict[str, Any]] = []
+    keys: list[str] = []
 
     for citation in citations:
-        key = normalize_title(citation.get("title"))
+        key = canonical_title_key(citation.get("title"))
         if not key:
             continue
 
-        if key not in selected:
-            selected[key] = citation
-            order.append(key)
+        match_index = next(
+            (i for i, existing_key in enumerate(keys) if same_paper(existing_key, selected[i], key, citation)),
+            None,
+        )
+
+        if match_index is None:
+            selected.append(citation)
+            keys.append(key)
             continue
 
-        current = selected[key]
+        current = selected[match_index]
         if citation_quality(citation) > citation_quality(current):
             better, other = citation, current
         else:
@@ -92,6 +134,6 @@ def deduplicate_generated_citations(
         for field, value in other.items():
             if not better.get(field) and value:
                 better[field] = value
-        selected[key] = better
+        selected[match_index] = better
 
-    return [selected[key] for key in order]
+    return selected
