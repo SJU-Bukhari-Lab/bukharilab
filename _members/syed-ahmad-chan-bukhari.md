@@ -8,7 +8,7 @@ affiliation: St. John's University
 links:
   google-scholar: JhWJ5PEAAAAJ
   linkedin: drahmadbukhari
-  website: https://www.stjohns.edu/academics/faculty/syed-ahmad-chan-bukhari
+  website: https://www.drahmadbukhari.com
 ---
 
 Dr. Bukhari is a tenured Associate Professor and Director of Research in the Collins College of Professional Studies at St. John’s University, where he also directs Healthcare Informatics. He earned his Ph.D. in Computer Science from the University of New Brunswick and completed postdoctoral training in biomedical informatics at Yale University. He previously served as a core research team member at Stanford University’s CEDAR Metadata Center and received an NIH ORISE fellowship to work at the National Center for Biotechnology Information.
