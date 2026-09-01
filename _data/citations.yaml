@@ -1,5 +1,20 @@
+# DO NOT EDIT, GENERATED AUTOMATICALLY
+
+- id: doi:10.64898/2026.08.05.26359803
+  title: 'SynTrustBench: An Evidence-Gated and Executable Benchmark for Trustworthiness
+    Claims in Synthetic Clinical Data'
+  authors:
+  - Neeam Shahriar Hayder
+  - Syed Ahmad Chan Bukhari
+  publisher: openRxiv
+  date: '2026-08-10'
+  link: https://doi.org/10.64898/2026.08.05.26359803
+  orcid: 0000-0002-6517-5261
+  plugin: orcid.py
+  file: orcid.yaml
 - id: doi:10.64898/2026.07.08.26357574
-  title: 'FHIRTrustBench: A Benchmark for Interoperability-Driven Clinical AI Readiness and Trustworthiness'
+  title: 'FHIRTrustBench: A Benchmark for Interoperability-Driven Clinical AI Readiness
+    and Trustworthiness'
   authors:
   - Syed Ahmad Chan Bukhari
   - Neeam Shahriar Hayder
@@ -14,7 +29,8 @@
   - benchmarking
   - clinical AI
 - id: doi:10.3390/jdad3020018
-  title: 'Digital Biomarkers for Early Detection of Alzheimer’s Disease: A Comprehensive Review and Bibliometric Analysis'
+  title: "Digital Biomarkers for Early Detection of Alzheimer\u2019s Disease: A Comprehensive\
+    \ Review and Bibliometric Analysis"
   authors:
   - Rahmat Ullah
   - Saeed Akbar
@@ -29,7 +45,8 @@
   plugin: orcid.py
   file: orcid.yaml
 - id: doi:10.3390/life15020316
-  title: 'Correction: Zafar et al. Skin Lesion Analysis and Cancer Detection Based on Machine/Deep Learning Techniques: A Comprehensive Survey. Life 2023, 13, 146'
+  title: 'Correction: Zafar et al. Skin Lesion Analysis and Cancer Detection Based
+    on Machine/Deep Learning Techniques: A Comprehensive Survey. Life 2023, 13, 146'
   authors:
   - Mehwish Zafar
   - Muhammad Imran Sharif
@@ -44,7 +61,8 @@
   plugin: orcid.py
   file: orcid.yaml
 - id: doi:10.1145/3578364
-  title: Introduction to the Special Issue on DNA-centric Modeling and Practice for Next-generation Computing and Communication Systems
+  title: Introduction to the Special Issue on DNA-centric Modeling and Practice for
+    Next-generation Computing and Communication Systems
   authors:
   - Suyel Namasudra
   - Pascal Lorenz
@@ -57,7 +75,8 @@
   plugin: orcid.py
   file: orcid.yaml
 - id: doi:10.32473/flairs.36.133253
-  title: Enhancing Biomedical Semantic Annotations through a Knowledge Graph-Based Approach
+  title: Enhancing Biomedical Semantic Annotations through a Knowledge Graph-Based
+    Approach
   authors:
   - Asim Abbas
   - Mutahira Khalid
@@ -71,7 +90,8 @@
   plugin: orcid.py
   file: orcid.yaml
 - id: doi:10.3390/life13010146
-  title: 'Skin Lesion Analysis and Cancer Detection Based on Machine/Deep Learning Techniques: A Comprehensive Survey'
+  title: 'Skin Lesion Analysis and Cancer Detection Based on Machine/Deep Learning
+    Techniques: A Comprehensive Survey'
   authors:
   - Mehwish Zafar
   - Muhammad Sharif
@@ -86,7 +106,8 @@
   plugin: orcid.py
   file: orcid.yaml
 - id: doi:10.1007/978-3-031-25380-5_6
-  title: A Decentralized Environment for Biomedical Semantic Content Authoring and Publishing
+  title: "A Decentralized Environment for\_Biomedical Semantic Content Authoring and\_\
+    Publishing"
   authors:
   - Asim Abbas
   - Steve Fonin Mbouadeu
@@ -101,7 +122,8 @@
   plugin: orcid.py
   file: orcid.yaml
 - id: doi:10.3390/curroncol29100590
-  title: Classification of Brain Tumor from Magnetic Resonance Imaging Using Vision Transformers Ensembling
+  title: Classification of Brain Tumor from Magnetic Resonance Imaging Using Vision
+    Transformers Ensembling
   authors:
   - Sudhakar Tummala
   - Seifedine Kadry
@@ -114,7 +136,8 @@
   plugin: orcid.py
   file: orcid.yaml
 - id: doi:10.1155/2022/1672677
-  title: Detection of Cardiovascular Disease Based on PPG Signals Using Machine Learning with Cloud Computing
+  title: Detection of Cardiovascular Disease Based on PPG Signals Using Machine Learning
+    with Cloud Computing
   authors:
   - Tariq Sadad
   - Syed Ahmad Chan Bukhari
@@ -129,7 +152,8 @@
   plugin: orcid.py
   file: orcid.yaml
 - id: doi:10.1155/2022/5475313
-  title: 'Exploration of Black Boxes of Supervised Machine Learning Models: A Demonstration on Development of Predictive Heart Risk Score'
+  title: 'Exploration of Black Boxes of Supervised Machine Learning Models: A Demonstration
+    on Development of Predictive Heart Risk Score'
   authors:
   - Mirza Rizwan Sajid
   - Arshad Ali Khan
@@ -145,7 +169,8 @@
   plugin: orcid.py
   file: orcid.yaml
 - id: doi:10.1109/JSEN.2021.3076114
-  title: Neuromechanical Signal-Based Parallel and Scalable Model for Lower Limb Movement Recognition
+  title: Neuromechanical Signal-Based Parallel and Scalable Model for Lower Limb Movement
+    Recognition
   authors:
   - Nadeem Iqbal
   - Tufail Khan
@@ -160,7 +185,8 @@
   plugin: orcid.py
   file: orcid.yaml
 - id: doi:10.1007/s00521-020-05157-2
-  title: 'LDA–GA–SVM: improved hepatocellular carcinoma prediction through dimensionality reduction and genetically optimized support vector machine'
+  title: "LDA\u2013GA\u2013SVM: improved hepatocellular carcinoma prediction through\
+    \ dimensionality reduction and genetically optimized support vector machine"
   authors:
   - Liaqat Ali
   - Iram Wajahat
@@ -174,7 +200,8 @@
   plugin: orcid.py
   file: orcid.yaml
 - id: doi:10.1109/ACCESS.2021.3059343
-  title: 'Detection and Prediction of Diabetes Using Data Mining: A Comprehensive Review'
+  title: 'Detection and Prediction of Diabetes Using Data Mining: A Comprehensive
+    Review'
   authors:
   - Farrukh Aslam Khan
   - Khan Zeb
@@ -188,7 +215,8 @@
   plugin: orcid.py
   file: orcid.yaml
 - id: doi:10.4081/jphr.2020.1893
-  title: 'Modifiable Risk Factors and Overall Cardiovascular Mortality: Moderation of Urbanization'
+  title: 'Modifiable Risk Factors and Overall Cardiovascular Mortality: Moderation
+    of Urbanization'
   authors:
   - Mirza Rizwan Sajid
   - Noryanti Muhammad
@@ -201,12 +229,13 @@
   plugin: orcid.py
   file: orcid.yaml
 - id: doi:10.3390/diagnostics10080565
-  title: 'Multimodal Brain Tumor Classification Using Deep Learning and Robust Feature Selection: A Machine Learning Application for Radiologists'
+  title: 'Multimodal Brain Tumor Classification Using Deep Learning and Robust Feature
+    Selection: A Machine Learning Application for Radiologists'
   authors:
   - Muhammad Attique Khan
   - Imran Ashraf
   - Majed Alhaisoni
-  - Robertas Damaševičius
+  - "Robertas Dama\u0161evi\u010Dius"
   - Rafal Scherer
   - Amjad Rehman
   - Syed Ahmad Chan Bukhari
@@ -233,7 +262,8 @@
   plugin: orcid.py
   file: orcid.yaml
 - id: doi:10.1016/j.patrec.2019.11.042
-  title: Integrated design of deep features fusion for localization and classification of skin cancer
+  title: Integrated design of deep features fusion for localization and classification
+    of skin cancer
   authors:
   - Javeria Amin
   - Abida Sharif
@@ -249,7 +279,8 @@
   plugin: orcid.py
   file: orcid.yaml
 - id: doi:10.1101/2020.02.04.20020222
-  title: Machine Learning Can Predict Deaths in Patients with Diverticulitis During their Hospital Stay
+  title: Machine Learning Can Predict Deaths in Patients with Diverticulitis During
+    their Hospital Stay
   authors:
   - Fahad Shabbir Ahmed
   - ' Raza-Ul-Mustafa'
@@ -281,7 +312,8 @@
   plugin: orcid.py
   file: orcid.yaml
 - id: doi:10.1016/j.patrec.2019.11.034
-  title: Developed Newton-Raphson based deep features selection framework for skin lesion recognition
+  title: Developed Newton-Raphson based deep features selection framework for skin
+    lesion recognition
   authors:
   - Muhammad Attique Khan
   - Muhammad Sharif
@@ -311,7 +343,8 @@
   plugin: orcid.py
   file: orcid.yaml
 - id: doi:10.1016/j.dib.2019.104340
-  title: A citrus fruits and leaves dataset for detection and classification of citrus diseases through machine learning
+  title: A citrus fruits and leaves dataset for detection and classification of citrus
+    diseases through machine learning
   authors:
   - Hafiz Tayyab Rauf
   - Basharat Ali Saleem
@@ -326,7 +359,8 @@
   plugin: orcid.py
   file: orcid.yaml
 - id: doi:10.1101/19006254
-  title: A Hybrid Machine Learning Framework to Predict Early Risk of Mortality in Paralytic Ileus Patients using Electronic Health Records
+  title: A Hybrid Machine Learning Framework to Predict Early Risk of Mortality in
+    Paralytic Ileus Patients using Electronic Health Records
   authors:
   - Fahad Shabbir Ahmad
   - Liaqat Ali
@@ -340,7 +374,8 @@
   plugin: orcid.py
   file: orcid.yaml
 - id: doi:10.20944/preprints201909.0139.v1
-  title: Lungs Nodule Detection Using Semantic Segmentation and Classification with Optimal Features
+  title: Lungs Nodule Detection Using Semantic Segmentation and Classification with
+    Optimal Features
   authors:
   - Talha Meraj
   - Arslan Hassan
@@ -356,11 +391,12 @@
   plugin: orcid.py
   file: orcid.yaml
 - id: doi:10.1186/s12859-018-2247-6
-  title: 'CEDAR OnDemand: a browser extension to generate ontology-based scientific metadata'
+  title: 'CEDAR OnDemand: a browser extension to generate ontology-based scientific
+    metadata'
   authors:
   - Syed Ahmad Chan Bukhari
-  - Marcos Martínez-Romero
-  - Martin J. O’ Connor
+  - "Marcos Mart\xEDnez-Romero"
+  - "Martin J. O\u2019 Connor"
   - Attila L. Egyedi
   - Debra Willrett
   - John Graybeal
@@ -386,12 +422,13 @@
   plugin: orcid.py
   file: orcid.yaml
 - id: doi:10.1038/ni.3873
-  title: Adaptive Immune Receptor Repertoire Community recommendations for sharing immune-repertoire sequencing data
+  title: Adaptive Immune Receptor Repertoire Community recommendations for sharing
+    immune-repertoire sequencing data
   authors:
   - Florian Rubelt
   - Christian E Busse
   - Syed Ahmad Chan Bukhari
-  - Jean-Philippe Bürckert
+  - "Jean-Philippe B\xFCrckert"
   - Encarnita Mariotti-Ferrandiz
   - Lindsay G Cowell
   - Corey T Watson
@@ -445,7 +482,8 @@
   orcid: 0000-0002-6517-5261
   plugin: orcid.py
   file: orcid.yaml
-- title: Leveraging the CEDAR Workbench for Ontology-linked Submission of Adaptive Immune Receptor Repertoire Data to the Sequence Read Archive (SRA)
+- title: Leveraging the CEDAR Workbench for Ontology-linked Submission of Adaptive
+    Immune Receptor Repertoire Data to the Sequence Read Archive (SRA)
   date: '2018-07-02'
   orcid: 0000-0002-6517-5261
   plugin: orcid.py
@@ -457,7 +495,8 @@
   orcid: 0000-0002-6517-5261
   plugin: orcid.py
   file: orcid.yaml
-- title: Semantic enrichment and similarity approximation for biomedical sequence images
+- title: Semantic enrichment and similarity approximation for biomedical sequence
+    images
   date: '2019-01-15'
   orcid: 0000-0002-6517-5261
   plugin: orcid.py
@@ -503,7 +542,8 @@
   plugin: orcid.py
   file: orcid.yaml
 - id: doi:10.1155/2014/676729
-  title: An Obstacle Recognizing Mechanism for Autonomous Underwater Vehicles Powered by Fuzzy Domain Ontology and Support Vector Machine
+  title: An Obstacle Recognizing Mechanism for Autonomous Underwater Vehicles Powered
+    by Fuzzy Domain Ontology and Support Vector Machine
   authors:
   - Zhen-Shu Mi
   - Ahmad C. Bukhari
@@ -515,12 +555,14 @@
   plugin: orcid.py
   file: orcid.yaml
 - title: Next-generation semantic search platform for biomedical images
-  publisher: 5th Atlantic Workshop on Semantics and Services  February 24, 2014, Saint John, New Brunswick, Canada
+  publisher: 5th Atlantic Workshop on Semantics and Services  February 24, 2014, Saint
+    John, New Brunswick, Canada
   date: '2018-07-02'
   orcid: 0000-0002-6517-5261
   plugin: orcid.py
   file: orcid.yaml
-- title: 'SEBI: An Architecture for Biomedical Image Discovery, Interoperability and Reusability Based on Semantic Enrichment.'
+- title: 'SEBI: An Architecture for Biomedical Image Discovery, Interoperability and
+    Reusability Based on Semantic Enrichment.'
   publisher: International SWAT4LS 2014
   date: '2018-07-02'
   orcid: 0000-0002-6517-5261
@@ -528,7 +570,8 @@
   file: orcid.yaml
   link: https://ceur-ws.org/Vol-1320/paper_8.pdf
 - id: doi:10.1007/s10489-012-0365-9
-  title: A research on an intelligent multipurpose fuzzy semantic enhanced 3D virtual reality simulator for complex maritime missions
+  title: A research on an intelligent multipurpose fuzzy semantic enhanced 3D virtual
+    reality simulator for complex maritime missions
   authors:
   - Ahmad C. Bukhari
   - Yong-Gi Kim
@@ -539,7 +582,8 @@
   plugin: orcid.py
   file: orcid.yaml
 - id: doi:10.1016/j.eswa.2012.08.016
-  title: An intelligent real-time multi-vessel collision risk assessment system from VTS view point based on fuzzy inference system
+  title: An intelligent real-time multi-vessel collision risk assessment system from
+    VTS view point based on fuzzy inference system
   authors:
   - Ahmad C. Bukhari
   - Inara Tusseyeva
@@ -551,13 +595,15 @@
   orcid: 0000-0002-6517-5261
   plugin: orcid.py
   file: orcid.yaml
-- title: Personalized Information Seeking Powered by Mobile Ontology for Sightless Residents of under Developing States
+- title: Personalized Information Seeking Powered by Mobile Ontology for Sightless
+    Residents of under Developing States
   publisher: International Journal of Computer and Communication Engineering (IJCCE)
   date: '2018-07-02'
   orcid: 0000-0002-6517-5261
   plugin: orcid.py
   file: orcid.yaml
-- title: 'The Canadian health census as Linked Open Data: towards policy making in public health'
+- title: 'The Canadian health census as Linked Open Data: towards policy making in
+    public health'
   publisher: Data Integration in the Life Sciences
   date: '2018-07-02'
   orcid: 0000-0002-6517-5261
@@ -576,7 +622,8 @@
   plugin: orcid.py
   file: orcid.yaml
 - id: doi:10.1016/j.ins.2012.02.036
-  title: 'Integration of a secure type-2 fuzzy ontology with a multi-agent platform: A proposal to automate the personalized flight ticket booking domain'
+  title: 'Integration of a secure type-2 fuzzy ontology with a multi-agent platform:
+    A proposal to automate the personalized flight ticket booking domain'
   authors:
   - Ahmad C. Bukhari
   - Yong-Gi Kim
@@ -587,7 +634,8 @@
   plugin: orcid.py
   file: orcid.yaml
 - id: doi:10.1007/s10462-011-9238-6
-  title: Ontology-assisted automatic precise information extractor for visually impaired inhabitants
+  title: Ontology-assisted automatic precise information extractor for visually impaired
+    inhabitants
   authors:
   - Ahmad C. Bukhari
   - Yong-Gi Kim
@@ -598,7 +646,8 @@
   plugin: orcid.py
   file: orcid.yaml
 - id: doi:10.4156/ijact.vol3.issue6.27
-  title: 'Exploiting the Heavyweight Ontology with Multi-Agent System Using Vocal Command System: A Case Study on E-Mall'
+  title: 'Exploiting the Heavyweight Ontology with Multi-Agent System Using Vocal
+    Command System: A Case Study on E-Mall'
   authors:
   - Ahmad C. Bukhari -
   - YongGi Kim -
@@ -608,14 +657,17 @@
   orcid: 0000-0002-6517-5261
   plugin: orcid.py
   file: orcid.yaml
-- title: 'HO2IEV: Heavyweight ontology based web information extraction technique for visionless users'
-  publisher: Proceedings - 7th International Conference on Networked Computing and Advanced Information Management, NCM 2011
+- title: 'HO2IEV: Heavyweight ontology based web information extraction technique
+    for visionless users'
+  publisher: Proceedings - 7th International Conference on Networked Computing and
+    Advanced Information Management, NCM 2011
   date: '2022-05-25'
   link: https://ieeexplore.ieee.org/document/5967523/
   orcid: 0000-0002-6517-5261
   plugin: orcid.py
   file: orcid.yaml
-- title: Incorporation of Fuzzy Theory with Heavyweight Ontology and Its Application on Vague Information Retrieval for Decision Making
+- title: Incorporation of Fuzzy Theory with Heavyweight Ontology and Its Application
+    on Vague Information Retrieval for Decision Making
   publisher: International Journal of Fuzzy Logic and Intelligent Systems
   date: '2018-07-02'
   orcid: 0000-0002-6517-5261
@@ -627,10 +679,11 @@
   plugin: orcid.py
   file: orcid.yaml
 - id: doi:10.1145/3308558.3313556
-  title: How Representative Is a SPARQL Benchmark? An Analysis of RDF Triplestore Benchmarks
+  title: How Representative Is a SPARQL Benchmark? An Analysis of RDF Triplestore
+    Benchmarks
   authors:
   - Muhammad Saleem
-  - Gábor Szárnyas
+  - "G\xE1bor Sz\xE1rnyas"
   - Felix Conrads
   - Syed Ahmad Chan Bukhari
   - Qaiser Mehmood
@@ -659,7 +712,8 @@
   plugin: sources.py
   file: sources.yaml
 - id: arxiv:2509.18145
-  title: Early Prediction of Multi-Label Care Escalation Triggers in the Intensive Care Unit Using Electronic Health Records
+  title: Early Prediction of Multi-Label Care Escalation Triggers in the Intensive
+    Care Unit Using Electronic Health Records
   authors:
   - Syed Ahmad Chan Bukhari
   - Amritpal Singh
@@ -674,7 +728,8 @@
   plugin: sources.py
   file: sources.yaml
 - id: arxiv:2509.18140
-  title: A Machine Learning Framework for Pathway-Driven Therapeutic Target Discovery in Metabolic Disorders
+  title: A Machine Learning Framework for Pathway-Driven Therapeutic Target Discovery
+    in Metabolic Disorders
   authors:
   - Iram Wajahat
   - Amritpal Singh
