@@ -6,7 +6,7 @@ title: About
   <p class="interior-hero__eyebrow">Lab overview</p>
   <h1>About</h1>
   <p>Learn about the Bukhari Lab's research identity, history, and focus in biomedical informatics and trustworthy artificial intelligence.</p>
-  <div class="legacy-interior-hero__actions">{% include button.html link="research" text="Explore research" %} {% include button.html link="team" text="Meet the team" style="bare" %}</div>
+  <div class="legacy-interior-hero__actions">{% include button.html link="research" text="Explore research" %} {% include button.html link="people-and-alumni" text="Meet our people" style="bare" %}</div>
 </div>
 
 {% include section.html %}

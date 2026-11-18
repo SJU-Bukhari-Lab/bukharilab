@@ -1,0 +1,155 @@
+---
+---
+
+/* People & Alumni: divider below the PI and the grouped lab-member directory. */
+
+.page-people-alumni .people-divider {
+  height: 4px;
+  width: 100%;
+  margin: 0;
+  border: 0;
+  border-radius: 999px;
+  background: linear-gradient(90deg, #b62034, #8dbed9);
+}
+
+/* The gradient divider already separates this block from the PI section. */
+.page-people-alumni .team-block--members {
+  padding: 0;
+  border-top: 0;
+}
+
+/* One panel holds every category, so all groups share the same frame. */
+.page-people-alumni .people-panel {
+  overflow: hidden;
+  border: 1px solid var(--interior-line);
+  border-radius: 20px;
+  background: var(--interior-surface);
+  box-shadow: 0 12px 28px rgba(20, 42, 68, 0.06);
+}
+
+.page-people-alumni .people-row {
+  display: grid;
+  grid-template-columns: minmax(160px, 210px) minmax(0, 1fr);
+  gap: 18px 28px;
+  align-items: start;
+  padding: 28px 34px;
+}
+
+.page-people-alumni .people-row + .people-row {
+  border-top: 1px solid var(--interior-line);
+}
+
+.page-people-alumni .people-row__label::before {
+  content: "";
+  display: block;
+  width: 28px;
+  height: 3px;
+  margin-bottom: 12px;
+  border-radius: 999px;
+  background: linear-gradient(90deg, #b62034, #8dbed9);
+}
+
+.page-people-alumni .people-row__label h3 {
+  margin: 0 !important;
+  padding: 0 !important;
+  border: 0 !important;
+  font-size: 1.08rem !important;
+  line-height: 1.3 !important;
+}
+
+.page-people-alumni .people-row__label p {
+  margin: 6px 0 0;
+  color: var(--interior-muted);
+  font-size: 0.74rem;
+  font-weight: 800;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+/* One member per line, separated by hairlines. */
+.page-people-alumni .people-list {
+  display: grid;
+  grid-template-columns: 1fr;
+  margin: 0 !important;
+  padding: 0 !important;
+  list-style: none;
+}
+
+.page-people-alumni .people-person {
+  display: flex;
+  min-width: 0;
+  margin: 0;
+  padding: 12px 0;
+  align-items: center;
+  gap: 12px;
+  line-height: 1.3;
+  text-align: left;
+}
+
+.page-people-alumni .people-person:first-child {
+  padding-top: 0;
+}
+
+.page-people-alumni .people-person:last-child {
+  padding-bottom: 0;
+}
+
+.page-people-alumni .people-person + .people-person {
+  border-top: 1px solid var(--interior-line);
+}
+
+.page-people-alumni .people-person__initials {
+  display: grid;
+  flex: 0 0 auto;
+  width: 44px;
+  height: 44px;
+  place-items: center;
+  border-radius: 50%;
+  color: #176d68;
+  background: var(--interior-teal-soft);
+  box-shadow: inset 0 0 0 1px rgba(23, 109, 104, 0.14);
+  font-size: 0.82rem;
+  font-weight: 800;
+  letter-spacing: 0.06em;
+}
+
+.page-people-alumni .people-person__text {
+  display: flex;
+  min-width: 0;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.page-people-alumni .people-person__name {
+  color: var(--bl-ink);
+  font-family: var(--heading);
+  font-size: 1rem;
+  font-weight: 600;
+  line-height: 1.3;
+}
+
+.page-people-alumni .people-person__affiliation {
+  color: var(--interior-muted);
+  font-size: 0.84rem;
+  line-height: 1.35;
+}
+
+html[data-dark="true"] .page-people-alumni .people-person__initials {
+  color: #9edbd8;
+  background: rgba(14, 133, 136, 0.2);
+  box-shadow: inset 0 0 0 1px rgba(158, 219, 216, 0.22);
+}
+
+@media (max-width: 1050px) {
+  .page-people-alumni .people-row {
+    grid-template-columns: minmax(150px, 200px) minmax(0, 1fr);
+    gap: 18px 28px;
+  }
+}
+
+@media (max-width: 760px) {
+  .page-people-alumni .people-row {
+    grid-template-columns: 1fr;
+    padding: 24px 22px;
+  }
+}

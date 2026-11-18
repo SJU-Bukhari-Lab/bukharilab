@@ -4,6 +4,12 @@ source "https://rubygems.org"
 gem "jekyll", "~> 4.3"
 gem "webrick", "~> 1.7"
 
+# no longer default gems as of ruby 3.4
+gem "base64"
+gem "bigdecimal"
+gem "csv"
+gem "logger"
+
 gem "html-proofer", "~> 5.0"
 
 # plugins

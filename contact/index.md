@@ -11,7 +11,7 @@ nav:
   <p>We welcome students, researchers, clinicians, engineers, and collaborators interested in trustworthy AI, biomedical data science, knowledge engineering, and healthcare innovation.</p>
   <div class="interior-hero__actions">
     {% include button.html link="https://www.linkedin.com/company/bukharilab" text="Connect on LinkedIn" %}
-    {% include button.html link="team" text="Meet the team" style="bare" %}
+    {% include button.html link="people-and-alumni" text="Meet our people" style="bare" %}
   </div>
 </div>
 

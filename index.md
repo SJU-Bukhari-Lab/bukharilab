@@ -20,7 +20,7 @@ nav:
 
       <div class="home-hero__actions">
         {% include button.html link="research" text="Explore our research" %}
-        {% include button.html link="team" text="Meet the team" style="bare" %}
+        {% include button.html link="people-and-alumni" text="Meet our people" style="bare" %}
         <a class="button" data-style="bare" href="https://www.linkedin.com/company/bukharilab" target="_blank" rel="noopener noreferrer">Join us on LinkedIn</a>
       </div>
 
