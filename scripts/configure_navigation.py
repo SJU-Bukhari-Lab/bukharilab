@@ -69,19 +69,20 @@ def main() -> int:
         ("research/index.md", "Research", 1, "Research areas and initiatives"),
         ("papers/index.md", "Papers", 2, "Publications and benchmarking research"),
         ("software/index.md", "Software", 3, "Research software, standards, and tools"),
-        ("team/index.md", "Team", 4, "Meet our team"),
+        ("people-and-alumni/index.md", "People & Alumni", 4, "Meet our people"),
         ("blog/index.md", "News", 5, "Lab news"),
         ("contact/index.md", "Join Us", 6, "Join or contact the lab"),
         # Keep these routes available without placing them in the main navigation.
         ("projects/index.md", "Projects", None, None),
         ("about/index.md", None, None, None),
+        ("team/index.md", "Team", None, None),
     ]
 
     for relative, title, order, tooltip in updates:
         update_page(root / relative, title=title, nav_order=order, tooltip=tooltip)
 
-    print("Navigation updated: Home, Research, Papers, Software, Team, News, Join Us")
-    print("Projects and About remain accessible but are not displayed in the main navigation.")
+    print("Navigation updated: Home, Research, Papers, Software, People & Alumni, News, Join Us")
+    print("Projects, About, and Team remain accessible but are not displayed in the main navigation.")
     return 0
 
 

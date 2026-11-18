@@ -3,7 +3,7 @@
 
 /* Final interior-page visual system. The homepage is intentionally excluded. */
 
-:where(body.page-research, body.page-papers, body.page-software, body.page-team, body.page-news, body.page-join-us, body.page-about, body.page-projects) {
+:where(body.page-research, body.page-papers, body.page-software, body.page-team, body.page-people-alumni, body.page-news, body.page-join-us, body.page-about, body.page-projects) {
   --interior-navy: #132537;
   --interior-teal: #0e8588;
   --interior-teal-soft: #e4f4f2;
@@ -13,17 +13,17 @@
   --interior-muted: var(--bl-muted, #6f7f8d);
 }
 
-:where(body.page-research, body.page-papers, body.page-software, body.page-team, body.page-news, body.page-join-us, body.page-about, body.page-projects) main > section.background {
+:where(body.page-research, body.page-papers, body.page-software, body.page-team, body.page-people-alumni, body.page-news, body.page-join-us, body.page-about, body.page-projects) main > section.background {
   padding: 34px 0 !important;
   border-top: 0 !important;
 }
 
-:where(body.page-research, body.page-papers, body.page-software, body.page-team, body.page-news, body.page-join-us, body.page-about, body.page-projects) main > section.background:first-child {
+:where(body.page-research, body.page-papers, body.page-software, body.page-team, body.page-people-alumni, body.page-news, body.page-join-us, body.page-about, body.page-projects) main > section.background:first-child {
   padding-top: 42px !important;
   padding-bottom: 24px !important;
 }
 
-:where(body.page-research, body.page-papers, body.page-software, body.page-team, body.page-news, body.page-join-us, body.page-about, body.page-projects) main > section.background:last-child {
+:where(body.page-research, body.page-papers, body.page-software, body.page-team, body.page-people-alumni, body.page-news, body.page-join-us, body.page-about, body.page-projects) main > section.background:last-child {
   padding-bottom: 64px !important;
 }
 
@@ -505,7 +505,7 @@ body.page-about .about-pillars { margin-top: 22px; }
 }
 
 @media (max-width: 700px) {
-  :where(body.page-research, body.page-papers, body.page-software, body.page-team, body.page-news, body.page-join-us, body.page-about, body.page-projects) main > section.background { padding: 25px 0 !important; }
+  :where(body.page-research, body.page-papers, body.page-software, body.page-team, body.page-people-alumni, body.page-news, body.page-join-us, body.page-about, body.page-projects) main > section.background { padding: 25px 0 !important; }
 
   .interior-hero,
   .legacy-interior-hero { padding: 26px 22px; border-radius: 16px; }
@@ -543,30 +543,30 @@ body.page-about .about-pillars { margin-top: 22px; }
 /* Final completeness and team-profile corrections. */
 
 /* Prevent legacy heading rules from placing the eyebrow beside the heading. */
-body.page-team .team-block__heading,
-body.page-team .team-alumni__summary {
+body:is(.page-team, .page-people-alumni) .team-block__heading,
+body:is(.page-team, .page-people-alumni) .team-alumni__summary {
   display: block !important;
   width: 100%;
 }
 
-body.page-team .team-block__heading .interior-heading__eyebrow {
+body:is(.page-team, .page-people-alumni) .team-block__heading .interior-heading__eyebrow {
   display: block !important;
   width: auto !important;
   margin: 0 0 8px !important;
 }
 
-body.page-team .team-block__heading h2 {
+body:is(.page-team, .page-people-alumni) .team-block__heading h2 {
   display: block !important;
   width: auto !important;
   margin: 0 !important;
 }
 
-body.page-team .team-alumni__summary {
+body:is(.page-team, .page-people-alumni) .team-alumni__summary {
   position: relative;
   padding-right: 48px;
 }
 
-body.page-team .team-alumni__toggle {
+body:is(.page-team, .page-people-alumni) .team-alumni__toggle {
   position: absolute;
   top: 12px;
   right: 4px;

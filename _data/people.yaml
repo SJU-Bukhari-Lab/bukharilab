@@ -1,0 +1,39 @@
+# People & Alumni page groups, shown in this order below the Principal Investigator.
+# Names are listed exactly as they should appear. "affiliation" is optional.
+# "icon" is an optional Font Awesome class for the category header (defaults to fa-solid fa-users).
+- category: Postdoctoral Researchers
+  icon: fa-solid fa-user-graduate
+  people:
+  - name: Behraj Khan
+  - name: Nadeem Iqbal
+- category: Research Staff and Scholars
+  icon: fa-solid fa-flask
+  people:
+  - name: Khawar Shakeel
+  - name: Asim Abbas
+- category: Graduate Researchers
+  icon: fa-solid fa-graduation-cap
+  people:
+  - name: Amritpal Singh
+  - name: Lauren Rodriguez
+  - name: Sebastian Torres
+  - name: Daniel Bhola
+  - name: Mutahira Khalid
+  - name: Sebastian Chalarca
+- category: Undergraduate Researchers
+  icon: fa-solid fa-book-open
+  people:
+  - name: Neeam Shahriar Hayder
+  - name: Shifath Hossain
+  - name: Alyssa Meczkowska
+  - name: Neelesh Rastogi
+  - name: Steve Fonin Mbouadeu
+  - name: Avinash Bisram
+- category: Visiting and Exchange Researchers
+  icon: fa-solid fa-earth-americas
+  people:
+  - name: Sushama Kumari
+  - name: Raihana Rahman
+    affiliation: Harvard University
+  - name: Veena Kumari
+    affiliation: Stevens Institute of Technology

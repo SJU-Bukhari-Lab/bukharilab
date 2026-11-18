@@ -62,7 +62,8 @@ python3 scripts/public_release_audit.py . --include-built
 | Canonical software catalog | `_data/software_catalog.yaml` |
 | Publications | `_data/papers.yaml`, `_data/citations.yaml` |
 | Projects | `_projects/` and `_data/projects.yaml` |
-| Team members | `_members/` |
+| People & Alumni page (categories and names) | `_data/people.yaml` |
+| Member profile pages and the PI card | `_members/` |
 | News | `_posts/` |
 | Site navigation and social links | `_config.yaml` |
 | Images | `images/` |

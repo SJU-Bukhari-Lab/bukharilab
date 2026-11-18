@@ -1,8 +1,6 @@
 ---
 title: Team
-nav:
-  order: 4
-  tooltip: Meet our team
+sitemap: false
 ---
 
 <div class="interior-hero interior-hero--team">
