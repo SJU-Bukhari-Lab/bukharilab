@@ -17,7 +17,9 @@ concurrency:
 
 jobs:
   build:
-    runs-on: ubuntu-latest
+    # Pinned: gem installation fails on Ubuntu 26, which ubuntu-latest became in Oct 2026
+    # (most likely posix-spawn, from jekyll-last-modified-at, failing to compile).
+    runs-on: ubuntu-24.04
 
     steps:
       - name: Checkout
@@ -74,7 +76,8 @@ jobs:
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
-    runs-on: ubuntu-latest
+    # Same image as the build job.
+    runs-on: ubuntu-24.04
     needs: build
 
     steps:
