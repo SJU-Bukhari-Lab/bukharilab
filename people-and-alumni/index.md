@@ -3,11 +3,12 @@ title: People & Alumni
 nav:
   order: 4
   tooltip: Meet our people
+  label: People
 ---
 
 <div class="interior-hero interior-hero--team">
   <p class="interior-hero__eyebrow">Our people</p>
-  <h1>People &amp; Alumni</h1>
+  <h1>Our People</h1>
   <p>Researchers, students, and collaborators advancing auditable, explainable, and trustworthy AI for healthcare and biomedical discovery.</p>
   <div class="interior-hero__actions">
     {% include button.html link="contact" text="Join the lab" %}

@@ -55,7 +55,7 @@
               aria-current="page"
             {% endif %}
           >
-            {{ nav_page.title }}
+            {{ nav_page.nav.label | default: nav_page.title }}
           </a>
         {% endif %}
       {% endfor %}

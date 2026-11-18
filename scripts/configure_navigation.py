@@ -39,7 +39,14 @@ def set_scalar(front: str, key: str, value: str) -> str:
     return f"{replacement}\n{front}".strip()
 
 
-def update_page(path: Path, *, title: str | None, nav_order: int | None, tooltip: str | None) -> None:
+def update_page(
+    path: Path,
+    *,
+    title: str | None,
+    nav_order: int | None,
+    tooltip: str | None,
+    nav_label: str | None = None,
+) -> None:
     if not path.exists():
         print(f"Skipping missing page: {path}")
         return
@@ -53,6 +60,8 @@ def update_page(path: Path, *, title: str | None, nav_order: int | None, tooltip
 
     if nav_order is not None:
         nav = f"nav:\n  order: {nav_order}\n  tooltip: {tooltip or title or 'Page'}"
+        if nav_label:
+            nav += f"\n  label: {nav_label}"
         front = f"{front.rstrip()}\n{nav}".strip()
 
     path.write_text(f"---\n{front}\n---\n\n{body.lstrip()}", encoding="utf-8")
@@ -78,10 +87,19 @@ def main() -> int:
         ("team/index.md", "Team", None, None),
     ]
 
-    for relative, title, order, tooltip in updates:
-        update_page(root / relative, title=title, nav_order=order, tooltip=tooltip)
+    # Shorter labels for the header menu bar only; page titles stay unchanged.
+    nav_labels = {"people-and-alumni/index.md": "People"}
 
-    print("Navigation updated: Home, Research, Papers, Software, People & Alumni, News, Join Us")
+    for relative, title, order, tooltip in updates:
+        update_page(
+            root / relative,
+            title=title,
+            nav_order=order,
+            tooltip=tooltip,
+            nav_label=nav_labels.get(relative),
+        )
+
+    print("Navigation updated: Home, Research, Papers, Software, People, News, Join Us")
     print("Projects, About, and Team remain accessible but are not displayed in the main navigation.")
     return 0
 
