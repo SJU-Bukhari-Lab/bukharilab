@@ -84,10 +84,9 @@ def main() -> int:
         # Keep these routes available without placing them in the main navigation.
         ("projects/index.md", "Projects", None, None),
         ("about/index.md", None, None, None),
-        ("team/index.md", "Team", None, None),
     ]
 
-    # Shorter labels for the header menu bar only; page titles stay unchanged.
+    # Shorter labels for the header and footer menus; page titles stay unchanged.
     nav_labels = {"people-and-alumni/index.md": "People"}
 
     for relative, title, order, tooltip in updates:
@@ -100,7 +99,7 @@ def main() -> int:
         )
 
     print("Navigation updated: Home, Research, Papers, Software, People, News, Join Us")
-    print("Projects, About, and Team remain accessible but are not displayed in the main navigation.")
+    print("Projects and About remain accessible but are not displayed in the main navigation.")
     return 0
 
 
