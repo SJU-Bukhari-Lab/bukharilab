@@ -1,5 +1,7 @@
 ---
 title: People & Alumni
+redirect_from:
+  - /team/
 nav:
   order: 4
   tooltip: Meet our people

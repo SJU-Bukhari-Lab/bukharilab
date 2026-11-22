@@ -20,7 +20,7 @@
         {% assign pages = site.pages | where_exp: "nav_page", "nav_page.nav" | sort: "nav.order" %}
         {% for nav_page in pages %}
           {% if nav_page.nav %}
-            <a href="{{ nav_page.dir | relative_url | uri_escape }}">{{ nav_page.title }}</a>
+            <a href="{{ nav_page.dir | relative_url | uri_escape }}">{{ nav_page.nav.label | default: nav_page.title }}</a>
           {% endif %}
         {% endfor %}
       </nav>
